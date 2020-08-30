@@ -12,11 +12,12 @@ class Class1():
 
     def meth(self):
         self.va = ("public bhai")
+        self._va = ("Protected bhai")
 
 ob = Class1()
 print(ob.pub)
 print(ob._pro)
-print()
+print(ob)
 # print(ob.__pri)
 
 # result = ob.add()
