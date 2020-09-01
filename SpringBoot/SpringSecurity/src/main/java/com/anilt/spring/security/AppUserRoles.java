@@ -13,16 +13,16 @@ import com.google.common.collect.Sets;
  */
 public enum AppUserRoles {
 
-	STUDENT(Sets.newHashSet()),
-	TEACHER(Sets.newHashSet());
+	STUDENT(Sets.newHashSet(AppUserPermissions.COURSE_READ, AppUserPermissions.STUDENT_READ, AppUserPermissions.STUDENT_WRITE)),
+	TEACHER(Sets.newHashSet(AppUserPermissions.COURSE_READ, AppUserPermissions.COURSE_WRITE, AppUserPermissions.STUDENT_READ, AppUserPermissions.STUDENT_WRITE));
 	
-	private final Set<AppUserPermissions> permissios;
+	private final Set<AppUserPermissions> permissions;
 
 	/**
-	 * @param permissios
+	 * @param permissions
 	 */
-	private AppUserRoles(Set<AppUserPermissions> permissios) {
-		this.permissios = permissios;
+	private AppUserRoles(Set<AppUserPermissions> permissions) {
+		this.permissions = permissions;
 	}
 	
 }
