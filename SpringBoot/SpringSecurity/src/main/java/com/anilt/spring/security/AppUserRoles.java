@@ -10,5 +10,6 @@ package com.anilt.spring.security;
 public enum AppUserRoles {
 
 	STUDENT,
-	TEACHER
+	TEACHER,
+	ADMIN
 }
