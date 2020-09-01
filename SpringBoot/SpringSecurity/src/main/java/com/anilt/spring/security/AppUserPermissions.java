@@ -8,8 +8,10 @@ package com.anilt.spring.security;
  *
  */
 public enum AppUserPermissions {
-	STUDENT_READ("student:read"),
-	STUDENT_WRITE("student:write"),
-	COURSE_READ("course:read"),
-	COURSE_WRITE("course:write")
+	STUDENT_READ,
+	STUDENT_WRITE,
+	COURSE_READ,
+	COURSE_WRITE
+	
+	
 }
