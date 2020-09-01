@@ -31,8 +31,8 @@ public class StudentSecurityConfig extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 		http
 		.authorizeRequests()
-		.antMatchers("/","index","css/*", "/js/*")
-		.permitAll()
+		.antMatchers("/","index","css/*", "/js/*").permitAll()
+		.antMatchers("/api/**").hasRole(AppUserRoles.STUDENT.name())
 		.anyRequest()
 		.authenticated()
 		.and()
@@ -44,17 +44,17 @@ public class StudentSecurityConfig extends WebSecurityConfigurerAdapter {
 	protected UserDetailsService userDetailsService() {
 		UserDetails anilUser =  User.builder()
 		.username("anil")
-		.password(passwordEncoder.encode("password"))
-		.roles(AppUserRoles.TEACHER.name())
+		.password(passwordEncoder.encode("anil"))
+		.roles(AppUserRoles.TEACHER.name(), AppUserRoles.STUDENT.name())
 		.build();
 		UserDetails shrihanUser =  User.builder()
 				.username("shrihan")
-				.password(passwordEncoder.encode("password"))
+				.password(passwordEncoder.encode("shrihan"))
 				.roles(AppUserRoles.STUDENT.name())
 				.build();
 		UserDetails shrithaUser =  User.builder()
 				.username("shritha")
-				.password(passwordEncoder.encode("password"))
+				.password(passwordEncoder.encode("shritha"))
 				.roles(AppUserRoles.STUDENT.name())
 				.build();
 		return new InMemoryUserDetailsManager(anilUser, shrihanUser, shrithaUser);
