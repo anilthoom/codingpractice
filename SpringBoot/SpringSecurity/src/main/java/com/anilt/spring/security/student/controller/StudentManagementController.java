@@ -35,5 +35,9 @@ public class StudentManagementController {
 		System.out.println(student);
 	}
 	
-	
+	@DeleteMapping(path = "{studentId}")
+	public void deleteStudentId(@PathVariable("studentId") Integer studentId)
+	{
+		
+	}
 }
