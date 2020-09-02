@@ -24,5 +24,10 @@ public class StudentManagementController {
 			new Student(4, "Shri Tharunika")
 	);
 	
-	
+	@GetMapping
+	public List<Student> getAllStudents(){
+		return STUDENTS;
+	}
+
+
 }
