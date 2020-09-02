@@ -17,5 +17,12 @@ import com.anilt.spring.security.student.Student;
 @RequestMapping("api/v1/students")
 public class StudentManagementController {
 	
-
+	private static final List<Student> STUDENTS = Arrays.asList(
+			new Student(1,"Anil"),
+			new Student(2, "Ramya"),
+			new Student(3, "Shrihan Chandra"),
+			new Student(4, "Shri Tharunika")
+	);
+	
+	
 }
