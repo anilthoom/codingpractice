@@ -29,5 +29,11 @@ public class StudentManagementController {
 		return STUDENTS;
 	}
 
+	@PostMapping
+	public void registerStudent(@RequestBody Student student)
+	{
+		System.out.println(student);
+	}
+	
 	
 }
