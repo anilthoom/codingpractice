@@ -45,7 +45,7 @@ public class StudentManagementController {
 	@PutMapping(path ="{studentId}")
 	public void updateStudent(@PathVariable("studentId") Integer studentId, Student student) {
 		
-		System.out.println(student);
+		System.out.println(studentId +" - "+ student);
 	}
 	
 }
