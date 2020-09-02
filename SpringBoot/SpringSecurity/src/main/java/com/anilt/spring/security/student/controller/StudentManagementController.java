@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.anilt.spring.security.student.Student;
 
 @RestController
-@RequestMapping("api/v1/students")
+@RequestMapping("management/api/v1/students")
 public class StudentManagementController {
 	
 	private static final List<Student> STUDENTS = Arrays.asList(
