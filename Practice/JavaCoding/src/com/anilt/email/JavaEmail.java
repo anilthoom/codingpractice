@@ -11,7 +11,7 @@ import javax.mail.internet.InternetAddress;
 import javax.mail.internet.MimeMessage;
 
 public class JavaEmail {
-	 Session mailSession;
+	 	Session mailSession;
 	 
 	    public static void main(String args[]) throws AddressException, MessagingException
 	    {
@@ -24,6 +24,7 @@ public class JavaEmail {
 	    private void setMailServerProperties()
 	    {
 	        Properties emailProperties = System.getProperties();
+	        //Try ports 
 	        emailProperties.put("mail.smtp.port", "25");
 	        emailProperties.put("mail.smtp.auth", "true");
 	        emailProperties.put("mail.smtp.starttls.enable", "true");
