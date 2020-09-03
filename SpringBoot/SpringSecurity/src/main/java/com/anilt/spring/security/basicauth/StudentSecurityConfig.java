@@ -5,6 +5,7 @@ import javax.annotation.security.PermitAll;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpMethod;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
@@ -14,6 +15,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 
+import com.anilt.spring.security.AppUserPermissions;
 import com.anilt.spring.security.AppUserRoles;
 
 @Configuration
@@ -34,6 +36,10 @@ public class StudentSecurityConfig extends WebSecurityConfigurerAdapter {
 		.authorizeRequests()
 		.antMatchers("/","index","css/*", "/js/*").permitAll()
 		.antMatchers("/api/**").hasRole(AppUserRoles.STUDENT.name())
+		.antMatchers(HttpMethod.DELETE, "/management/api/**").hasAuthority(AppUserPermissions.COURSE_WRITE.name())
+		.antMatchers(HttpMethod.POST, "/management/api/**").hasAuthority(AppUserPermissions.COURSE_WRITE.name())
+		.antMatchers(HttpMethod.PUT, "/management/api/**").hasAuthority(AppUserPermissions.COURSE_WRITE.name())
+		.antMatchers(HttpMethod.GET, "/management/api/**").hasAnyRole(AppUserRoles.ADMIN.name(), AppUserRoles.ADMINTRAINEE.name())
 		.anyRequest()
 		.authenticated()
 		.and()

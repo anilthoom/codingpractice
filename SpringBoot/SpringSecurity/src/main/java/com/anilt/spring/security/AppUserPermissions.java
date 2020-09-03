@@ -7,7 +7,7 @@ package com.anilt.spring.security;
  * @author anilt
  *
  */
-enum AppUserPermissions {
+public enum AppUserPermissions {
 	STUDENT_READ("student:read"), 
 	STUDENT_WRITE("student:write"), 
 	COURSE_READ("course:read"), 
