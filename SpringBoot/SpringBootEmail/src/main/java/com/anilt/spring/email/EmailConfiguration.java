@@ -1,15 +1,23 @@
 package com.anilt.spring.email;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
 public class EmailConfiguration {
 
+	@Value("${spring.mail.host}")
 	private String host;
-	private String port;
-	private String username;
-	private String password;
 	
+	@Value("${spring.mail.port}")
+	private String port;
+	
+	@Value("${spring.mail.username}")
+	private String username;
+	
+	@Value("${spring.mail.password}")
+	private String password;
+
 	public String getHost() {
 		return host;
 	}
