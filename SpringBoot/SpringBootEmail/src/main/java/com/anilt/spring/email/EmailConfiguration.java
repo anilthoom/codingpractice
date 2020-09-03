@@ -10,7 +10,7 @@ public class EmailConfiguration {
 	private String host;
 	
 	@Value("${spring.mail.port}")
-	private String port;
+	private int port;
 	
 	@Value("${spring.mail.username}")
 	private String username;
@@ -24,10 +24,10 @@ public class EmailConfiguration {
 	public void setHost(String host) {
 		this.host = host;
 	}
-	public String getPort() {
+	public int getPort() {
 		return port;
 	}
-	public void setPort(String port) {
+	public void setPort(int port) {
 		this.port = port;
 	}
 	public String getUsername() {
