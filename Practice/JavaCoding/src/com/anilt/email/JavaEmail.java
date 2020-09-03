@@ -24,7 +24,7 @@ public class JavaEmail {
 	    private void setMailServerProperties()
 	    {
 	        Properties emailProperties = System.getProperties();
-	        //Try ports 
+	        //Try ports 25 
 	        emailProperties.put("mail.smtp.port", "25");
 	        emailProperties.put("mail.smtp.auth", "true");
 	        emailProperties.put("mail.smtp.starttls.enable", "true");
