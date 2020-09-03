@@ -32,7 +32,7 @@ public class JavaEmail {
 	 
 	    private MimeMessage draftEmailMessage() throws AddressException, MessagingException
 	    {
-	        String[] toEmails = { "anilkumar9944@gmail.com" };
+	        String[] toEmails = { "receiver@gmail.com" };
 	        String emailSubject = "Test email subject";
 	        String emailBody = "This is an email sent by <b>//howtodoinjava.com</b>.";
 	        MimeMessage emailMessage = new MimeMessage(mailSession);
