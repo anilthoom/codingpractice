@@ -1,5 +1,6 @@
 package com.anilt.spring.email;
 
+import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -25,6 +26,14 @@ public class EmailController {
 		mailSender.setPort(this.emailConfig.getPort());
 		mailSender.setUsername(this.emailConfig.getUsername());
 		mailSender.setPassword(this.emailConfig.getPassword());
+		
+		//Create an email message
+		SimpleMailMessage mailMessage = new SimpleMailMessage();
+		mailMessage.setFrom(emailDetails.getEmail());
+		mailMessage.setTo("anilt@opentext.com");
+		mailMessage.setSubject("Spring email Demo from : "+ emailDetails.getEmail());
+		mailMessage.setText(emailDetails.getEmailContent());
+		
 		
 	}
 }
