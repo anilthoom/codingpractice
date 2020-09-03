@@ -34,6 +34,7 @@ public class EmailController {
 		mailMessage.setSubject("Spring email Demo from : "+ emailDetails.getEmail());
 		mailMessage.setText(emailDetails.getEmailContent());
 		
-		
+		//Send mail
+		mailSender.send(mailMessage);
 	}
 }
