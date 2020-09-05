@@ -69,7 +69,12 @@ public class StudentSecurityConfig extends WebSecurityConfigurerAdapter {
 				.password(passwordEncoder.encode("shritha"))
 				.roles(AppUserRoles.STUDENT.name())
 				.build();
-		return new InMemoryUserDetailsManager(anilUser, shrihanUser, shrithaUser, ramyaUser);
+		UserDetails funnyUser =  User.builder()
+				.username("funny")
+				.password(passwordEncoder.encode("funny"))
+				.roles(AppUserRoles.ZEROACCESS.name())
+				.build();
+		return new InMemoryUserDetailsManager(anilUser, shrihanUser, shrithaUser, ramyaUser, funnyUser);
 	}
 
 }
