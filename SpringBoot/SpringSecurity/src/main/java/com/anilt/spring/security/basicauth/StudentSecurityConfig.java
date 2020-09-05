@@ -52,27 +52,32 @@ public class StudentSecurityConfig extends WebSecurityConfigurerAdapter {
 		UserDetails anilUser =  User.builder()
 		.username("anil")
 		.password(passwordEncoder.encode("anil"))
-		.roles(AppUserRoles.ADMIN.name(), AppUserRoles.STUDENT.name())
+//		.roles(AppUserRoles.ADMIN.name(), AppUserRoles.STUDENT.name())
+		.authorities(AppUserRoles.ADMIN.getGrantedAuthorities())
 		.build();
 		UserDetails ramyaUser =  User.builder()
 				.username("ramya")
 				.password(passwordEncoder.encode("ramya"))
-				.roles(AppUserRoles.ADMINTRAINEE.name())
+//				.roles(AppUserRoles.ADMINTRAINEE.name())
+				.authorities(AppUserRoles.ADMINTRAINEE.getGrantedAuthorities())
 				.build();
 		UserDetails shrihanUser =  User.builder()
 				.username("shrihan")
 				.password(passwordEncoder.encode("shrihan"))
-				.roles(AppUserRoles.STUDENT.name())
+//				.roles(AppUserRoles.STUDENT.name())
+				.authorities(AppUserRoles.STUDENT.getGrantedAuthorities())
 				.build();
 		UserDetails shrithaUser =  User.builder()
 				.username("shritha")
 				.password(passwordEncoder.encode("shritha"))
-				.roles(AppUserRoles.STUDENT.name())
+//				.roles(AppUserRoles.STUDENT.name())
+				.authorities(AppUserRoles.STUDENT.getGrantedAuthorities())
 				.build();
 		UserDetails funnyUser =  User.builder()
 				.username("funny")
 				.password(passwordEncoder.encode("funny"))
-				.roles(AppUserRoles.ZEROACCESS.name())
+//				.roles(AppUserRoles.ZEROACCESS.name())
+				.authorities(AppUserRoles.ZEROACCESS.getGrantedAuthorities())
 				.build();
 		return new InMemoryUserDetailsManager(anilUser, shrihanUser, shrithaUser, ramyaUser, funnyUser);
 	}

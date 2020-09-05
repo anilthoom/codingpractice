@@ -42,5 +42,4 @@ public enum AppUserRoles {
 		permissions.add(new SimpleGrantedAuthority("ROLE_"+this.name()));
 		return permissions;
 	}
-	
 }
