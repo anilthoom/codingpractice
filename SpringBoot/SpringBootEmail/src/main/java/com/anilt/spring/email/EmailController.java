@@ -24,13 +24,13 @@ public class EmailController {
 		JavaMailSenderImpl mailSender = new JavaMailSenderImpl();
 		mailSender.setHost(this.emailConfig.getHost());
 		mailSender.setPort(this.emailConfig.getPort());
-		mailSender.setUsername(this.emailConfig.getUsername());
-		mailSender.setPassword(this.emailConfig.getPassword());
+	//	mailSender.setUsername(this.emailConfig.getUsername());
+	//	mailSender.setPassword(this.emailConfig.getPassword());
 		
 		//Create an email message
 		SimpleMailMessage mailMessage = new SimpleMailMessage();
 		mailMessage.setFrom(emailDetails.getEmail());
-		mailMessage.setTo("user@domain.com");
+		mailMessage.setTo("anilt@opentext.com");
 		mailMessage.setSubject("Spring email Demo from : "+ emailDetails.getEmail());
 		mailMessage.setText(emailDetails.getEmailContent());
 		
