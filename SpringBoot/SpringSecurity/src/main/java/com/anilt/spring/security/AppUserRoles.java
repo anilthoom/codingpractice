@@ -5,6 +5,8 @@ package com.anilt.spring.security;
 
 import java.util.Set;
 
+import org.springframework.security.core.authority.SimpleGrantedAuthority;
+
 import com.google.common.collect.Sets;
 
 /**
@@ -25,6 +27,11 @@ public enum AppUserRoles {
 	 */
 	private AppUserRoles(Set<AppUserPermissions> permissions) {
 		this.permissions = permissions;
+	}
+	
+	public Set<SimpleGrantedAuthority> getGrantedAuthorities(){
+		
+		return null;
 	}
 	
 }
