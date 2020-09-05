@@ -25,12 +25,16 @@ public enum AppUserRoles {
 	/**
 	 * @param permissions
 	 */
-	private AppUserRoles(Set<AppUserPermissions> permissions) {
+	AppUserRoles(Set<AppUserPermissions> permissions) {
 		this.permissions = permissions;
 	}
-	
+
+	public Set<AppUserPermissions> getPermissions(){
+		return permissions;
+	}
 	public Set<SimpleGrantedAuthority> getGrantedAuthorities(){
 		
+		getPermissio
 		return null;
 	}
 	
