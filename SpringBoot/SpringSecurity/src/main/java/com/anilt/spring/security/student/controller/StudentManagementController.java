@@ -34,6 +34,7 @@ public class StudentManagementController {
 	}
 
 	@PostMapping
+	@PreAuthorize("hasAuthority('student:write')")
 	public void registerStudent(@RequestBody Student student)
 	{
 		System.out.println("registerStudent()");
@@ -41,6 +42,7 @@ public class StudentManagementController {
 	}
 	
 	@DeleteMapping(path = "{studentId}")
+	@PreAuthorize("hasAuthority('student:write')")
 	public void deleteStudentId(@PathVariable("studentId") Integer studentId)
 	{
 		System.out.println("deleteStudentId()");
@@ -48,6 +50,7 @@ public class StudentManagementController {
 	}
 	
 	@PutMapping(path ="{studentId}")
+	@PreAuthorize("hasAuthority('student:write')")
 	public void updateStudent(@PathVariable("studentId") Integer studentId, Student student) {
 		System.out.println("registerStudent()");
 		System.out.println(studentId +" - "+ student);
