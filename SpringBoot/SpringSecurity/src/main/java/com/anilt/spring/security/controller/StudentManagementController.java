@@ -1,4 +1,4 @@
-package com.anilt.spring.security.student.controller;
+package com.anilt.spring.security.controller;
 
 import java.util.Arrays;
 import java.util.List;
