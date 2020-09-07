@@ -45,7 +45,8 @@ public class StudentSecurityConfig extends WebSecurityConfigurerAdapter {
 		.anyRequest()
 		.authenticated()
 		.and()
-		.httpBasic();
+//		.httpBasic();
+		.formLogin();
 	}
 	
 	@Override
