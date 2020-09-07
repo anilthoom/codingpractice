@@ -9,6 +9,7 @@ public class EnumExe {
 			+" Action : "
 			+ enumTest.getAcction()
 			);
+			
 		}
 	}
 }

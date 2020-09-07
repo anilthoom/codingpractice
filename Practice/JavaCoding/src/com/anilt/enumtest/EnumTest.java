@@ -3,6 +3,7 @@ package com.anilt.enumtest;
 public enum EnumTest {
 	RED("stop"),
 	ORANGE("slowdown"),
+//	ALL(),
 	GREEN("go");
 	
 	private String action;
