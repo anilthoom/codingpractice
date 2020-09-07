@@ -9,7 +9,7 @@ import com.google.common.collect.Sets;
 public class TempMain {
 
 	//Rename when we need to run as java
-	public static void main2(String[] args) {
+	public static void main1(String[] args) {
 		// TODO Auto-generated method stub
 		Set<String> names = Sets.newHashSet("Anil", "Ramya");
 		EnumTest[] enumTest = EnumTest.values();
