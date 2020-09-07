@@ -35,11 +35,11 @@ public class StudentSecurityConfig extends WebSecurityConfigurerAdapter {
 		.csrf().disable()
 		.authorizeRequests()
 		.antMatchers("/","index","css/*", "/js/*").permitAll()
-		.antMatchers("/api/**").hasRole(AppUserRoles.STUDENT.name())
-		.antMatchers(HttpMethod.DELETE, "/management/api/**").hasAuthority(AppUserPermissions.COURSE_WRITE.getPermission())
-		.antMatchers(HttpMethod.POST, "/management/api/**").hasAuthority(AppUserPermissions.COURSE_WRITE.getPermission())
-		.antMatchers(HttpMethod.PUT, "/management/api/**").hasAuthority(AppUserPermissions.COURSE_WRITE.getPermission())
-		.antMatchers(HttpMethod.GET, "/management/api/**").hasAnyRole(AppUserRoles.ADMIN.name(), AppUserRoles.ADMINTRAINEE.name())
+		.antMatchers("/api/**").hasAnyRole(AppUserRoles.STUDENT.name(), AppUserRoles.ADMIN.name(), AppUserRoles.ADMINTRAINEE.name())//all
+		.antMatchers(HttpMethod.DELETE, "/management/api/**").hasAuthority(AppUserPermissions.COURSE_WRITE.getPermission())//anil
+		.antMatchers(HttpMethod.POST, "/management/api/**").hasAuthority(AppUserPermissions.COURSE_WRITE.getPermission())//anil
+		.antMatchers(HttpMethod.PUT, "/management/api/**").hasAuthority(AppUserPermissions.COURSE_WRITE.getPermission())// anil
+		.antMatchers(HttpMethod.GET, "/management/api/**").hasAnyRole(AppUserRoles.ADMIN.name(), AppUserRoles.ADMINTRAINEE.name())// anil, ramya
 		.anyRequest()
 		.authenticated()
 		.and()
@@ -73,13 +73,7 @@ public class StudentSecurityConfig extends WebSecurityConfigurerAdapter {
 //				.roles(AppUserRoles.STUDENT.name())
 				.authorities(AppUserRoles.STUDENT.getGrantedAuthorities())
 				.build();
-		UserDetails funnyUser =  User.builder()
-				.username("funny")
-				.password(passwordEncoder.encode("funny"))
-//				.roles(AppUserRoles.ZEROACCESS.name())
-				.authorities(AppUserRoles.ZEROACCESS.getGrantedAuthorities())
-				.build();
-		return new InMemoryUserDetailsManager(anilUser, shrihanUser, shrithaUser, ramyaUser, funnyUser);
+		return new InMemoryUserDetailsManager(anilUser, shrihanUser, shrithaUser, ramyaUser);
 	}
 
 }
