@@ -47,7 +47,7 @@ public class StudentSecurityConfig extends WebSecurityConfigurerAdapter {
 		.and()
 //		.httpBasic(); 	
 		.formLogin()
-		.loginPage("/login");
+		.loginPage("/login").permitAll();
 		
 	}
 	
