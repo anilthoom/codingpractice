@@ -61,7 +61,7 @@ public class StudentSecurityConfig extends WebSecurityConfigurerAdapter {
 		.and()
 		.logout()
 			.logoutUrl("/logout")
-			.logoutRequestMatcher(new AntPathRequestMatcher("/logout", "GET"))
+			.logoutRequestMatcher(new AntPathRequestMatcher("/logout", "GET"))// This must be POST, as we have disabled the csrf using this as GET
 			.clearAuthentication(true)
 			.invalidateHttpSession(true)
 			.deleteCookies("JSESSIONID", "remember-me")
