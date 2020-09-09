@@ -48,7 +48,9 @@ public class StudentSecurityConfig extends WebSecurityConfigurerAdapter {
 //		.httpBasic(); 	
 		.formLogin()
 		.loginPage("/login").permitAll()
-		.defaultSuccessUrl("/courses", true);
+		.defaultSuccessUrl("/courses", true)
+		.and()
+		.rememberMe();//Default 2 weeks
 		
 	}
 	
