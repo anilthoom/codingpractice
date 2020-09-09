@@ -17,6 +17,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.provisioning.InMemoryUserDetailsManager;
+import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
+import org.springframework.util.AntPathMatcher;
 
 import com.anilt.spring.security.AppUserPermissions;
 import com.anilt.spring.security.AppUserRoles;
@@ -59,6 +61,7 @@ public class StudentSecurityConfig extends WebSecurityConfigurerAdapter {
 		.and()
 		.logout()
 			.logoutUrl("/logout")
+			.logoutRequestMatcher(new AntPathRequestMatcher("/logout", "GET"))
 			.clearAuthentication(true)
 			.invalidateHttpSession(true)
 			.deleteCookies("JSESSIONID", "remember-me")
