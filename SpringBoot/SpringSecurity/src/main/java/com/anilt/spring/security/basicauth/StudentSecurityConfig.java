@@ -55,8 +55,11 @@ public class StudentSecurityConfig extends WebSecurityConfigurerAdapter {
 //		.rememberMe();//Default 2 weeks
 		.rememberMe()
 			.tokenValiditySeconds((int)TimeUnit.DAYS.toSeconds(21))
-			.key("customesecuredkey");
-		
+			.key("customesecuredkey")
+		.and()
+		.logout()
+			.logoutUrl("/logout")
+			.clearAuthentication(true)
 		
 	}
 	
