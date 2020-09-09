@@ -60,6 +60,9 @@ public class StudentSecurityConfig extends WebSecurityConfigurerAdapter {
 		.logout()
 			.logoutUrl("/logout")
 			.clearAuthentication(true)
+			.invalidateHttpSession(true)
+			.deleteCookies("JSESSIONID", "remember-me")
+			.logoutSuccessUrl("/login");
 		
 	}
 	
