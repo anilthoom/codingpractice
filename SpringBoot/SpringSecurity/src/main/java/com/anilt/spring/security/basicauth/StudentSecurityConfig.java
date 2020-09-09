@@ -1,5 +1,7 @@
 package com.anilt.spring.security.basicauth;
 
+import java.util.concurrent.TimeUnit;
+
 import javax.annotation.security.PermitAll;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -50,7 +52,11 @@ public class StudentSecurityConfig extends WebSecurityConfigurerAdapter {
 		.loginPage("/login").permitAll()
 		.defaultSuccessUrl("/courses", true)
 		.and()
-		.rememberMe();//Default 2 weeks
+//		.rememberMe();//Default 2 weeks
+		.rememberMe()
+			.tokenValiditySeconds((int)TimeUnit.DAYS.toSeconds(21))
+			.key("customesecuredkey");
+		
 		
 	}
 	
