@@ -16,4 +16,4 @@ ob = AccessSpecifiersDemo()
 ob._AccessSpecifiersDemo__privateMeth() # Accessing private method
 print (ob._AccessSpecifiersDemo__pri) # Accessing private variable
 
-# STOPPED AT 1 HOUR RESUME FROM CONSTRUCTEOR  https://learning.edureka.co/classroom/recording/777/7014/123449?tab=CourseContent
+# STOPPED AT 1 HOUR RESUME FROM CONSTRUCTEOR  https://learning.edureka.co/classroom/recording/777/7014/123449?tab=CourseContent. Is this working...
