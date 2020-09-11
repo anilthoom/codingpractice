@@ -18,7 +18,3 @@ ob = Class1()
 print(ob.pub)
 print(ob._pro)
 print(ob)
-# print(ob.__pri)
-
-# result = ob.add()
-# print(result)
