@@ -4,7 +4,9 @@ class Base1:
 
 
 class Sub(Base1):
-    pass
+    # pass
+    def fun(self):
+        print("In Sub Class")
 
 
 obj = Sub()
