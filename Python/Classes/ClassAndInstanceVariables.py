@@ -5,5 +5,7 @@ class CaIv:
         self.name = name
 
 
-obj = CaIv()
-print(obj.localV)
+obj1 = CaIv()
+print(obj1.localV)
+
+obj2 = CaIv()
