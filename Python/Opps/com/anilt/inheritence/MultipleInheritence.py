@@ -3,12 +3,14 @@ class First(object):
         super(First, self).__init__()
         print("First")
 
-class Second(object)
+
+class Second(object):
     def __init__(self):
         super(Second, self).__init__()
         print("Second")
 
-class Third(Second, First)
+
+class Third(Second, First):
     def __init__(self):
         super(Third, self).__init__()
         print("Third")
