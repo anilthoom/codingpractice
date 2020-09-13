@@ -7,6 +7,6 @@ class MC:
         cls.name = name
 
 
-# defaultObj = MC()
-customObj = MC.customConstructor("Anil")
-print(customObj.name)
+defaultObj = MC()
+MC.customConstructor("Anil")
+print(defaultObj.name)
