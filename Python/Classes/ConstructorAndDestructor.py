@@ -3,7 +3,7 @@ class CaD:
         print("This is constructor")
 
     def __del__(self):
-        print("Destruction is complete")
+        print("Destruction is completed")
 
 
 obj = CaD()
