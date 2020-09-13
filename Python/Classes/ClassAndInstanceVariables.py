@@ -12,3 +12,10 @@ print(obj1.localV)
 
 obj2 = CaIv()
 print(obj2.localV)
+
+
+obj1.SetSource("Anil")
+print(obj1.name)
+
+obj2.SetSource("Kumar")
+print(obj2.name)
