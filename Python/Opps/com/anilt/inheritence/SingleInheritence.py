@@ -5,6 +5,7 @@ class Base1:
 
 class Sub(Base1):
     # pass
+    # This is also called as method overriding
     def fun(self):
         print("In Sub Class")
 
