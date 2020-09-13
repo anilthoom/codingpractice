@@ -4,8 +4,11 @@ class AccessSpecifiersDemo():
         self._pro = ("I am PROTECTED variable")
         self.pub = ("I am PUBLIC variable")
 
-    def __privateMeth(self):
+    def __privatemeth(self):
         print("In Private method")
+
+    def _protectedmeth(self):
+        print("In Protected method")
 
 
 ob = AccessSpecifiersDemo()
@@ -13,7 +16,7 @@ ob = AccessSpecifiersDemo()
 # print(ob._pro)
 # print(ob.__pri)
 
-ob._AccessSpecifiersDemo__privateMeth() # Accessing private method
+# print(ob._AccessSpecifiersDemo__privateMeth()) # Accessing private method
 print (ob._AccessSpecifiersDemo__pri) # Accessing private variable
 
-# STOPPED AT 1 HOUR RESUME FROM CONSTRUCTEOR  https://learning.edureka.co/classroom/recording/777/7014/123449?tab=CourseContent. Is this working...
+#print(ob._protectedmeth())
