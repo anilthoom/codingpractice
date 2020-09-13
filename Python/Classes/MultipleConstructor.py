@@ -8,5 +8,5 @@ class MC:
 
 
 defaultObj = MC()
-MC.customConstructor("Anil")
+MC.customConstructor("Anil Kumar")
 print(defaultObj.name)
