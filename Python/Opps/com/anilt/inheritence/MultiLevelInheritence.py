@@ -1,11 +1,19 @@
 class Animal:
     def eat(self):
-        print("eating")
+        print("Eating...")
 
 
 class Dog(Animal):
     def bark(self):
-        print("barking")
+        print("Barking...")
 
 
-class Puppy(Dog)
+class Puppy(Dog):
+    def weep(self):
+        print("Weeping...")
+
+
+pObj = Puppy()
+pObj.eat()
+pObj.bark()
+pObj.weep()
