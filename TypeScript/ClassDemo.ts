@@ -16,21 +16,17 @@ class Customer{
     }
 
     private _age: number;
-    // With different syntax : Accessors
-    public get age(): number{
-        return this.age;
+    public get age(): number {
+        return this._age;
     }
-    public set age(val1: number){
-        this.age = val1;
+    public set age(value: number) {
+        this._age = value;
     }
-}
+ }
 
 let myCustomer = new Customer("T", "Anil", 30);
 console.log(myCustomer.firstName, myCustomer.lastName);
 
 myCustomer.setFirstName("Thoom");
 console.log(myCustomer.getFirstName());
-
-
-
 console.log(myCustomer.age);

@@ -12,12 +12,11 @@ var Customer = /** @class */ (function () {
         this.firstName = val;
     };
     Object.defineProperty(Customer.prototype, "age", {
-        // With different syntax : Accessors
         get: function () {
-            return this.age;
+            return this._age;
         },
-        set: function (val1) {
-            this.age = val1;
+        set: function (value) {
+            this._age = value;
         },
         enumerable: false,
         configurable: true
