@@ -23,6 +23,11 @@ console.log(`Hi ${firstName} ${secondName}`);
 for(let i=0; i<=5; i++){
     console.log(i);
 }
+//Simplified for loop
+let grades: number[] = [40, 20, 32, 88];
+for(let grade of grades){
+    console.log(grade);
+}
 // Foreach....
 let sports: string[] = ["Cricket", "Golf", "Badminton"];
 sports.forEach(element => {
