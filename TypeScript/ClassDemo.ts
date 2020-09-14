@@ -15,5 +15,8 @@ class Customer{
     }
 }
 
-let myCustomer = new Customer("Thoom", "Anil");
+let myCustomer = new Customer("T", "Anil");
 console.log(myCustomer.firstName, myCustomer.lastName);
+
+myCustomer.setFirstName("Thoom");
+console.log(myCustomer.getFirstName());
