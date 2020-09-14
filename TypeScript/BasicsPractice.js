@@ -19,3 +19,8 @@ console.log("Hi " + firstName + " " + secondName);
 for (var i = 0; i <= 5; i++) {
     console.log(i);
 }
+//Simplified for loop
+var sports = ["Cricket", "Golf", "Badminton"];
+sports.forEach(function (element) {
+    console.log(element);
+});

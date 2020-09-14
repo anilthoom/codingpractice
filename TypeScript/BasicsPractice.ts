@@ -23,3 +23,8 @@ console.log(`Hi ${firstName} ${secondName}`);
 for(let i=0; i<=5; i++){
     console.log(i);
 }
+// Foreach....
+let sports: string[] = ["Cricket", "Golf", "Badminton"];
+sports.forEach(element => {
+    console.log(element)
+});
