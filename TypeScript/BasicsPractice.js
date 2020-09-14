@@ -16,3 +16,6 @@ console.log("Hi " + firstName + " " + secondName);
 /**
  * For loop
  */
+for (var i = 0; i <= 5; i++) {
+    console.log(i);
+}
