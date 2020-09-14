@@ -1,7 +1,9 @@
+"use strict";
 var Customer = /** @class */ (function () {
-    function Customer(fName, lName) {
+    function Customer(fName, lName, age) {
         this.firstName = fName;
         this.lastName = lName;
+        this._age = age;
     }
     Customer.prototype.getFirstName = function () {
         return this.firstName;
@@ -22,10 +24,8 @@ var Customer = /** @class */ (function () {
     });
     return Customer;
 }());
-var myCustomer = new Customer("T", "Anil");
+var myCustomer = new Customer("T", "Anil", 30);
 console.log(myCustomer.firstName, myCustomer.lastName);
 myCustomer.setFirstName("Thoom");
 console.log(myCustomer.getFirstName());
-// console.log("Age is : ", myCustomer.age);
-myCustomer.age = 30;
-console.log("Age is : ", myCustomer.age);
+console.log(myCustomer.age);
