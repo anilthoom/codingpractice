@@ -30,3 +30,6 @@ console.log(myCustomer.firstName, myCustomer.lastName);
 myCustomer.setFirstName("Thoom");
 console.log(myCustomer.getFirstName());
 
+// console.log("Age is : ", myCustomer.age);
+myCustomer.age = 30;
+console.log("Age is : ", myCustomer.age);
