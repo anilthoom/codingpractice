@@ -6,6 +6,13 @@ class Customer{
         this.firstName = fName;
         this.lastName =  lName;
     }
+
+    public getFirstName(): string{
+        return this.firstName;
+    }
+    public setFirstName(val: string): void{
+        this.firstName = val;
+    }
 }
 
 let myCustomer = new Customer("Thoom", "Anil");
