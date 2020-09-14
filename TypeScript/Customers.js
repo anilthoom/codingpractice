@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Customers = void 0;
 /**
  * Parameters properties demo..for removing boilar plate code.
  */
@@ -29,5 +31,6 @@ var Customers = /** @class */ (function () {
     });
     return Customers;
 }());
-var myCustomers = new Customers("Thoom", "Anil");
-console.log(myCustomers.firstName);
+exports.Customers = Customers;
+//let myCustomers = new Customers("Thoom", "Anil");
+// console.log(myCustomers.firstName);
