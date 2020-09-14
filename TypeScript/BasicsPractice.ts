@@ -16,3 +16,7 @@ console.log(found, grade, cname, anyVar);
 let firstName: string = "Anil";
 let secondName: string = "Kumar";
 console.log(`Hi ${firstName} ${secondName}`);
+
+/**
+ * For loop
+ */
