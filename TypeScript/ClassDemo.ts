@@ -7,3 +7,6 @@ class Customer{
         this.lastName =  lName;
     }
 }
+
+let myCustomer = new Customer("Thoom", "Anil");
+console.log(myCustomer.firstName, myCustomer.lastName);
