@@ -13,3 +13,6 @@ console.log(found, grade, cname, anyVar);
 /**
  * Template Strings 
  */
+let firstName: string = "Anil";
+let secondName: string = "Kumar";
+console.log(`Hi ${firstName} ${secondName}`);
