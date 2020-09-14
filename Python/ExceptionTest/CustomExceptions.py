@@ -9,7 +9,7 @@ class ValueLargeError(Exception):
 
 
 try:
-    val = int(input("Enter value between 5 to 10 "))
+    val = int(input("Enter value between 5 to 10\n"))
     if val<5:
         raise ValueSmallError
     elif val>10:
