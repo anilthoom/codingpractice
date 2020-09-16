@@ -28,5 +28,4 @@ let myCustomer = new Customer("T", "Anil", 30);
 console.log(myCustomer.firstName, myCustomer.lastName);
 
 myCustomer.setFirstName("Thoom");
-console.log(myCustomer.getFirstName());
 console.log(myCustomer.getFirstName(), myCustomer.age);
