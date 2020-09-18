@@ -31,7 +31,7 @@ public class EmailController {
 		  //Create an email message SimpleMailMessage mailMessage = new
 		  SimpleMailMessage mailMessage = new SimpleMailMessage(); 
 		  mailMessage.setFrom(emailDetails.getEmail());
-		  mailMessage.setTo("anilt@abc.com");
+		  mailMessage.setTo("your@domain.com");
 		  mailMessage.setSubject("Spring email Demo from : "+ emailDetails.getEmail());
 		  mailMessage.setText(emailDetails.getEmailContent());
 		  
