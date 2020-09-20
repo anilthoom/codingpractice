@@ -19,5 +19,3 @@ export class Customers{
         this._firstName = value;
     }
 }
-//let myCustomers = new Customers("Thoom", "Anil");
-// console.log(myCustomers.firstName);
