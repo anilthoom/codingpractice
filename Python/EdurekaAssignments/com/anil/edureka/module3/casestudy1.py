@@ -13,3 +13,6 @@ startPoint = [0]
 endPoint = [0]
 print(math.dist([0],[0])+math.dist([5],[0])+math.dist([3],[0])+math.dist([0],[3])+math.dist([0],[2]))
 
+# 2. Data of XYZ company is stored in sorted list. Write a program for searching
+#     specific data from that list.
+#     Hint: Use if/elif to deal with conditions.
