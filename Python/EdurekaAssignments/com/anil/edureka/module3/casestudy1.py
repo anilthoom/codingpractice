@@ -16,3 +16,15 @@ print(math.dist([0],[0])+math.dist([5],[0])+math.dist([3],[0])+math.dist([0],[3]
 # 2. Data of XYZ company is stored in sorted list. Write a program for searching
 #     specific data from that list.
 #     Hint: Use if/elif to deal with conditions.
+empList = list(("others", "anil", "shrihan", "shritha"))
+empList.sort()
+searchStr = input("Enter employee name, you want to search\n")
+isFound = False
+for emp in empList:
+    if(emp == searchStr):
+        isFound = True
+        break
+if(isFound):
+    print("Employee found")
+else:
+    print("Employee does not exist in repository")
