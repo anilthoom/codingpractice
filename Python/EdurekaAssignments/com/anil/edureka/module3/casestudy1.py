@@ -34,5 +34,11 @@ else:
 #     Hint: Use time module.
 import datetime
 
+
 currentDateTime = datetime.datetime.now()
-print(currentDateTime)
+print(currentDateTime.hour)
+if currentDateTime.hour >= 19 or currentDateTime.hour <= 6:
+    print("It's dark outside!! Take torch light with you!!")
+else:
+    print("It bright outside... enjoy.. ")
+
