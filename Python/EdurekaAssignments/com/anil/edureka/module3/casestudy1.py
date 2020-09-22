@@ -44,8 +44,21 @@ else:
 # 4. Write a program to find distance between two locations when their latitude and
 #     longitudes are given.
 from math import sin, cos, atan2, radians
+
+# approximate radius of earth in km
+R = 6373.0
 lat1 = radians(52.2296756)
 lon1 = radians(21.0122287)
 lat2 = radians(52.406374)
 lon2 = radians(16.9251681)
-print(lat1, lon1, lat2, lon2)
+
+dlon = lon2 - lon1
+dlat = lat2 - lat1
+print(dlon, dlat)
+a = sin(dlat / 2)**2 + cos(lat1) * cos(lat2) * sin(dlon / 2)**2
+c = 2 * atan2(math.sqrt(a), math.sqrt(1 - a))
+
+distance = R * c
+
+print("Result:", distance)
+print("Should be:", 278.546, "km")
