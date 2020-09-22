@@ -62,3 +62,5 @@ distance = R * c
 
 print("Result:", distance)
 print("Should be:", 278.546, "km")
+
+# WANTED TO CHECK, IF IT IS REALLY VERIFIED.
