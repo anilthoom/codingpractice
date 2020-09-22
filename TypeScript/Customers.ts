@@ -1,7 +1,7 @@
 /**
  * Parameters properties demo..for removing boilar plate code.
  */
-export class Customers{
+export class CustomersClass{
    
     constructor(private _firstName: string, private _lastName: string){
 
