@@ -1,23 +1,11 @@
 import numpy as np
 
-# 0 - D array
-ar = np.array(64)
-print(ar)
+a = np.array(42)
+b = np.array([1, 2, 3, 4, 5])
+c = np.array([[1, 2, 3], [4, 5, 6]])
+d = np.array([[[1, 2, 3], [4, 5, 6]], [[1, 2, 3], [4, 5, 6]]])
 
-# 1- D array
-oneDarr = np.array([1, 2, 3, 4, 7, 2, 3])
-print(oneDarr)
-
-# 2- D array
-twoDarr = np.array([[1,2],
-                    [3,4]
-                    ])
-print(twoDarr)
-
-# 3- D array
-threeDarr = np.array([
-    [1,2,3],
-    [4,5,6],
-    [6,7,7]
-])
-print(threeDarr)
+print(a.ndim)
+print(b.ndim)
+print(c.ndim)
+print(d.ndim)
