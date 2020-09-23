@@ -13,3 +13,11 @@ twoDarr = np.array([[1,2],
                     [3,4]
                     ])
 print(twoDarr)
+
+# 3- D array
+threeDarr = np.array([
+    [1,2,3],
+    [4,5,6],
+    [6,7,7]
+])
+print(threeDarr)
