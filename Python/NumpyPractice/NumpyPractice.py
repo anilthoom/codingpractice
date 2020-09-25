@@ -25,4 +25,5 @@ print(age[1:])
 print(age[:4])
 
 students = np.array(["Anil", "Shrihan", "Shritha", "Ramya", "Abc", "Bde"])
-print(students[:3])
+students.sort()
+print(students[:2])
