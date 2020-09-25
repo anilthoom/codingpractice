@@ -34,3 +34,5 @@ print(c[1, 0:2])
 
 print(students.dtype)
 print(a.dtype)
+students2 = np.array(["Anil", "Shrihan", "Shritha", "Ramya", "Abc", "Bde"], dtype='S')
+print(students2.dtype)
