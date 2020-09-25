@@ -23,6 +23,7 @@ age = np.array([10, 20, 30, 40, 50, 60])
 print(age[2:1000])
 print(age[1:])
 print(age[:4])
+print("Negative index : ", age[-3:-2])
 
 students = np.array(["Anil", "Shrihan", "Shritha", "Ramya", "Abc", "Bde"])
 students.sort()
