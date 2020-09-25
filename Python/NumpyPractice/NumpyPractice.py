@@ -31,3 +31,6 @@ print(students[:2])
 print(students[1:6:2])
 print(students[::2])
 print(c[1, 0:2])
+
+print(students.dtype)
+print(a.dtype)
