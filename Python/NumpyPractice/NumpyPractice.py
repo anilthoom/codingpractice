@@ -29,3 +29,5 @@ students = np.array(["Anil", "Shrihan", "Shritha", "Ramya", "Abc", "Bde"])
 
 print(students[:2])
 print(students[1:6:2])
+print(students[::2])
+print(c[1, 0:2])
