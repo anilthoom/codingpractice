@@ -3,7 +3,14 @@ package com.anilt.spring.batch.model;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
+
 @Entity
+@AllArgsConstructor
+@Getter
+@Setter
 public class User {
 	@Id
 	private Integer id;
