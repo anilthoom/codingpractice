@@ -19,7 +19,10 @@ public class BatchProcessor implements ItemProcessor<User, User> {
 	}
 	@Override
 	public User process(User user) throws Exception {
-		user.getDept();
+		String deptCode = user.getDept();
+		String dept = DEPT_NAMES.get(deptCode);
+		user.setDept(dept);
+		System.out.println("Converted from "+ deptCode + " To " + dept);
 		return null;
 	}
 	

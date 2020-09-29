@@ -17,4 +17,9 @@ public class User {
 	private String name;
 	private String dept;
 	private Integer salary;
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", name=" + name + ", dept=" + dept + ", salary=" + salary + "]";
+	}
+	
 }
