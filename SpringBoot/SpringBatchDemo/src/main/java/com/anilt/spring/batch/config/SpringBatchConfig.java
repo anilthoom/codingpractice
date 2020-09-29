@@ -66,7 +66,9 @@ public class SpringBatchConfig {
 		fieldSetMapper.setTargetType(User.class);
 		
 		defaultLineMapper.setLineTokenizer(lineTokenizer);
-		return null;
+		defaultLineMapper.setFieldSetMapper(fieldSetMapper);
+		
+		return defaultLineMapper;
 	}
 	
 	
