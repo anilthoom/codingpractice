@@ -2,6 +2,7 @@ package com.anilt.spring.batch.config;
 
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
+import org.springframework.batch.core.configuration.annotation.EnableBatchProcessing;
 import org.springframework.batch.core.configuration.annotation.JobBuilderFactory;
 import org.springframework.batch.core.configuration.annotation.StepBuilderFactory;
 import org.springframework.batch.core.launch.support.RunIdIncrementer;
@@ -21,6 +22,7 @@ import org.springframework.core.io.Resource;
 import com.anilt.spring.batch.model.User;
 
 @Configuration
+@EnableBatchProcessing
 public class SpringBatchConfig {
 	@Bean
 	public Job job(JobBuilderFactory jobBuilderFactory, 
@@ -58,7 +60,7 @@ public class SpringBatchConfig {
 		DefaultLineMapper<User> defaultLineMapper = new DefaultLineMapper<>();
 		DelimitedLineTokenizer lineTokenizer = new DelimitedLineTokenizer();
 		
-//		lineTokenizer.setDelimiter(",");
+		lineTokenizer.setDelimiter(",");
 		lineTokenizer.setStrict(false);
 		lineTokenizer.setNames(new String[] {"id", "name", "dept", "salary"});
 		
