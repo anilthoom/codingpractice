@@ -14,5 +14,7 @@ export class Shape{
     public set y(value: number) {
         this._y = value;
     }
-    
+    getInfo(): string{
+        return `x=${this._x}, y=${this._y}`;
+    }
 }
