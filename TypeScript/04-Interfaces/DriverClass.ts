@@ -6,6 +6,9 @@ let cricketPracticeTip = new CricketCoach();
 let golfPracticeTip = new GolfCoach();
 
 let coachingTips: Coach[] = [];
+coachingTips.push(cricketPracticeTip);
+coachingTips.push(golfPracticeTip);
+
 coachingTips.forEach(tip => {
     console.log(tip.getDailyWorkout());
 });
