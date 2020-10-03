@@ -1,7 +1,6 @@
 export class Shape{
-    private _x: number;
-    private _y: number;
-    
+    constructor(private _x: number, private _y: number){
+    }
     public get x(): number {
         return this._x;
     }
