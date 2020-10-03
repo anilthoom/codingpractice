@@ -1,6 +1,9 @@
 import { Shape } from './Shape';
 
 export class Circle extends Shape{
+    calculateArea(): number {
+        throw new Error('Method not implemented.');
+    }
     
     constructor(theX: number, theY: number, private _radius: number){
         super(theX, theY);
