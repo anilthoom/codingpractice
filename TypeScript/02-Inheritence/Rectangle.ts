@@ -19,4 +19,7 @@ export class Rectangle extends Shape{
         this._length = value;
     }
     
+    getInfo(): string{
+        return super.getInfo() + `, width=${this._width}, length=${this._length}`;
+    }
 }
