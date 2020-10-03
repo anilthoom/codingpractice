@@ -8,3 +8,7 @@ let myRectangle = new Rectangle(0, 0, 3, 4);
 
 //Empty array of type Shape
 let theShapes: Shape[] = [];
+
+theShapes.push(myShape);
+theShapes.push(myCircle);
+theShapes.push(myRectangle);
