@@ -12,3 +12,7 @@ let theShapes: Shape[] = [];
 theShapes.push(myShape);
 theShapes.push(myCircle);
 theShapes.push(myRectangle);
+
+for(let tempShape of theShapes){
+    console.log(tempShape.getInfo());
+}
