@@ -12,4 +12,7 @@ export class Circle extends Shape{
         this._radius = value;
     }
     
+    getInfo(): string{
+        return super.getInfo() + `, radius=${this._radius}`;
+    }
 }
