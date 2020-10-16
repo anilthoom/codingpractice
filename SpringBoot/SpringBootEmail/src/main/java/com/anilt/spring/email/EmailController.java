@@ -31,7 +31,7 @@ public class EmailController {
 		  //Create an email message SimpleMailMessage mailMessage = new
 		  SimpleMailMessage mailMessage = new SimpleMailMessage(); 
 		  mailMessage.setFrom(emailDetails.getEmail());
-		  mailMessage.setTo("anilt@opentext.com");
+		  mailMessage.setTo("to@domain.com");
 		  mailMessage.setSubject("License Renewal Notification");
 		  mailMessage.setText(emailDetails.getEmailContent());
 		  
