@@ -15,6 +15,9 @@ public class EmailConfiguration {
 	@Value("${spring.mail.port}")
 	private int port;
 	
+	@Value("to.email.address")
+	private String toEmailAddress;
+	
 	/*
 	 * @Value("${spring.mail.username}") private String username;
 	 * 
