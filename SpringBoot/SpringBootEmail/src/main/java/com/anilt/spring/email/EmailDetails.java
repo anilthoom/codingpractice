@@ -1,5 +1,10 @@
 package com.anilt.spring.email;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class EmailDetails {
 
 	private String name;
@@ -8,29 +13,4 @@ public class EmailDetails {
 	
 	private String emailContent;
 
-	public String getName() {
-		return name;
-	}
-
-	public void setName(String name) {
-		this.name = name;
-	}
-
-	public String getEmail() {
-		return email;
-	}
-
-	public void setEmail(String email) {
-		this.email = email;
-	}
-
-	public String getEmailContent() {
-		return emailContent;
-	}
-
-	public void setEmailContent(String emailContent) {
-		this.emailContent = emailContent;
-	}
-	
-	
 }
