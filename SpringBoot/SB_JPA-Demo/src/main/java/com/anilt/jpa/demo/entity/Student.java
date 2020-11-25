@@ -1,7 +1,9 @@
 package com.anilt.jpa.demo.entity;
 
+import javax.persistence.Entity;
 import java.util.Date;
 
+@Entity
 public class Student {
     private Integer student_id;
     private String student_name;
