@@ -9,6 +9,4 @@ public class Student {
     private Date student_dob;
     private String student_address;
     private Integer student_status;
-
-
 }
