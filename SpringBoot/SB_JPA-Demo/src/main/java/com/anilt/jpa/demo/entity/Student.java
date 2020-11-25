@@ -8,6 +8,7 @@ public class Student {
     private String student_name;
     private Date student_dob;
     private String student_address;
+    private Integer student_status;
 
 
 }
