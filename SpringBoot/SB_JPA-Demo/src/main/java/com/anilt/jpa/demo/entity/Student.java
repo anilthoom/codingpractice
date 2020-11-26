@@ -3,6 +3,7 @@ package com.anilt.jpa.demo.entity;
 import lombok.Getter;
 import lombok.Setter;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 import java.util.Date;
@@ -12,6 +13,7 @@ import java.util.Date;
 @Getter
 @Setter
 public class Student {
+    @Column(name = "student_id")
     private Integer student_id;
     private String student_name;
     private Date student_dob;
