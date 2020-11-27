@@ -15,6 +15,8 @@ import java.util.Date;
 public class Student {
     @Column(name = "student_id")
     private Integer student_id;
+
+    @Column(name = "student_name")
     private String student_name;
     private Date student_dob;
     private String student_address;
