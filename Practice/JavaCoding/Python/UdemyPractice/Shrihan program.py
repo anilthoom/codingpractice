@@ -1,0 +1,11 @@
+# This is coments
+n = input("What is your name \n")
+a = input("What is your age \n")
+f = input("what is your father name \n")
+m = input("what is your Mother name \n")
+s = input("what is your sister name \n")
+print("Hi "+ n)
+print("Your age is "+ a)
+print("Your father name is "+ f)
+print("your mother name is "+m )
+print("your sister name is "+s)
