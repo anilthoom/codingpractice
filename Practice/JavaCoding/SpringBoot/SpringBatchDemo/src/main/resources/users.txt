@@ -1,6 +1,0 @@
-id,name,dept,salary
-1,Anil,001,12000
-2,Mohan,002,11000
-3,Jayanth,001,10000
-4,Srikanth,003,11000
-5,Sai,002,1900
