@@ -35,7 +35,6 @@ public class Java8ForEachExample {
         myList.forEach(action);
 
     }
-
 }
 
 //Consumer implementation that can be reused
