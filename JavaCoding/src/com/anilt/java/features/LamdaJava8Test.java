@@ -23,13 +23,10 @@ public class LamdaJava8Test
     static void runAnanymous()
     {
         new Thread(new Runnable(){
-
             @Override
             public void run() {
                 System.out.println("Ananymous class");
             }
-
         }).start();
     }
-
 }
