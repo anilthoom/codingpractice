@@ -38,7 +38,6 @@ public class FirstNonRepeated {
             }
         }
         System.out.println("THERE IS NO UNIQUE CHAR");
-
     }
     public static Character firstNonRepeatedCharacter(String str)
     {
