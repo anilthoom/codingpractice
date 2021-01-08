@@ -1,4 +1,4 @@
-package com.anilt.enumtest;
+package com.anilt.java.features.enumtest;
 
 public class EnumExe {
 
