@@ -3,13 +3,10 @@ package com.anilt.problems;
 import java.util.HashMap;
 import java.util.Scanner;
 
-
 public class FirstNonRepeated {
 
     public static void main(String[] args)
     {
-        // TODO Auto-generated method stub
-
         System.out.println(" Please enter the input string :" );
         Scanner in = new Scanner (System.in);
         String s=in.nextLine();
