@@ -1,4 +1,5 @@
 package com.anilt.problems;
+
 import java.util.HashMap;
 import java.util.Scanner;
 
