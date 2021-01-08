@@ -62,8 +62,8 @@ public class FirstNonRepeated {
                 characterhashtable.put( c , 1 ) ;
             }
         }
-        // Search characterhashtable in order of string str
 
+        // Search characterhashtable in order of string str
         for (i =0 ; i < length ; i++ )
         {
             counter++;
