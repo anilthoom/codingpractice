@@ -4,21 +4,21 @@ import java.sql.Connection;
 import java.sql.DatabaseMetaData;
 import java.sql.DriverManager;
 import java.sql.SQLException;
- 
+
 /**
  * This program demonstrates how to establish database connection to Microsoft
  * SQL Server.
- * @author www.codejava.net
  *
+ * @author www.codejava.net
  */
 public class JdbcSQLServerConnection {
- 
+
     public static void main(String[] args) {
- 
+
         Connection conn = null;
- 
+
         try {
- 
+
 //            String dbURL = "jdbc:sqlserver://ANILT62KS022:1433";
             String dbURL = "jdbc:sqlserver://ANILT62KS022:1433;sendStringParametersAsUnicode=false";
             String user = "sa";
@@ -31,7 +31,7 @@ public class JdbcSQLServerConnection {
                 System.out.println("Product name: " + dm.getDatabaseProductName());
                 System.out.println("Product version: " + dm.getDatabaseProductVersion());
             }
- 
+
         } catch (SQLException ex) {
             ex.printStackTrace();
         } finally {
