@@ -18,9 +18,9 @@ import org.xml.sax.SAXException;
 
 public class DocumentBuilderDemo {
 
-   public static void main(String[] args) throws SAXException, ParserConfigurationException, IOException, URISyntaxException {
+    public static void main(String[] args) throws SAXException, ParserConfigurationException, IOException, URISyntaxException {
 
-      // create a new DocumentBuilderFactory
+        // create a new DocumentBuilderFactory
      /* DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 
       try {
@@ -45,27 +45,27 @@ public class DocumentBuilderDemo {
       } catch (Exception ex) {
          ex.printStackTrace();
       }*/
-	   
-	   Document document = getDOM("");
-	   System.out.println("########################## : "+document.getElementsByTagName("title").item(0).getTextContent());
-	   
-   }
-   public static Document getDOM(String test) throws SAXException,ParserConfigurationException,IOException, URISyntaxException
-	{
-		    Document dom=null;
-		    File quizFile=null;
-		    
-	        quizFile=new File("C:\\quizzes\\java-quiz-1.xml");
-	        System.out.println("Quiz File Absolute Path "+quizFile.getAbsolutePath());
-	         
-	   DocumentBuilderFactory dbf=DocumentBuilderFactory.newInstance();
-	   DocumentBuilder db=dbf.newDocumentBuilder();
-	   try{
-	        dom=db.parse(quizFile);
-	   }catch(FileNotFoundException fileNotFound){
-		   System.out.println("Error : Quiz File Not Found "+fileNotFound);
-	   }
-	   dom.getDocumentElement().normalize();
-	   return dom;
-	}
+
+        Document document = getDOM("");
+        System.out.println("########################## : " + document.getElementsByTagName("title").item(0).getTextContent());
+
+    }
+
+    public static Document getDOM(String test) throws SAXException, ParserConfigurationException, IOException, URISyntaxException {
+        Document dom = null;
+        File quizFile = null;
+
+        quizFile = new File("C:\\quizzes\\java-quiz-1.xml");
+        System.out.println("Quiz File Absolute Path " + quizFile.getAbsolutePath());
+
+        DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+        DocumentBuilder db = dbf.newDocumentBuilder();
+        try {
+            dom = db.parse(quizFile);
+        } catch (FileNotFoundException fileNotFound) {
+            System.out.println("Error : Quiz File Not Found " + fileNotFound);
+        }
+        dom.getDocumentElement().normalize();
+        return dom;
+    }
 }
