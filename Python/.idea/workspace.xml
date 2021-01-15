@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2d5bf6f8-a5cc-4401-be60-3f031e0c0012" name="Default Changelist" comment="Custom exceptions and Regular Expressions demo" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1gdjZ4Fc0g3ciFH9HPb1debCaec" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Apps/SpaceXShooter" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\MyWork\Coding\Python\Practice" />
+      <recent name="C:\MyWork\Coding\Python\Edureka\Module2" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.Yo">
+    <configuration name="Customer" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Practice" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Edureka/Module3/777_m3_datasets_v1.0" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Edureka/Module3/777_m3_datasets_v1.0/Customer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="NumpyPractice" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Practice" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NumpyPractice" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NumpyPractice/NumpyPractice.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TimeDemo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Practice" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NumpyPractice" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NumpyPractice/TimeDemo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Yo" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Practice" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/NumpyPractice" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/NumpyPractice/Yo.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="casestudy1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Practice" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EdurekaAssignments/com/anil/edureka/module3" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/EdurekaAssignments/com/anil/edureka/module3/casestudy1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.Yo" />
+        <item itemvalue="Python.TimeDemo" />
+        <item itemvalue="Python.NumpyPractice" />
+        <item itemvalue="Python.Customer" />
+        <item itemvalue="Python.casestudy1" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d5bf6f8-a5cc-4401-be60-3f031e0c0012" name="Default Changelist" comment="" />
+      <created>1598451415950</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598451415950</updated>
+    </task>
+    <task id="LOCAL-00037" summary="Case study 1 for Module 3">
+      <created>1600686879745</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1600686879745</updated>
+    </task>
+    <task id="LOCAL-00038" summary="Case study 1 for Module 3">
+      <created>1600687456135</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1600687456135</updated>
+    </task>
+    <task id="LOCAL-00039" summary="Case study 1 for Module 3&#10;Date time">
+      <created>1600688139286</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1600688139286</updated>
+    </task>
+    <task id="LOCAL-00040" summary="Case study 1 for Module 3&#10;Date time">
+      <created>1600689004470</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1600689004470</updated>
+    </task>
+    <task id="LOCAL-00041" summary="Case study 1 for Module 3&#10;Date time">
+      <created>1600691914818</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1600691914818</updated>
+    </task>
+    <task id="LOCAL-00042" summary="Distance using Math">
+      <created>1600762198035</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1600762198035</updated>
+    </task>
+    <task id="LOCAL-00043" summary="Distance using Math">
+      <created>1600762447909</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1600762447909</updated>
+    </task>
+    <task id="LOCAL-00044" summary="Distance using Math">
+      <created>1600762661076</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1600762661076</updated>
+    </task>
+    <task id="LOCAL-00045" summary="Path changes">
+      <created>1600763299741</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1600763299741</updated>
+    </task>
+    <task id="LOCAL-00046" summary="Module3 Edureka class codes">
+      <created>1600763382054</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1600763382054</updated>
+    </task>
+    <task id="LOCAL-00047" summary="Module3 Edureka class codes">
+      <created>1600763596274</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1600763596274</updated>
+    </task>
+    <task id="LOCAL-00048" summary="Path change">
+      <created>1600764032892</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1600764032892</updated>
+    </task>
+    <task id="LOCAL-00049" summary="Numpy Practice">
+      <created>1600764116138</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1600764116138</updated>
+    </task>
+    <task id="LOCAL-00050" summary="Numpy ndarry">
+      <created>1600764510762</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1600764510763</updated>
+    </task>
+    <task id="LOCAL-00051" summary="Numpy ndarry">
+      <created>1600764527930</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1600764527930</updated>
+    </task>
+    <task id="LOCAL-00052" summary="one D array">
+      <created>1600850405570</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1600850405571</updated>
+    </task>
+    <task id="LOCAL-00053" summary="one, two D array">
+      <created>1600851627827</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1600851627827</updated>
+    </task>
+    <task id="LOCAL-00054" summary="3 D array">
+      <created>1600851917562</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1600851917562</updated>
+    </task>
+    <task id="LOCAL-00055" summary="optimized">
+      <created>1600852095533</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1600852095533</updated>
+    </task>
+    <task id="LOCAL-00056" summary="5d array">
+      <created>1600852732839</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1600852732839</updated>
+    </task>
+    <task id="LOCAL-00057" summary="Sum..">
+      <created>1600863428760</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1600863428760</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Array indexes">
+      <created>1600926176074</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1600926176074</updated>
+    </task>
+    <task id="LOCAL-00059" summary="Array Index">
+      <created>1600949018863</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1600949018864</updated>
+    </task>
+    <task id="LOCAL-00060" summary="Index change">
+      <created>1601011536419</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1601011536419</updated>
+    </task>
+    <task id="LOCAL-00061" summary="git ignore">
+      <created>1601016396960</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1601016396961</updated>
+    </task>
+    <task id="LOCAL-00062" summary="Array Slicing">
+      <created>1601016467893</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1601016467893</updated>
+    </task>
+    <task id="LOCAL-00063" summary="Array Slicing">
+      <created>1601016669436</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1601016669436</updated>
+    </task>
+    <task id="LOCAL-00064" summary="Array Slicing">
+      <created>1601016989698</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1601016989698</updated>
+    </task>
+    <task id="LOCAL-00065" summary="Array Slicing">
+      <created>1601017284189</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1601017284189</updated>
+    </task>
+    <task id="LOCAL-00066" summary="Array Slicing">
+      <created>1601017355631</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1601017355631</updated>
+    </task>
+    <task id="LOCAL-00067" summary="Array Slicing">
+      <created>1601017461227</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1601017461227</updated>
+    </task>
+    <task id="LOCAL-00068" summary="Array Slicing">
+      <created>1601017769936</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1601017769936</updated>
+    </task>
+    <task id="LOCAL-00069" summary="Array Slicing">
+      <created>1601018060553</created>
+      <option name="number" value="00069" />
+      <option name="presentableId" value="LOCAL-00069" />
+      <option name="project" value="LOCAL" />
+      <updated>1601018060554</updated>
+    </task>
+    <task id="LOCAL-00070" summary="Array Slicing">
+      <created>1601018208445</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1601018208445</updated>
+    </task>
+    <task id="LOCAL-00071" summary="Array Slicing">
+      <created>1601018439915</created>
+      <option name="number" value="00071" />
+      <option name="presentableId" value="LOCAL-00071" />
+      <option name="project" value="LOCAL" />
+      <updated>1601018439915</updated>
+    </task>
+    <task id="LOCAL-00072" summary="New student added">
+      <created>1601131612482</created>
+      <option name="number" value="00072" />
+      <option name="presentableId" value="LOCAL-00072" />
+      <option name="project" value="LOCAL" />
+      <updated>1601131612482</updated>
+    </task>
+    <task id="LOCAL-00073" summary="Student Removal">
+      <created>1601230293512</created>
+      <option name="number" value="00073" />
+      <option name="presentableId" value="LOCAL-00073" />
+      <option name="project" value="LOCAL" />
+      <updated>1601230293513</updated>
+    </task>
+    <task id="LOCAL-00074" summary="converting boolean array">
+      <created>1601271174032</created>
+      <option name="number" value="00074" />
+      <option name="presentableId" value="LOCAL-00074" />
+      <option name="project" value="LOCAL" />
+      <updated>1601271174033</updated>
+    </task>
+    <task id="LOCAL-00075" summary="converting boolean array">
+      <created>1601271213147</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1601271213147</updated>
+    </task>
+    <task id="LOCAL-00076" summary="Boolean Change">
+      <created>1601358744176</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1601358744176</updated>
+    </task>
+    <task id="LOCAL-00077" summary="Added a new file">
+      <created>1601645296284</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1601645296284</updated>
+    </task>
+    <task id="LOCAL-00078" summary="Added hour and minetes">
+      <created>1601645514708</created>
+      <option name="number" value="00078" />
+      <option name="presentableId" value="LOCAL-00078" />
+      <option name="project" value="LOCAL" />
+      <updated>1601645514708</updated>
+    </task>
+    <task id="LOCAL-00079" summary="Added numpy">
+      <created>1601646118260</created>
+      <option name="number" value="00079" />
+      <option name="presentableId" value="LOCAL-00079" />
+      <option name="project" value="LOCAL" />
+      <updated>1601646118260</updated>
+    </task>
+    <task id="LOCAL-00080" summary="Added Thanks">
+      <created>1601646405295</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1601646405295</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Style changes">
+      <created>1603617937593</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1603617937594</updated>
+    </task>
+    <task id="LOCAL-00082" summary="Pacakage .json">
+      <created>1603618011554</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1603618011554</updated>
+    </task>
+    <task id="LOCAL-00083" summary="Pacakage .json">
+      <created>1603618026335</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1603618026335</updated>
+    </task>
+    <task id="LOCAL-00084" summary="Index.html">
+      <created>1603618062549</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1603618062549</updated>
+    </task>
+    <task id="LOCAL-00085" summary="Angular.json">
+      <created>1603618130771</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1603618130771</updated>
+    </task>
+    <option name="localTasksCounter" value="86" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Numpy Practice" />
+    <MESSAGE value="Numpy ndarry" />
+    <MESSAGE value="one D array" />
+    <MESSAGE value="one, two D array" />
+    <MESSAGE value="3 D array" />
+    <MESSAGE value="optimized" />
+    <MESSAGE value="5d array" />
+    <MESSAGE value="Sum.." />
+    <MESSAGE value="Array indexes" />
+    <MESSAGE value="Array Index" />
+    <MESSAGE value="Index change" />
+    <MESSAGE value="git ignore" />
+    <MESSAGE value="Array Slicing" />
+    <MESSAGE value="New student added" />
+    <MESSAGE value="Student Removal" />
+    <MESSAGE value="converting boolean array" />
+    <MESSAGE value="Boolean Change" />
+    <MESSAGE value="Added a new file" />
+    <MESSAGE value="Added hour and minetes" />
+    <MESSAGE value="Added numpy" />
+    <MESSAGE value="Added Thanks" />
+    <MESSAGE value="Style changes" />
+    <MESSAGE value="Pacakage .json" />
+    <MESSAGE value="Index.html" />
+    <MESSAGE value="Angular.json" />
+    <option name="LAST_COMMIT_MESSAGE" value="Angular.json" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="654" y="275" key="#Notifications" timestamp="1599826333460">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="654" y="275" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1599826333460" />
+    <state x="2540" y="260" key="FileChooserDialogImpl" timestamp="1603714503227">
+      <screen x="1920" y="0" width="1680" height="1010" />
+    </state>
+    <state x="2540" y="260" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1680.1010@1920.0.1680.1010" timestamp="1603714503227" />
+    <state width="1659" height="267" key="GridCell.Tab.0.bottom" timestamp="1603619768116">
+      <screen x="1920" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1515" height="207" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1680.1010@0.0.1536.824" timestamp="1601380062533" />
+    <state width="1659" height="267" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1680.1010@1920.0.1680.1010" timestamp="1603619768116" />
+    <state width="1515" height="207" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1601646391314" />
+    <state width="1659" height="267" key="GridCell.Tab.0.bottom/0.0.1680.1010@0.0.1680.1010" timestamp="1603619660094" />
+    <state width="1659" height="267" key="GridCell.Tab.0.center" timestamp="1603619768116">
+      <screen x="1920" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1515" height="207" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1680.1010@0.0.1536.824" timestamp="1601380062533" />
+    <state width="1659" height="267" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1680.1010@1920.0.1680.1010" timestamp="1603619768116" />
+    <state width="1515" height="207" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1601646391314" />
+    <state width="1659" height="267" key="GridCell.Tab.0.center/0.0.1680.1010@0.0.1680.1010" timestamp="1603619660094" />
+    <state width="1659" height="267" key="GridCell.Tab.0.left" timestamp="1603619768116">
+      <screen x="1920" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1515" height="207" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1680.1010@0.0.1536.824" timestamp="1601380062533" />
+    <state width="1659" height="267" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1680.1010@1920.0.1680.1010" timestamp="1603619768116" />
+    <state width="1515" height="207" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1601646391314" />
+    <state width="1659" height="267" key="GridCell.Tab.0.left/0.0.1680.1010@0.0.1680.1010" timestamp="1603619660094" />
+    <state width="1659" height="267" key="GridCell.Tab.0.right" timestamp="1603619768116">
+      <screen x="1920" y="0" width="1680" height="1010" />
+    </state>
+    <state width="1515" height="207" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1680.1010@0.0.1536.824" timestamp="1601380062533" />
+    <state width="1659" height="267" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1680.1010@1920.0.1680.1010" timestamp="1603619768116" />
+    <state width="1515" height="207" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1601646391314" />
+    <state width="1659" height="267" key="GridCell.Tab.0.right/0.0.1680.1010@0.0.1680.1010" timestamp="1603619660094" />
+    <state width="1515" height="261" key="GridCell.Tab.1.bottom" timestamp="1599999651361">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599999651361" />
+    <state width="1515" height="261" key="GridCell.Tab.1.center" timestamp="1599999651361">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1599999651361" />
+    <state width="1515" height="261" key="GridCell.Tab.1.left" timestamp="1599999651361">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1599999651361" />
+    <state width="1515" height="261" key="GridCell.Tab.1.right" timestamp="1599999651361">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1515" height="261" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1599999651361" />
+    <state x="2223" y="70" key="SettingsEditor" timestamp="1603618460976">
+      <screen x="1920" y="0" width="1680" height="1010" />
+    </state>
+    <state x="2223" y="70" key="SettingsEditor/0.0.1536.824/1920.0.1680.1010@1920.0.1680.1010" timestamp="1603618460976" />
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1600685779020" />
+    <state x="2315" y="178" key="Vcs.Push.Dialog.v2" timestamp="1603618133286">
+      <screen x="1920" y="0" width="1680" height="1010" />
+    </state>
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1680.1010@0.0.1536.824" timestamp="1603618064918" />
+    <state x="2315" y="178" key="Vcs.Push.Dialog.v2/0.0.1536.824/1920.0.1680.1010@1920.0.1680.1010" timestamp="1603618133286" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1601646406154" />
+    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599826278914">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="578" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1599826278914" />
+    <state x="535" y="314" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1599986690207">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="535" y="314" key="git4idea.remote.GitConfigureRemotesDialog/0.0.1536.824@0.0.1536.824" timestamp="1599986690207" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1599991789518">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1599991789518" />
+    <state x="491" y="324" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1601646377217">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="491" y="324" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1536.824@0.0.1536.824" timestamp="1601646377217" />
+  </component>
+</project>

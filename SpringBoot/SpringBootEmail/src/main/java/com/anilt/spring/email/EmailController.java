@@ -31,8 +31,8 @@ public class EmailController {
 		  //Create an email message SimpleMailMessage mailMessage = new
 		  SimpleMailMessage mailMessage = new SimpleMailMessage(); 
 		  mailMessage.setFrom(emailDetails.getEmail());
-		  mailMessage.setTo("your@domain.com");
-		  mailMessage.setSubject("Spring email Demo from : "+ emailDetails.getEmail());
+		  mailMessage.setTo("to@domain.com");
+		  mailMessage.setSubject("License Renewal Notification");
 		  mailMessage.setText(emailDetails.getEmailContent());
 		  
 		  //Send mail 
