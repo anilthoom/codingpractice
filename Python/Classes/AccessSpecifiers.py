@@ -4,6 +4,7 @@ class AccessSpecifiersDemo():
         self._pro = ("I am PROTECTED variable")
         self.pub = ("I am PUBLIC variable")
 
+
     def __privatemeth(self):
         print("In Private method")
 
