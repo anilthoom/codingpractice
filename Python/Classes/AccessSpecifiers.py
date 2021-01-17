@@ -1,8 +1,9 @@
 class AccessSpecifiersDemo():
     def __init__(self):
-        self.__pri = ("I am PRIVATE variable")
+        self.__pri = "I am PRIVATE variable"
         self._pro = ("I am PROTECTED variable")
         self.pub = ("I am PUBLIC variable")
+
 
     def __privatemeth(self):
         print("In Private method")
