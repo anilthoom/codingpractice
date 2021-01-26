@@ -67,6 +67,5 @@ public class BinarySearchWays {
             System.out.println("Element not present"); 
         else
             System.out.println("Element found at index " + result); 
-
-    } 
+    }
 }
