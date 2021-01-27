@@ -49,8 +49,7 @@ public class BinarySearchWays {
             else
                 r = m - 1; 
         } 
-  
-        // if we reach here, then element was 
+        // if we reach here, then element was
         // not present 
         return -1; 
     } 
