@@ -27,8 +27,7 @@ public class BinarySearchWays {
         // We reach here when element is not present 
         // in array 
         return -1; 
-    } 
-  
+    }
     // Returns index of x if it is present in arr[], 
     // else return -1 
     int binarySearchIterative(int arr[], int findThis) 
