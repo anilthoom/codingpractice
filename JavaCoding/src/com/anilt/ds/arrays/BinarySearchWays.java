@@ -1,8 +1,7 @@
 package com.anilt.ds.arrays;
 
 public class BinarySearchWays {
-
-	// Returns index of x if it is present in arr[l.. 
+	// Returns index of x if it is present in arr[l..
     // r], else return -1 
     int binarySearchRecursive(int arr[], int lowValue, int highValue, int findThis) 
     { 
