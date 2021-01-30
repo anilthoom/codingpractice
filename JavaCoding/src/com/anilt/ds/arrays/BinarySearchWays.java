@@ -21,8 +21,7 @@ public class BinarySearchWays {
             // Else the element can only be present 
             // in right subarray 
             return binarySearchRecursive(arr, mid + 1, highValue, findThis); 
-        } 
-  
+        }
         // We reach here when element is not present 
         // in array 
         return -1; 
