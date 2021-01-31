@@ -7,8 +7,7 @@ public class BinarySearchWays {
     { 
         if (highValue >= lowValue) { 
             int mid = lowValue + (highValue - lowValue) / 2; 
-  
-            // If the element is present at the 
+            // If the element is present at the
             // middle itself 
             if (arr[mid] == findThis) 
                 return mid; 
