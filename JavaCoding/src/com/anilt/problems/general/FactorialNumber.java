@@ -1,4 +1,4 @@
-package com.anilt.problems;
+package com.anilt.problems.general;
 
 public class FactorialNumber {
     public static void main(String[] args)
