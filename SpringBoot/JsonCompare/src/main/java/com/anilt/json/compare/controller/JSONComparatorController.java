@@ -17,6 +17,7 @@ public class JSONComparatorController {
         String arrayString = "[10, 20, 30]";
         JsonElement json1 = parser.parse(objectString);
         JsonElement json2 = parser.parse(arrayString);
-        return "OK : "+json1.isJsonObject();
+
+        return "OK : "+json2.isJsonObject();
     }
 }
