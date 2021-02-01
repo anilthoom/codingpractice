@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/compare")
 public class JSONComparatorController {
     @GetMapping("/")
-    public String isObjectsSame(){
+    public String isObjectSame(){
 
 
         return "OK";
