@@ -1,4 +1,4 @@
-package com.anilt.problems;
+package com.anilt.problems.general;
 
 import java.util.HashMap;
 import java.util.Map;
