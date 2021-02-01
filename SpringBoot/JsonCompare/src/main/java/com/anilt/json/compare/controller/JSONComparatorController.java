@@ -12,6 +12,8 @@ public class JSONComparatorController {
     public String isObjectSame(){
 
         JsonParser parser = new JsonParser();
+        String objectString = "{\"customer\": {\"fullName\": \"Emily Jenkins\", \"age\": 27 }}";
+        String arrayString = "[10, 20, 30]";
 
         return "OK";
     }
