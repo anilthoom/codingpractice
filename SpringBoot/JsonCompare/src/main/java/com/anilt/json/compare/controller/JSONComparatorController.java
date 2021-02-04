@@ -31,7 +31,6 @@ public class JSONComparatorController {
         JsonElement json1 = parser.parse(objectString);
         JsonElement json2 = parser.parse(arrayString);
         assertEquals(json1, json2);
-
         return "OK : "+json2.isJsonObject();
     }
 }
