@@ -12,7 +12,6 @@ import static org.junit.Assert.*;
 public class JSONComparatorController {
     @GetMapping("/")
     public String isObjectSame(){
-
         JsonParser parser = new JsonParser();
         String objectString = "{\n" +
                 "    \"customer\": {\n" +
