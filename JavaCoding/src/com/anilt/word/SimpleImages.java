@@ -5,7 +5,6 @@ import java.io.IOException;
 
 import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 import org.apache.poi.util.Units;
-import org.apache.poi.xwpf.usermodel.BreakType;
 import org.apache.poi.xwpf.usermodel.XWPFDocument;
 import org.apache.poi.xwpf.usermodel.XWPFParagraph;
 import org.apache.poi.xwpf.usermodel.XWPFRun;
@@ -15,7 +14,7 @@ import org.apache.poi.xwpf.usermodel.XWPFRun;
  */
 public class SimpleImages {
 
-    public static void main(String[] args) throws IOException, InvalidFormatException {
+   /* public static void main(String[] args) throws IOException, InvalidFormatException {
         XWPFDocument doc = new XWPFDocument();
         XWPFParagraph p = doc.createParagraph();
 
@@ -55,5 +54,5 @@ public class SimpleImages {
 //        doc.close();
     }
 
-
+*/
 }
