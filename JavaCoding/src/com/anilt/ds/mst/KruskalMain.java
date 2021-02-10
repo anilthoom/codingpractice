@@ -1,4 +1,6 @@
 package com.anilt.ds.mst;
+import com.anilt.ds.node.WeightedNode;
+
 import java.util.ArrayList;
 
 
