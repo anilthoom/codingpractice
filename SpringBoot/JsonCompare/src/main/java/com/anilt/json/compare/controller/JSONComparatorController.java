@@ -28,9 +28,7 @@ public class JSONComparatorController {
                 "        \"fullName\": \"Emily Jenkins\"\n" +
                 "    }\n" +
                 "}";
-        //parsing to json object
         JsonElement json1 = parser.parse(objectString);
-        //parsing to json 2 object
         JsonElement json2 = parser.parse(arrayString);
         assertEquals(json1, json2);
         return "OK : "+json1.isJsonObject();
