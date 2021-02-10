@@ -1,6 +1,6 @@
 package com.anilt.ds.mst;
 import java.util.ArrayList;
-import node.WeightedNode;
+
 
 public class KruskalMain {
 	public static void main(String[] args) {
