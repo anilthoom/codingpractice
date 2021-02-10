@@ -1,7 +1,6 @@
 package com.anilt.ds.binaryTree;
 import java.util.*;
 
-import node.BinaryNode;
 
 public class BinaryTreeByLinkedList {
 	BinaryNode root;
