@@ -14,16 +14,16 @@ import org.apache.poi.xwpf.usermodel.XWPFTableCell;
 import org.apache.poi.xwpf.usermodel.XWPFTableRow;
 
 public class Find_Replace_DOCX {
-
+/*
     public static void main(String args[]) throws IOException,
       InvalidFormatException,
       org.apache.poi.openxml4j.exceptions.InvalidFormatException {
      try {
 
-      /**
+      *//**
        * if uploaded doc then use HWPF else if uploaded Docx file use
        * XWPFDocument
-       */
+       *//*
       XWPFDocument doc = new XWPFDocument(
         OPCPackage.open("input.docx"));
       for (XWPFParagraph p : doc.getParagraphs()) {
@@ -60,6 +60,6 @@ public class Find_Replace_DOCX {
 
      }
 
-    }
+    }*/
 
    }
