@@ -2,13 +2,14 @@ package com.anilt.leetcode;
 
 public class ReverseInteger {
     public static void main(String[] args) {
-        System.out.println(reverse(123));
+        System.out.println(reverse(-12345600));
     }
     public static int reverse(int x) {
         String xValue = ""+x;
-        for(int i=xValue.length()-1; i>0; i--){
-
+        String reverseStr = "";
+        for(int i=xValue.length()-1; i>=0; i--){
+            reverseStr += xValue.charAt(i);
         }
-        return 0;
+        return Integer.parseInt(reverseStr);
     }
 }
