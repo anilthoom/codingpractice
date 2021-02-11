@@ -2,7 +2,7 @@ package com.anilt.leetcode;
 
 public class ReverseInteger {
     public static void main(String[] args) {
-        System.out.println(reverse(-0123456));
+        System.out.println(reverse(-123467));
     }
     public static int reverse(int x) {
         boolean isNegative = false;
