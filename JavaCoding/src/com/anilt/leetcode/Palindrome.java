@@ -10,9 +10,14 @@ public class Palindrome {
         StringBuffer sb = new StringBuffer(""+x);
         sb.reverse();
         System.out.println(sb.toString());
-        int reversedInt = Integer.parseInt(sb.toString());
-        if (x == reversedInt)
-            return true;
+        try {
+            int reversedInt = Integer.parseInt(sb.toString());
+            if (x == reversedInt)
+                return true;
+        }
+        catch (NumberFormatException nfe){
+            return false;
+        }
         return false;
     }
 }
