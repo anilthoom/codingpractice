@@ -15,14 +15,10 @@ public class ReverseInteger {
         else {
             xValue = ""+x;
         }
-         String.valueOf(x);
-
-        String reverseStr = "";
-        for(int i=xValue.length()-1; i>=0; i--){
-            reverseStr += xValue.charAt(i);
-        }
-        if (isNegative)
-            reverseStr = "-"+reverseStr;
-        return Integer.parseInt(reverseStr);
+        StringBuffer reverseStr = new StringBuffer(xValue);
+        reverseStr.reverse();
+  //      if (isNegative)
+//            reverseStr = "-"+reverseStr;
+        return Integer.parseInt(reverseStr.toString());
     }
 }
