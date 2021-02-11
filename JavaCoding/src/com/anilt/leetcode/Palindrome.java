@@ -7,7 +7,9 @@ public class Palindrome {
     public static boolean isPalindrome(int x) {
         if(x<0)
             return false;
-
+        int reversedInt = Integer.reverse(x);
+        if (x == reversedInt)
+            return true;
         return false;
     }
 }
