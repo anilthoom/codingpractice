@@ -9,7 +9,6 @@ public class Palindrome {
             return false;
         StringBuffer sb = new StringBuffer(""+x);
         sb.reverse();
-        System.out.println(sb.toString());
         try {
             int reversedInt = Integer.parseInt(sb.toString());
             if (x == reversedInt)
