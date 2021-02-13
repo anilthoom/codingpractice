@@ -11,7 +11,7 @@ public class ShuffleString {
         char resultCharArr[] = new char[indices.length];
         for (int i = 0; i< indices.length; i++){
             System.out.println(indices[i]);
-            resultCharArr[indices[i]] = s.charAt(indices[i]);
+            resultCharArr[indices[i]] = s.charAt(i);
 
         }
         return result;
