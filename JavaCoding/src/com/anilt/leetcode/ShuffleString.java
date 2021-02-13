@@ -11,6 +11,6 @@ public class ShuffleString {
         for (int i = 0; i< indices.length; i++){
             result += s.charAt(i);
         }
-        return "";
+        return result;
     }
 }
