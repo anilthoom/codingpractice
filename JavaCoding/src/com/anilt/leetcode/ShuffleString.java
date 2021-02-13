@@ -9,7 +9,7 @@ public class ShuffleString {
     public static String restoreString(String s, int[] indices) {
         String result = "";
         for (int i = 0; i< indices.length; i++){
-            //result +=
+            result += s.charAt(i);
         }
         return "";
     }
