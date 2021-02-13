@@ -7,8 +7,9 @@ public class ShuffleString {
         System.out.println(restoreString("KumarAnil", ar));
     }
     public static String restoreString(String s, int[] indices) {
+        String result = "";
         for (int i = 0; i< indices.length; i++){
-
+            //result +=
         }
         return "";
     }
