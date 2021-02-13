@@ -9,11 +9,11 @@ public class ShuffleString {
     public static String restoreString(String s, int[] indices) {
         String result = "";
         char resultCharArr[] = new char[indices.length];
-        for (int i = 0; i< indices.length; i++){
+        for (int i = 0; i< indices.length; i++) {
             System.out.println(indices[i]);
             resultCharArr[indices[i]] = s.charAt(i);
 
         }
-        return result;
+        return String.copyValueOf(resultCharArr);
     }
 }
