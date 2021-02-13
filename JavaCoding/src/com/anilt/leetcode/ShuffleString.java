@@ -3,9 +3,13 @@ package com.anilt.leetcode;
 
 public class ShuffleString {
     public static void main(String[] args) {
-        System.out.println();
+        int ar[] = {5, 6, 7, 8, 0, 1, 2, 3, 4};
+        System.out.println(restoreString("KumarAnil", ar));
     }
-    public String restoreString(String s, int[] indices) {
+    public static String restoreString(String s, int[] indices) {
+        for (int i = 0; i< indices.length; i++){
+
+        }
         return "";
     }
 }
