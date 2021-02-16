@@ -4,6 +4,8 @@ package com.anilt.leetcode;
 public class LongestCommonPrefix {
     public static void main(String[] args) {
         LongestCommonPrefix lcp = new LongestCommonPrefix();
+        String[] strings = {"flower", "flow", "flight"};
+
     }
     public String longestCommonPrefix(String[] strs) {
         return "";
