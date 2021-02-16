@@ -8,7 +8,9 @@ public class LongestCommonPrefix {
         System.out.println(lcp.longestCommonPrefix(strings));
     }
     public String longestCommonPrefix(String[] strs) {
+        for(String val : strs){
 
+        }
         return "";
     }
 }
