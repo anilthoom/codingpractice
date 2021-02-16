@@ -2,4 +2,7 @@
 package com.anilt.leetcode;
 
 public class LongestCommonPrefix {
+    public String longestCommonPrefix(String[] strs) {
+        return "";
+    }
 }
