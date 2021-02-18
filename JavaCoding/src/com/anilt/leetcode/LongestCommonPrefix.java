@@ -12,7 +12,7 @@ public class LongestCommonPrefix {
         char[] baseChars = baseStr.toCharArray();
         boolean[] asciiArr = new boolean[256];
         for(char c : baseChars){
-
+            asciiArr[c] = true;
         }
         for(int i=1; i<strs.length; i++){
 
