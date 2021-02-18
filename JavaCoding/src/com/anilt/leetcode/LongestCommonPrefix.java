@@ -1,12 +1,15 @@
 //https://leetcode.com/problems/longest-common-prefix/
 package com.anilt.leetcode;
 
+import java.util.Arrays;
 import java.util.Stack;
+import java.util.stream.Stream;
 
 public class LongestCommonPrefix {
     public static void main(String[] args) {
         LongestCommonPrefix lcp = new LongestCommonPrefix();
         String[] strings = {"flower", "flow", "flight"};
+        Arrays.binarySearch(strings, "flow");
         System.out.println(lcp.longestCommonPrefix(strings));
     }
     public String longestCommonPrefix(String[] strs) {
