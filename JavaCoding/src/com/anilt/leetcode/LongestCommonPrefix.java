@@ -23,30 +23,3 @@ public class LongestCommonPrefix {
         return "";
     }
 }
-class Main{
-    public static void main(String[] args) {
-        String[] strings = {"flower", "flow", "floight"};
-
-        boolean flag = true;
-        String placeHolder = null;
-
-        for(int i = 1;i<strings[0].length();i++){
-            placeHolder = strings[0].substring(0,i);
-
-            for(String s: strings){
-                if(s.startsWith(placeHolder)){
-                    continue;
-                }else{
-                    flag = false;
-                }
-            }
-
-            if(!flag){
-                break;
-            }
-        }
-
-        System.out.println(placeHolder);
-    }
-
-}
