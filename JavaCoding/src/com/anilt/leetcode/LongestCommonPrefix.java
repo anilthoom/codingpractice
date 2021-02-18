@@ -1,6 +1,8 @@
 //https://leetcode.com/problems/longest-common-prefix/
 package com.anilt.leetcode;
 
+import java.util.Stack;
+
 public class LongestCommonPrefix {
     public static void main(String[] args) {
         LongestCommonPrefix lcp = new LongestCommonPrefix();
@@ -14,6 +16,7 @@ public class LongestCommonPrefix {
         for(char c : baseChars){
             asciiArr[c] = true;
         }
+        Stack<Character> charsStack = new Stack<Character>();
         for(int i=1; i<strs.length; i++){
 
         }
