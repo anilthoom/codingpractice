@@ -22,6 +22,6 @@ public class LongestCommonPrefix {
         for(int i=1; i<strs.length; i++){
 
         }
-        return "";
+        return prefix;
     }
 }
