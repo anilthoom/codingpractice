@@ -9,7 +9,6 @@ public class LongestCommonPrefix {
     public static void main(String[] args) {
         LongestCommonPrefix lcp = new LongestCommonPrefix();
         String[] strings = {"flower", "flow", "flight"};
-        Arrays.binarySearch(strings, "flow");
         System.out.println(lcp.longestCommonPrefix(strings));
     }
     public String longestCommonPrefix(String[] strs) {
