@@ -20,6 +20,7 @@ public class LongestCommonPrefix {
         }
         String prefix = "";
         for(int i=1; i<strs.length; i++){
+
         }
         return prefix;
     }
