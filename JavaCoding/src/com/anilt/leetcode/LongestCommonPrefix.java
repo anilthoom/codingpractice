@@ -14,9 +14,7 @@ public class LongestCommonPrefix {
     public String longestCommonPrefix(String[] strs) {
         String baseStr = strs[0];
         char[] baseChars = baseStr.toCharArray();
-        boolean[] asciiArr = new boolean[256];
         for(char c : baseChars){
-            asciiArr[c] = true;
         }
         String prefix = "";
         for(int i=1; i<strs.length; i++){
