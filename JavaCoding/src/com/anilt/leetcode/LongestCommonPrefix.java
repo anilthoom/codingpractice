@@ -19,7 +19,7 @@ public class LongestCommonPrefix {
             prefix += c;
             for(int i=1; i<strs.length; i++){
                 if(strs[i].startsWith(prefix)){
-                    System.out.println(prefix);
+                    System.out.println(" RESULT : "+prefix);
                 }
             }
         }
