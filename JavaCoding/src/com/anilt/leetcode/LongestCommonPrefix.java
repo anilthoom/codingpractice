@@ -8,10 +8,12 @@ import java.util.stream.Stream;
 public class LongestCommonPrefix {
     public static void main(String[] args) {
         LongestCommonPrefix lcp = new LongestCommonPrefix();
-        String[] strings = {"flower", "flow", "floight"};
+        String[] strings = {"0flower", "flow", "floight"};
         System.out.println(lcp.longestCommonPrefix(strings));
     }
     public String longestCommonPrefix(String[] strs) {
+        if (strs.length == 0)
+            return "";
         String baseStr = strs[0];
         char[] baseChars = baseStr.toCharArray();
         String prefix = "";
