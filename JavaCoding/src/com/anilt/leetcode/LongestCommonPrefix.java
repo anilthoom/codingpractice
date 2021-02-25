@@ -18,7 +18,9 @@ public class LongestCommonPrefix {
         for(char c : baseChars){
             prefix += c;
             for(int i=1; i<strs.length; i++){
-                System.out.println(prefix);
+                if(strs[i].startsWith(prefix)){
+
+                }
             }
         }
         return prefix;
