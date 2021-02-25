@@ -21,6 +21,9 @@ public class LongestCommonPrefix {
                 if(strs[i].startsWith(prefix)){
                     System.out.println(" RESULT : "+prefix);
                 }
+                else {
+                    break;
+                }
             }
         }
         return prefix;
