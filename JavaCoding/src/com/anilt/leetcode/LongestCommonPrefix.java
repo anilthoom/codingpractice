@@ -15,8 +15,10 @@ public class LongestCommonPrefix {
         String baseStr = strs[0];
         char[] baseChars = baseStr.toCharArray();
         String prefix = "";
-        boolean isStartsWith = false;
+        boolean isStartsWith = true;
         for(char c : baseChars){
+            if (!isStartsWith)
+                break;
             prefix += c;
             for(int i=1; i<strs.length; i++){
                 if(strs[i].startsWith(prefix)){
@@ -24,6 +26,7 @@ public class LongestCommonPrefix {
                     System.out.println(" RESULT : "+prefix);
                 }
                 else {
+                    isStartsWith = false;
                     break;
                 }
             }
