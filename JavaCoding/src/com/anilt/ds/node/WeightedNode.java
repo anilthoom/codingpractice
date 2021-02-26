@@ -1,8 +1,9 @@
 package com.anilt.ds.node;
 
+import com.anilt.ds.mst.DisjointSet;
 import java.util.*;
 
-import mst.DisjointSet;
+
 
 public class WeightedNode implements Comparable<WeightedNode> {
 	public String name;

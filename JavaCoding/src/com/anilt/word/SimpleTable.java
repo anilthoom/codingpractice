@@ -34,7 +34,7 @@ import org.openxmlformats.schemas.wordprocessingml.x2006.main.STVerticalJc;
  */
 public class SimpleTable {
 
-    public static void main(String[] args) throws Exception {
+  /*  public static void main(String[] args) throws Exception {
     	try {
     		createSimpleTable();
     	}
@@ -86,7 +86,7 @@ public class SimpleTable {
 //            doc.close();
         }
     }
-    /**
+    *//**
      * Create a table with some row and column styling. I "manually" add the
      * style name to the table, but don't check to see if the style actually
      * exists in the document. Since I'm creating it from scratch, it obviously
@@ -99,7 +99,7 @@ public class SimpleTable {
      * instructive and give you ideas for your own solutions.
 
      * @throws Exception
-     */
+     *//*
     public static void createStyledTable() throws Exception {
     	// Create a new document from scratch
         XWPFDocument doc = new XWPFDocument();
@@ -193,5 +193,5 @@ public class SimpleTable {
         } finally {
 //            doc.close();
         }
-    }
+    }*/
 }

@@ -1,15 +1,13 @@
 package com.anilt.ds.arrays;
 
 public class BinarySearchWays {
-
-	// Returns index of x if it is present in arr[l.. 
+	// Returns index of x if it is present in arr[l..
     // r], else return -1 
     int binarySearchRecursive(int arr[], int lowValue, int highValue, int findThis) 
     { 
         if (highValue >= lowValue) { 
             int mid = lowValue + (highValue - lowValue) / 2; 
-  
-            // If the element is present at the 
+            // If the element is present at the
             // middle itself 
             if (arr[mid] == findThis) 
                 return mid; 
@@ -22,13 +20,11 @@ public class BinarySearchWays {
             // Else the element can only be present 
             // in right subarray 
             return binarySearchRecursive(arr, mid + 1, highValue, findThis); 
-        } 
-  
+        }
         // We reach here when element is not present 
         // in array 
         return -1; 
-    } 
-  
+    }
     // Returns index of x if it is present in arr[], 
     // else return -1 
     int binarySearchIterative(int arr[], int findThis) 
@@ -49,8 +45,7 @@ public class BinarySearchWays {
             else
                 r = m - 1; 
         } 
-  
-        // if we reach here, then element was 
+        // if we reach here, then element was
         // not present 
         return -1; 
     } 
@@ -67,6 +62,5 @@ public class BinarySearchWays {
             System.out.println("Element not present"); 
         else
             System.out.println("Element found at index " + result); 
-
-    } 
+    }
 }

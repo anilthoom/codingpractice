@@ -1,5 +1,5 @@
 package com.anilt.word;
-import static org.junit.Assert.assertEquals;
+//import static org.junit.Assert.assertEquals;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -30,7 +30,7 @@ import org.apache.poi.xwpf.usermodel.XWPFDocument;
  * http://svn.apache.org/repos/asf/poi/trunk/test-key/document/EmbeddedDocument.docx
  */
 public class UpdateEmbeddedDoc {
-
+/*
     private XWPFDocument doc = null;
     private File docFile = null;
 
@@ -41,7 +41,7 @@ public class UpdateEmbeddedDoc {
     private static final String BINARY_EXTENSION = "xls";
     private static final String OPENXML_EXTENSION = "xlsx";
 
-    /**
+    *//**
      * Create a new instance of the UpdateEmbeddedDoc class using the following
      * parameters;
      *
@@ -52,7 +52,7 @@ public class UpdateEmbeddedDoc {
      *                                       on the underlying file system.
      * @throws java.io.IOException           Thrown if a problem occurs in the underlying
      *                                       file system.
-     */
+     *//*
     public UpdateEmbeddedDoc(String filename) throws FileNotFoundException, IOException {
         this.docFile = new File(filename);
         FileInputStream fis = null;
@@ -69,7 +69,7 @@ public class UpdateEmbeddedDoc {
         }
     }
 
-    /**
+    *//**
      * Called to update the embedded Excel workbook. As the format and structire
      * of the workbook are known in advance, all this code attempts to do is
      * write a new value into the first cell on the first row of the first
@@ -85,7 +85,7 @@ public class UpdateEmbeddedDoc {
      *                             invalid.
      * @throws java.io.IOException Thrown if a problem occurs in the underlying
      *                             file system.
-     */
+     *//*
     public void updateEmbeddedDoc() throws OpenXML4JException, IOException {
         List<PackagePart> embeddedDocs = this.doc.getAllEmbedds();
         for (PackagePart pPart : embeddedDocs) {
@@ -122,7 +122,7 @@ public class UpdateEmbeddedDoc {
         }
     }
 
-    /**
+    *//**
      * Called to test whether or not the embedded workbook was correctly
      * updated. This method simply recovers the first cell from the first row
      * of the first workbook and tests the value it contains.
@@ -146,7 +146,7 @@ public class UpdateEmbeddedDoc {
      *                             invalid.
      * @throws java.io.IOException Thrown if a problem occurs in the underlying
      *                             file system.
-     */
+     *//*
     public void checkUpdatedDoc() throws OpenXML4JException, IOException {
         for (PackagePart pPart : this.doc.getAllEmbedds()) {
             String ext = pPart.getPartName().getExtension();
@@ -167,15 +167,15 @@ public class UpdateEmbeddedDoc {
         }
     }
 
-    /**
+    *//**
      * Code to test updating of the embedded Excel workbook.
      *
      * @param args
      * @throws OpenXML4JException 
-     */
+     *//*
     public static void main(String[] args) throws IOException, OpenXML4JException {
         UpdateEmbeddedDoc ued = new UpdateEmbeddedDoc("styledTable.docx");
         ued.updateEmbeddedDoc();
         ued.checkUpdatedDoc();
-    }
+    }*/
 }

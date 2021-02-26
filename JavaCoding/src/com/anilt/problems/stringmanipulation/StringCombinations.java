@@ -9,6 +9,15 @@ public class StringCombinations {
 	public static void main(String[] args) 
 	{
 		String str = "abc";
+		char[] strChars = str.toCharArray();
+		System.out.println(strChars.length);
+		int n = strChars.length;
+		for(int i=0; i<n;i++) {
+			for(int j=i+1; j<n;j++) {
+				System.out.println("RESULT : "+strChars[i]+strChars[j]);
+			}
+
+		}
 		//abc acb bac bca cab cba
 		//print(str, "");
 		Map<String, String> hm 
