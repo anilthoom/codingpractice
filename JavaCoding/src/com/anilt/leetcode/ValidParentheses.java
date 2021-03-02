@@ -8,8 +8,8 @@ public class ValidParentheses {
     }
     public boolean isValid(String s) {
         char cArr[] = s.toCharArray();
-        for(char b: cArr){
-            System.out.println(b);
+        for(char c: cArr){
+            
         }
         return false;
     }
