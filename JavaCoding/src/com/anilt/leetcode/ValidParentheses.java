@@ -14,6 +14,11 @@ public class ValidParentheses {
         for(char c: cArr){
             if(c == '{' || c=='[' || c=='(')
                 characterStack.push(c);
+            else{
+                characterStack.pop();
+
+            }
+
         }
         return false;
     }
