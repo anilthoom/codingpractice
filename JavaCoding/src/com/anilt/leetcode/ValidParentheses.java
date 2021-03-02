@@ -1,5 +1,7 @@
 package com.anilt.leetcode;
 
+import java.util.Stack;
+
 public class ValidParentheses {
     public static void main(String[] args) {
         ValidParentheses vp = new ValidParentheses();
@@ -8,8 +10,9 @@ public class ValidParentheses {
     }
     public boolean isValid(String s) {
         char cArr[] = s.toCharArray();
+        Stack<Character> characterStack = new Stack<Character>();
         for(char c: cArr){
-
+            characterStack.push(c);
         }
         return false;
     }
