@@ -20,11 +20,11 @@ public class ValidParentheses {
                     continue;
                 }
                 else {
-                    break;
+                    return false;
                 }
             }
 
         }
-        return false;
+        return true;
     }
 }
