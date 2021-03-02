@@ -9,7 +9,7 @@ public class ValidParentheses {
     public boolean isValid(String s) {
         char cArr[] = s.toCharArray();
         for(char c: cArr){
-            
+
         }
         return false;
     }
