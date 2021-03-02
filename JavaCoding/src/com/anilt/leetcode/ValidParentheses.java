@@ -15,7 +15,10 @@ public class ValidParentheses {
             if(c == '{' || c=='[' || c=='(')
                 characterStack.push(c);
             else{
-                characterStack.pop();
+                char p = characterStack.pop();
+                if ((c == '{' && p == '}') || (c == '[' && p == ']')){
+
+                }
 
             }
 
