@@ -20,7 +20,7 @@ import java.util.HashMap;
 public class RomanToInteger {
     public static void main(String[] args) {
         RomanToInteger rti = new RomanToInteger();
-        System.out.println(rti.romanToInt("III"));
+        System.out.println(rti.romanToInt("XIII"));
     }
     public int romanToInt(String s) {
         HashMap<String, Integer> hashMap = new HashMap<String, Integer>();
@@ -33,7 +33,13 @@ public class RomanToInteger {
         hashMap.put("M", 1000);
 
         for (int i=0; i< s.length(); i++){
-            System.out.println(s.charAt(i));
+            char c = s.charAt(i);
+            if(c == 'I'){
+                //Check for next char if exists
+            }
+            else if(c == 'X'){
+                //Check for next char 
+            }
         }
         return 0;
     }
