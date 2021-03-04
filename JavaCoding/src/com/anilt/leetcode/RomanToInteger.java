@@ -48,7 +48,17 @@ public class RomanToInteger {
                 }
             }
             else if(c == 'X' && i+1<s.length()){
-                //Check for next char if exists and increment i
+                if(s.charAt(i+1) == 'V'){
+                    total += 4;
+                    i++;
+                }
+                else if(s.charAt(i+1) == 'X'){
+                    total += 9;
+                    i++;
+                }
+                else {
+                    total += 1;
+                }
             }
             else if(c == 'C'){
                 //Check for next char if exists and increment i
