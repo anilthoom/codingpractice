@@ -28,6 +28,7 @@ public class RomanToInteger {
         hashMap.put("V", 5);
         hashMap.put("X", 10);
         hashMap.put("L", 50);
+        hashMap.put("C", 100);
         return 0;
     }
 }
