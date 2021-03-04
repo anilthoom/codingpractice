@@ -63,7 +63,7 @@ public class RomanToInteger {
                 }
             }
             //Handling 100, 400, 900
-            else if(c == 'C'){
+            else if(c == 'C' && i+1<s.length()){
                 if(s.charAt(i+1) == 'L'){
                     total += 40;
                     i++;
