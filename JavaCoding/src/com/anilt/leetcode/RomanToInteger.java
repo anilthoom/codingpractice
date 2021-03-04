@@ -38,8 +38,15 @@ public class RomanToInteger {
                 //Check for next char if exists
             }
             else if(c == 'X'){
-                //Check for next char 
+                //Check for next char if exists and increment i
             }
+            else if(c == 'C'){
+                //Check for next char if exists and increment i
+            }
+            else {
+                // Get and add the value
+            }
+
         }
         return 0;
     }
