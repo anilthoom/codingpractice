@@ -62,6 +62,7 @@ public class RomanToInteger {
                     total += 10;
                 }
             }
+            //Handling 100, 400, 900
             else if(c == 'C'){
                 //Check for next char if exists and increment i
             }
