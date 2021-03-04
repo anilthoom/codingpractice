@@ -31,6 +31,7 @@ public class RomanToInteger {
         hashMap.put("C", 100);
         hashMap.put("D", 500);
         hashMap.put("M", 1000);
+        System.out.println(hashMap.get("D"));
         return 0;
     }
 }
