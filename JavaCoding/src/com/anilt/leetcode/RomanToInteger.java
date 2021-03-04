@@ -31,13 +31,23 @@ public class RomanToInteger {
         hashMap.put("C", 100);
         hashMap.put("D", 500);
         hashMap.put("M", 1000);
-
+        int total = 0;
         for (int i=0; i< s.length(); i++){
             char c = s.charAt(i);
-            if(c == 'I'){
-                //Check for next char if exists
+            if(c == 'I' && i+1<s.length()){
+                if(s.charAt(i+1) == 'V'){
+                    total += 4;
+                    i++;
+                }
+                else if(s.charAt(i+1) == 'X'){
+                    total += 9;
+                    i++;
+                }
+                else {
+                    total += 1;
+                }
             }
-            else if(c == 'X'){
+            else if(c == 'X' && i+1<s.length()){
                 //Check for next char if exists and increment i
             }
             else if(c == 'C'){
@@ -45,9 +55,9 @@ public class RomanToInteger {
             }
             else {
                 // Get and add the value
-            }
 
+            }
         }
-        return 0;
+        return total;
     }
 }
