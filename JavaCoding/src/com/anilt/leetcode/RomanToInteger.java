@@ -77,8 +77,7 @@ public class RomanToInteger {
                 }
             }
             else {
-                // Get and add the value
-
+                // Get from map and add the value
             }
         }
         return total;
