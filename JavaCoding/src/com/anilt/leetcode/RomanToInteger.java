@@ -26,6 +26,7 @@ public class RomanToInteger {
         HashMap<String, Integer> hashMap = new HashMap<String, Integer>();
         hashMap.put("I", 1);
         hashMap.put("V", 5);
+        hashMap.put("X", 10);
         return 0;
     }
 }
