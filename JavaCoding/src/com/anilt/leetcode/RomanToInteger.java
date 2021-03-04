@@ -48,6 +48,7 @@ public class RomanToInteger {
                     total += 1;
                 }
             }
+            //Handling 10, 40, 90 scenario
             else if(c == 'X' && i+1<s.length()){
                 if(s.charAt(i+1) == 'V'){
                     total += 4;
