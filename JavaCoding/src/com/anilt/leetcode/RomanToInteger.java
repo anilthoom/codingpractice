@@ -18,6 +18,7 @@ package com.anilt.leetcode;
 public class RomanToInteger {
     public static void main(String[] args) {
         RomanToInteger rti = new RomanToInteger();
+        System.out.println(rti.romanToInt("III"));
     }
     public int romanToInt(String s) {
         return 0;
