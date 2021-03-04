@@ -68,8 +68,8 @@ public class RomanToInteger {
                     total += 400;
                     i++;
                 }
-                else if(s.charAt(i+1) == 'C'){
-                    total += 90;
+                else if(s.charAt(i+1) == 'M'){
+                    total += 900;
                     i++;
                 }
                 else {
