@@ -34,6 +34,7 @@ public class RomanToInteger {
         int total = 0;
         for (int i=0; i< s.length(); i++){
             char c = s.charAt(i);
+            // Handling 1, 4, 9 scenario
             if(c == 'I' && i+1<s.length()){
                 if(s.charAt(i+1) == 'V'){
                     total += 4;
@@ -58,6 +59,7 @@ public class RomanToInteger {
                 }
                 else {
                     total += 1;
+
                 }
             }
             else if(c == 'C'){
