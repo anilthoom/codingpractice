@@ -73,7 +73,7 @@ public class RomanToInteger {
                     i++;
                 }
                 else {
-                    total += 10;
+                    total += 100;
                 }
             }
             else {
