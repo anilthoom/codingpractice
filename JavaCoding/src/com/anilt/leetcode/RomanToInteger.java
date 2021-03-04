@@ -20,7 +20,7 @@ import java.util.HashMap;
 public class RomanToInteger {
     public static void main(String[] args) {
         RomanToInteger rti = new RomanToInteger();
-        System.out.println(rti.romanToInt("VI"));
+        System.out.println(rti.romanToInt("XI"));
     }
     public int romanToInt(String s) {
         HashMap<String, Integer> hashMap = new HashMap<String, Integer>();
