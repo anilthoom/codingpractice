@@ -50,17 +50,16 @@ public class RomanToInteger {
             }
             //Handling 10, 40, 90 scenario
             else if(c == 'X' && i+1<s.length()){
-                if(s.charAt(i+1) == 'V'){
-                    total += 4;
+                if(s.charAt(i+1) == 'L'){
+                    total += 40;
                     i++;
                 }
-                else if(s.charAt(i+1) == 'X'){
-                    total += 9;
+                else if(s.charAt(i+1) == 'C'){
+                    total += 90;
                     i++;
                 }
                 else {
-                    total += 1;
-
+                    total += 10;
                 }
             }
             else if(c == 'C'){
