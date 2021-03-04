@@ -1,6 +1,8 @@
 //https://leetcode.com/problems/roman-to-integer/
 package com.anilt.leetcode;
 
+import java.util.HashMap;
+
 /**
  *  Symbol       Value
  *  I             1
@@ -21,6 +23,8 @@ public class RomanToInteger {
         System.out.println(rti.romanToInt("III"));
     }
     public int romanToInt(String s) {
+        HashMap<String, Integer> hashMap = new HashMap<String, Integer>();
+        hashMap.put("I", 1);
         return 0;
     }
 }
