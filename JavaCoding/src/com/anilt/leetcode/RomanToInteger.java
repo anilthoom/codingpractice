@@ -78,7 +78,7 @@ public class RomanToInteger {
             }
             else {
                 // Get from map and add the value
-                total += hashMap.get(c);
+                total += hashMap.get(""+c);
             }
         }
         return total;
