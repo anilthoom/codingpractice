@@ -64,7 +64,17 @@ public class RomanToInteger {
             }
             //Handling 100, 400, 900
             else if(c == 'C'){
-                //Check for next char if exists and increment i
+                if(s.charAt(i+1) == 'L'){
+                    total += 40;
+                    i++;
+                }
+                else if(s.charAt(i+1) == 'C'){
+                    total += 90;
+                    i++;
+                }
+                else {
+                    total += 10;
+                }
             }
             else {
                 // Get and add the value
