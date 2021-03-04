@@ -17,7 +17,7 @@ package com.anilt.leetcode;
  */
 public class RomanToInteger {
     public static void main(String[] args) {
-
+        RomanToInteger rti = new RomanToInteger();
     }
     public int romanToInt(String s) {
         return 0;
