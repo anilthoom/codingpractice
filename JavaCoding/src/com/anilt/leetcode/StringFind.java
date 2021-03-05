@@ -5,6 +5,6 @@ public class StringFind {
         StringFind sf = new StringFind();
     }
     public int strStr(String haystack, String needle) {
-
+        return -1;
     }
 }
