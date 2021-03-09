@@ -17,9 +17,9 @@ public class KidsWithCandies {
         }
         System.out.println(maxCandy);
         boolean[] resultArray = new boolean[candies.length];
-        for(int count : candies) {
-            if(count >= maxCandy){
-                
+        for(int i=0; i<candies.length; i++) {
+            if((candies[i]+extraCandies) >= maxCandy){
+                resultArray[i]= true;
             }
         }
         return null;
