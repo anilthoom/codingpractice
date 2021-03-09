@@ -1,5 +1,6 @@
 package com.anilt.leetcode;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class KidsWithCandies {
@@ -16,12 +17,11 @@ public class KidsWithCandies {
                 maxCandy = max;
         }
         System.out.println(maxCandy);
-        boolean[] resultArray = new boolean[candies.length];
+        List<Boolean> resultArray = new ArrayList<Boolean>();
         for(int i=0; i<candies.length; i++) {
             if((candies[i]+extraCandies) >= maxCandy){
-                resultArray[i]= true;
             }
         }
-        return null;
+        return resultArray;
     }
 }
