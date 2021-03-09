@@ -14,7 +14,6 @@ public class KidsWithCandies {
         for(int max : candies){
             if(maxCandy < max)
                 maxCandy = max;
-            System.out.println(max);
         }
         return null;
     }
