@@ -19,8 +19,11 @@ public class KidsWithCandies {
         System.out.println(maxCandy);
         List<Boolean> resultArray = new ArrayList<Boolean>();
         for(int i=0; i<candies.length; i++) {
-            if((candies[i]+extraCandies) >= maxCandy){
-            }
+            if((candies[i]+extraCandies) >= maxCandy)
+                resultArray.add(true);
+            else
+                resultArray.add(false);
+
         }
         return resultArray;
     }
