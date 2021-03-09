@@ -15,6 +15,7 @@ public class KidsWithCandies {
             if(maxCandy < max)
                 maxCandy = max;
         }
+        System.out.println(maxCandy);
         return null;
     }
 }
