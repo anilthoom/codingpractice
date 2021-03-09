@@ -16,6 +16,9 @@ public class KidsWithCandies {
                 maxCandy = max;
         }
         System.out.println(maxCandy);
+        for(int count : candies) {
+
+        }
         return null;
     }
 }
