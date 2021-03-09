@@ -17,7 +17,9 @@ public class KidsWithCandies {
         }
         System.out.println(maxCandy);
         for(int count : candies) {
-
+            if(count >= maxCandy){
+                
+            }
         }
         return null;
     }
