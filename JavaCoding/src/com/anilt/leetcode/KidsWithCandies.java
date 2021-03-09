@@ -12,6 +12,8 @@ public class KidsWithCandies {
     public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
         int maxCandy = 0;
         for(int max : candies){
+            if(maxCandy < max)
+                maxCandy = max;
             System.out.println(max);
         }
         return null;
