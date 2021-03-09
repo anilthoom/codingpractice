@@ -7,6 +7,9 @@ public class KidsWithCandies {
         KidsWithCandies kidsWithCandies = new KidsWithCandies();
     }
     public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
+        for(int max : candies){
+            System.out.println(max);
+        }
         return null;
     }
 }
