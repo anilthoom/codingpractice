@@ -7,6 +7,12 @@ public class RemoveElement {
         System.out.println(removeElement.removeElement(nums, 2));
     }
     public int removeElement(int[] nums, int val) {
+        int[] resultNums;
+        for (int n: nums){
+            if(n == val){
+
+            }
+        }
         return 0;
     }
 }
