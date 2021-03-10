@@ -7,9 +7,9 @@ public class RemoveElement {
         System.out.println(removeElement.removeElement(nums, 2));
     }
     public int removeElement(int[] nums, int val) {
-        int[] resultNums;
+        int[] resultNums = new int[nums.length];
         for (int n: nums){
-            if(n == val){
+            if(n != val){
 
             }
         }
