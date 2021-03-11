@@ -17,3 +17,9 @@ public class RemoveElement {
         return resultNums.length;
     }
 }
+
+
+
+
+
+
