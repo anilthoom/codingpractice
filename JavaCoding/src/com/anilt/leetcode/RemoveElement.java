@@ -17,13 +17,11 @@ public class RemoveElement {
             }
         }
         int i=0;
-        int[] resultNums = new int[elements.size()];
         for (Integer filteredElements: elements){
-            resultNums[i] = filteredElements;
+            nums[i] = filteredElements;
             i++;
         }
-        System.out.println(resultNums);
-        return resultNums.length;
+        return elements.size();
     }
 }
 
