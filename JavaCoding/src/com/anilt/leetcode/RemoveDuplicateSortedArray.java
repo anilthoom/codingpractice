@@ -11,7 +11,9 @@ public class RemoveDuplicateSortedArray {
     public int removeDuplicates(int[] nums) {
         Stack<Integer> elements = new Stack<Integer>();
         for (int i=0; i<nums.length; i++){
+            if(i+1 <= nums.length) {
 
+            }
         }
         return 0;
     }
