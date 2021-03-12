@@ -5,11 +5,10 @@ import java.util.Stack;
 public class RemoveElement {
     public static void main(String[] args) {
         RemoveElement removeElement = new RemoveElement();
-        int nums[] = {3, 2, 1, 2, 3, 2};
-        System.out.println(removeElement.removeElement(nums, 2));
+        int nums[] = {3, 2, 2, 3};
+        System.out.println(removeElement.removeElement(nums, 3));
     }
     public int removeElement(int[] nums, int val) {
-        int[] resultNums = new int[nums.length];
         Stack<Integer> elements = new Stack<Integer>();
 
         for (int i=0; i<nums.length; i++){
@@ -18,6 +17,7 @@ public class RemoveElement {
             }
         }
         int i=0;
+        int[] resultNums = new int[elements.size()];
         for (Integer filteredElements: elements){
             resultNums[i] = filteredElements;
             i++;
