@@ -1,5 +1,7 @@
 package com.anilt.leetcode;
 
+import java.util.Stack;
+
 public class RemoveElement {
     public static void main(String[] args) {
         RemoveElement removeElement = new RemoveElement();
@@ -8,10 +10,17 @@ public class RemoveElement {
     }
     public int removeElement(int[] nums, int val) {
         int[] resultNums = new int[nums.length];
+        Stack<Integer> elements = new Stack<Integer>();
+
         for (int i=0; i<nums.length; i++){
             if(nums[i] != val){
-                resultNums[i] = nums[i];
+                elements.push(nums[i]);
             }
+        }
+        int i=0;
+        for (Integer filteredElements: elements){
+            resultNums[i] = filteredElements;
+            i++;
         }
         System.out.println(resultNums);
         return resultNums.length;
