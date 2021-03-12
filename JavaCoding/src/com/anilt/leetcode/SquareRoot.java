@@ -6,7 +6,7 @@ public class SquareRoot {
 
     }
     public int mySqrt(int x) {
-        Math.sqrt(Double.parseDouble(""+x));
-        return 0;
+        double resultD = Math.sqrt(Double.parseDouble(""+x));
+        return Integer.parseInt(""+resultD);         
     }
 }
