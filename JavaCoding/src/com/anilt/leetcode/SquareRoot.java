@@ -3,7 +3,7 @@ package com.anilt.leetcode;
 public class SquareRoot {
     public static void main(String[] args) {
         SquareRoot sR = new SquareRoot();
-        System.out.println(sR.mySqrt(8));
+        System.out.println(sR.mySqrt(16));
     }
     public int mySqrt(int x) {
         double resultD = Math.sqrt(x);
