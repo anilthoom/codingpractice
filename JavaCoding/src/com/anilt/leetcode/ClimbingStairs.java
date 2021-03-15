@@ -7,7 +7,6 @@ public class ClimbingStairs {
     }
     public int climbStairs(int n) {
         //0 1 1 2 3 5 8 13 21 34 55 89 144 233 377
-        //2 3 5 8 12 17
         int x=0;
         int y=1;
         int ans=0;
