@@ -1,4 +1,4 @@
-package com.anilt.problems;
+package com.anilt.problems.stringmanipulation;
 
 import java.io.*;
 import java.math.*;
