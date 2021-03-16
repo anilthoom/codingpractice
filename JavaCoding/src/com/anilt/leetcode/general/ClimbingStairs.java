@@ -1,4 +1,4 @@
-package com.anilt.leetcode;
+package com.anilt.leetcode.general;
 
 public class ClimbingStairs {
     public static void main(String[] args) {
