@@ -1,5 +1,5 @@
 //https://leetcode.com/problems/shuffle-string/
-package com.anilt.leetcode;
+package com.anilt.leetcode.general;
 
 public class ShuffleString {
     public static void main(String[] args) {
