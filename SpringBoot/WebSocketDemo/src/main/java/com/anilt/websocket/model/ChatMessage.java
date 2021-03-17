@@ -32,7 +32,7 @@ public class ChatMessage {
     public void setSender(String sender) {
         this.sender = sender;
     }
-    
+
     public enum MessageType{
         CHAT,
         JOIN,
