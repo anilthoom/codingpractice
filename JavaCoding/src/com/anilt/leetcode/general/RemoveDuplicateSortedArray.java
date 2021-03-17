@@ -1,4 +1,4 @@
-package com.anilt.leetcode;
+package com.anilt.leetcode.general;
 
 import java.util.Stack;
 
