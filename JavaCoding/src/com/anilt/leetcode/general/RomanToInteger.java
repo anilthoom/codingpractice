@@ -1,5 +1,5 @@
 //https://leetcode.com/problems/roman-to-integer/
-package com.anilt.leetcode;
+package com.anilt.leetcode.general;
 
 import java.util.HashMap;
 
