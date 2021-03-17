@@ -1,4 +1,4 @@
-package com.anilt.leetcode;
+package com.anilt.leetcode.general;
 
 public class ReverseInteger {
     public static void main(String[] args) {
