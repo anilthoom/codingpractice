@@ -1,5 +1,6 @@
 'use strict';
 
+var welcomeHeader = document.querySelector('#welcome-header')
 var usernamePage = document.querySelector('#username-page');
 var chatPage = document.querySelector('#chat-page');
 var usernameForm = document.querySelector('#usernameForm');
@@ -20,6 +21,7 @@ function connect(event) {
     username = document.querySelector('#name').value.trim();
 
     if(username) {
+        welcomeHeader.innerText = "Welcome : "+username;
         usernamePage.classList.add('hidden');
         chatPage.classList.remove('hidden');
 
