@@ -1,9 +1,5 @@
 //https://leetcode.com/problems/longest-common-prefix/
-package com.anilt.leetcode;
-
-import java.util.Arrays;
-import java.util.Stack;
-import java.util.stream.Stream;
+package com.anilt.leetcode.general;
 
 public class LongestCommonPrefix {
     public static void main(String[] args) {
