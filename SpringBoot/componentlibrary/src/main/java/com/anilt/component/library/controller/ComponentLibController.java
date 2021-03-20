@@ -7,7 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import javax.validation.Valid;
 import java.util.List;
+
 
 @RestController
 @CrossOrigin(origins = "http://localhost:4200")
@@ -28,5 +30,10 @@ public class ComponentLibController {
         ComponentLibrary componentLibrary = componentLibraryRepository.findById(componentId)
                 .orElseThrow(()->new ResourceNotFoundException("Component not found with the id :: "+componentId));
         return ResponseEntity.ok().body(componentLibrary);
+    }
+
+    @PostMapping("/components")
+    public ComponentLibrary createComponent(@Valid @RequestBody ComponentLibrary componentLibrary){
+        return componentLibraryRepository.save(componentLibrary);
     }
 }
