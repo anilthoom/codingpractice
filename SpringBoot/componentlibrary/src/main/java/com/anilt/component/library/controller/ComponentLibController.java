@@ -1,5 +1,6 @@
 package com.anilt.component.library.controller;
 
+import com.anilt.component.library.exception.ResourceNotFoundException;
 import com.anilt.component.library.model.ComponentLibrary;
 import com.anilt.component.library.repository.ComponentLibraryRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,7 +22,11 @@ public class ComponentLibController {
         return componentLibraryRepository.findAll();
     }
 
-    public ResponseEntity<ComponentLibrary> getComponentLibraryById(@PathVariable(value = "id") Long componentId){
-        return null;
+    @GetMapping("/component/{id}")
+    public ResponseEntity<ComponentLibrary> getComponentLibraryById(@PathVariable(value = "id") Long componentId)
+            throws ResourceNotFoundException {
+        ComponentLibrary componentLibrary = componentLibraryRepository.findById(componentId)
+                .orElseThrow(()->new ResourceNotFoundException("Component not found with the id :: "+componentId));
+        return ResponseEntity.ok().body(componentLibrary);
     }
 }
