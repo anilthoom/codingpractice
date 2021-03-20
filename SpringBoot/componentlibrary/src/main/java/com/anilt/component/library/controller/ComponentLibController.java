@@ -8,7 +8,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 
 @RestController
@@ -49,4 +51,15 @@ public class ComponentLibController {
         return ResponseEntity.ok(updatedComponent);
     }
 
+    @DeleteMapping("/components/{id}")
+    public Map<String, Boolean> deleteComponent(@PathVariable(value = "id") Long componentId)
+            throws ResourceNotFoundException {
+        ComponentLibrary componentLibrary = componentLibraryRepository.findById(componentId)
+                .orElseThrow(() -> new ResourceNotFoundException("Component not found with the id :: " + componentId));
+
+        componentLibraryRepository.delete(componentLibrary);
+        Map<String, Boolean> response = new HashMap<>();
+        response.put("deleted", Boolean.TRUE);
+        return response;
+    }
 }
