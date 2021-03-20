@@ -36,4 +36,17 @@ public class ComponentLibController {
     public ComponentLibrary createComponent(@Valid @RequestBody ComponentLibrary componentLibrary){
         return componentLibraryRepository.save(componentLibrary);
     }
+
+    @PutMapping("/components/{id}")
+    public ResponseEntity<ComponentLibrary> updateComponent(@PathVariable(value = "id") Long componentId,
+                                                   @Valid @RequestBody ComponentLibrary componentLibraryDetails) throws ResourceNotFoundException {
+        ComponentLibrary componentLibrary = componentLibraryRepository.findById(componentId)
+                .orElseThrow(() -> new ResourceNotFoundException("Component not found with the id :: " + componentId));
+
+        componentLibrary.setContentText(componentLibraryDetails.getContentText());
+        componentLibrary.setContentHtml(componentLibraryDetails.getContentHtml());
+        final ComponentLibrary updatedComponent = componentLibraryRepository.save(componentLibrary);
+        return ResponseEntity.ok(updatedComponent);
+    }
+
 }
