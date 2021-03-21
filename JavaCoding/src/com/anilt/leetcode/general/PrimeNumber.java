@@ -3,7 +3,7 @@ package com.anilt.leetcode.general;
 public class PrimeNumber {
     public static void main(String[] args) {
         PrimeNumber pn = new PrimeNumber();
-        System.out.println();
+        System.out.println(isPrime(653));
     }
     static boolean isPrime(int n)
     {
