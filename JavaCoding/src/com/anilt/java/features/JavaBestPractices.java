@@ -1,8 +1,6 @@
 package com.anilt.java.features;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -38,7 +36,7 @@ class Items {
     public Items(List<Integer> items) {
         this.items = items;
     }
-    public Integer highest() {
+    public Integer highests() {
         if (items.isEmpty()) return null;
         Integer highest = null;
         for (Integer item : items) {
