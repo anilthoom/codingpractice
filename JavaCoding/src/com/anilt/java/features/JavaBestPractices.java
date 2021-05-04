@@ -8,7 +8,7 @@ import java.util.List;
 public class JavaBestPractices {
     public static void main(String[] args) {
         JavaBestPractices javaBestPractices = new JavaBestPractices();
-
+        javaBestPractices.lambdasUse();
     }
     void lambdasUse(){
         /* Traditional imperative way */
