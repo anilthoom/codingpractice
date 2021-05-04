@@ -34,7 +34,7 @@ public class JavaBestPractices {
 class Items {
     private final List<Integer> items;
     public Items(List<Integer> items) {
-        this.items = items;
+        this.items = items; // chance of manipulations from client
     }
     public Integer highests() {
         if (items.isEmpty()) return null;
