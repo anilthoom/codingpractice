@@ -3,6 +3,8 @@ package com.anilt.java.features;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 // Reference https://dev.to/deepsource/guidelines-for-java-code-reviews-3096
 public class JavaBestPractices {
@@ -19,6 +21,14 @@ public class JavaBestPractices {
             }
         }
         for (Integer n : oddNumbers){
+            System.out.println(n);
+        }
+
+        /* Functional way of filtering odd numbers */
+        List<Integer> oddNums = Stream.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+                .filter(number -> number % 2 != 0)
+                .collect(Collectors.toList());
+        for (Integer n: oddNums){
             System.out.println(n);
         }
     }
