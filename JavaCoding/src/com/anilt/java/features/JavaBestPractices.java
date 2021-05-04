@@ -4,6 +4,9 @@ package com.anilt.java.features;
 public class JavaBestPractices {
     public static void main(String[] args) {
         JavaBestPractices javaBestPractices = new JavaBestPractices();
+
+    }
+    void lambdasUse(){
         
     }
 }
