@@ -20,3 +20,14 @@ class Rectangle implements Shape {
         return 2 * (length + breadth);
     }
 }
+
+class Circle implements Shape {
+    private Double radius;
+    Circle(Double radius){
+        this.radius = radius;
+    }
+    @Override
+    public Double perimeter() {
+        return 2 * Math.PI * (this.radius);
+    }
+}
