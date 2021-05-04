@@ -33,3 +33,18 @@ public class JavaBestPractices {
         }
     }
 }
+class Items {
+    private final List<Integer> items;
+    public Items(List<Integer> items) {
+        this.items = items;
+    }
+    public Integer highest() {
+        if (items.isEmpty()) return null;
+        Integer highest = null;
+        for (Integer item : items) {
+            if (items.indexOf(item) == 0) highest = item;
+            else highest = highest > item ? highest : item;
+        }
+        return highest;
+    }
+}
