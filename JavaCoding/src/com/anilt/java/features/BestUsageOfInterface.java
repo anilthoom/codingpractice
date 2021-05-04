@@ -1,6 +1,14 @@
 package com.anilt.java.features;
 
+import java.util.List;
+
 public class BestUsageOfInterface {
+    public double totalPerimeter(List<Shape> shapes) {
+        return shapes.stream()
+                .map(Shape::perimeter)
+                .reduce((a, b) -> Double.sum(a, b))
+                .orElseGet(() -> (double) 0);
+    }
 }
 
 interface Shape {
