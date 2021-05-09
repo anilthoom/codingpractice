@@ -5,7 +5,7 @@ import java.util.List;
 public class BestUsageOfInterface {
     public static void main(String[] args) {
         BestUsageOfInterface bestUsageOfInterface = new BestUsageOfInterface();
-
+//        bestUsageOfInterface.totalPerimeter();
     }
     public double totalPerimeter(List<Shape> shapes) {
         return shapes.stream()
