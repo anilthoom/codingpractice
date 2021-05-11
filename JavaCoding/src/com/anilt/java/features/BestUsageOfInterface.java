@@ -6,6 +6,8 @@ public class BestUsageOfInterface {
     public static void main(String[] args) {
         BestUsageOfInterface bestUsageOfInterface = new BestUsageOfInterface();
         Shape rec = new Rectangle(10.0,5.0);
+        Shape cir = new Circle(5.0);
+
 //        bestUsageOfInterface.totalPerimeter();
     }
     public double totalPerimeter(List<Shape> shapes) {
