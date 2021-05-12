@@ -1,5 +1,6 @@
 package com.anilt.java.features;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class BestUsageOfInterface {
@@ -7,8 +8,10 @@ public class BestUsageOfInterface {
         BestUsageOfInterface bestUsageOfInterface = new BestUsageOfInterface();
         Shape rec = new Rectangle(10.0,5.0);
         Shape cir = new Circle(5.0);
-
-//        bestUsageOfInterface.totalPerimeter();
+        List<Shape> shapes = new ArrayList<>();
+        shapes.add(rec);
+        shapes.add(cir);
+        System.out.println(bestUsageOfInterface.totalPerimeter(shapes));
     }
     public double totalPerimeter(List<Shape> shapes) {
         return shapes.stream()
