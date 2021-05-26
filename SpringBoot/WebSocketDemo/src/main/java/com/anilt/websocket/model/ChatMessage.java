@@ -1,8 +1,5 @@
 package com.anilt.websocket.model;
 
-import lombok.Getter;
-import lombok.Setter;
-
 public class ChatMessage {
 
     private MessageType type;
