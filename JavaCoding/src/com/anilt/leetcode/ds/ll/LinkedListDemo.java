@@ -5,3 +5,6 @@ public class LinkedListDemo {
         System.out.println("Linked List");
     }
 }
+class Node{
+
+}
