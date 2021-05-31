@@ -6,5 +6,5 @@ public class LinkedListDemo {
     }
 }
 class Node{
-
+    private int top;
 }
