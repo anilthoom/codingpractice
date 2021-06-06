@@ -10,9 +10,10 @@ app.get('/', function(req, res){
 var clients = 0;
 io.on('connection', function(socket){
     clients++;
-    console.log('User connected');
+    socket.emit('newclientconnect', {description: 'Hello Welcome!'});
+    socket.broadcast.emit('newclientconnect', {description: clients + ' clients connected!'});
 
-    io.sockets.emit('broadcast',{description: clients + ' clients connected!'})
+    //io.sockets.emit('broadcast',{description: clients + ' clients connected!'})
     /*setTimeout(function(){
         //socket.send('Welcome bro!!!');
         socket.emit('customEvent', {description: 'This is a custom event'});
@@ -20,8 +21,8 @@ io.on('connection', function(socket){
 
     socket.on('disconnect', function(){
         clients--;
-        io.sockets.emit('broadcast', {description: clients + 'clients connected!'})
-        console.log('User disconnected');
+        //io.sockets.emit('broadcast', {description: clients + 'clients connected!'});
+        socket.broadcast.emit('newclientconnect', {description: clients + ' clients connected!'});
     });
 });
 
