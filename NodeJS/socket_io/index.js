@@ -8,7 +8,8 @@ app.get('/', function(req, res){
 });
 
 var clients = 0;
-io.on('connection', function(socket){
+var nsp = io.of('/my-ns');
+nsp.on('connection', function(socket){
     clients++;
     socket.emit('newclientconnect', {description: 'Hello Welcome!'});
     socket.broadcast.emit('newclientconnect', {description: clients + ' clients connected!'});
