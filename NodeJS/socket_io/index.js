@@ -11,8 +11,8 @@ io.on('connection', function(socket){
     console.log('User connected');
 
     setTimeout(function(){
-        socket.send('Welcome bro!!!');
-        console.log('WWWWWW');
+        //socket.send('Welcome bro!!!');
+        socket.emit('customEvent', {description: 'This is a custom event'});
     }, 4000);
 
     socket.on('disconnect', function(){
