@@ -12,6 +12,7 @@ io.on('connection', function(socket){
 
     setTimeout(function(){
         socket.send('Welcome bro!!!');
+        console.log('WWWWWW');
     }, 4000);
 
     socket.on('disconnect', function(){
