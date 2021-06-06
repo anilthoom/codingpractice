@@ -10,15 +10,19 @@ users = [];
 io.on('connection', function(socket){
     console.log('User connected!');
     socket.on('setUserName', function(data){
-        console.log("ANIL   "+users.indexOf(data));
-        if(users.indexOf(data) == -1){
-            users.push(data);
-            socket.emit('userSet', {username: data});
-        }
-        else{
+        console.log("Data object details : "+data);
+        if(users.indexOf(data) > -1){
             socket.emit('userExists', data + ' username is taken! Try some other name.');
         }
-    })
+        else{
+            users.push(data);
+            socket.emit('userSet', {username: data});            
+        }
+    });
+
+    socket.on('msg', function(data){
+        io.sockets.emit('newmsg', data);
+    });
 });
 
 http.listen(3000, function(){
