@@ -10,6 +10,7 @@
       socket.on('message', function(data){
           document.write(data);
       });
+      socket.on('customEvent', function(data){document.write(data.description)});
    </script>
    <body>Hello world</body>
 </html>
