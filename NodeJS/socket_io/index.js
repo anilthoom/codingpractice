@@ -7,15 +7,20 @@ app.get('/', function(req, res){
     res.sendFile('index.html', {root: __dirname});
 });
 
+var clients = 0;
 io.on('connection', function(socket){
+    clients++;
     console.log('User connected');
 
-    setTimeout(function(){
+    io.sockets.emit('broadcast',{description: clients + ' clients connected!'})
+    /*setTimeout(function(){
         //socket.send('Welcome bro!!!');
         socket.emit('customEvent', {description: 'This is a custom event'});
-    }, 4000);
+    }, 4000);*/
 
     socket.on('disconnect', function(){
+        clients--;
+        io.sockets.emit('broadcast', {description: clients + 'clients connected!'})
         console.log('User disconnected');
     });
 });
