@@ -11,7 +11,7 @@
           document.write(data);
       });
       socket.on('customEvent', function(data){document.write(data.description)});
-      socket.on('broadcast', function(data){
+      socket.on('newclientconnect', function(data){
         document.body.innerHTML = '';
         document.write(data.description);
       });
