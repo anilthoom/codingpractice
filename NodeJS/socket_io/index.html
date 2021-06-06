@@ -7,14 +7,10 @@
    
    <script>
       var socket = io();
-      /*socket.on('message', function(data){
-          document.write(data);
-      });*/
-      //socket.on('customEvent', function(data){document.write(data.description)});
-      socket.on('connectToRoom', function(data){
-        document.body.innerHTML = '';
-        document.write(data.description);
+      socket.on('connectToRoom',function(data) {
+         document.body.innerHTML = '';
+         document.write(data);
       });
    </script>
-   <body>Hello world</body>
+   <body></body>
 </html>
