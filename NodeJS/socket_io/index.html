@@ -6,7 +6,7 @@
    <script src = "/socket.io/socket.io.js"></script>
    
    <script>
-      var socket = io('/my-ns');
+      var socket = io();
       socket.on('message', function(data){
           document.write(data);
       });
