@@ -1,12 +1,24 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title>Hello world</title>
+      <title>Chat Application</title>
    </head>
    <script src = "/socket.io/socket.io.js"></script>
    
    <script>
       var socket = io();
+      function setUserName(){
+        socket.emit('setUserName', document.getElementById('name').value);
+      };
+
+      socket.on('userExists', function(data){
+        document.getElementById('error-container').innerHTML = data;
+      });
+
+      var user;
+      socket.on('userSet', function(data){
+        user = data.username;
+      });
    </script>
    <body>
       <input type = "text" name = "name" value = "" placeholder = "Enter your name!">
