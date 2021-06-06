@@ -10,7 +10,8 @@ users = [];
 io.on('connection', function(socket){
     console.log('User connected!');
     socket.on('setUserName', function(data){
-        if(users.indexOf(data) > -1){
+        console.log("ANIL   "+users.indexOf(data));
+        if(users.indexOf(data) == -1){
             users.push(data);
             socket.emit('userSet', {username: data});
         }
