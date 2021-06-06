@@ -8,3 +8,6 @@ router.get('/', function(req, res){
 router.post('/', function(req, res){
     res.send('Post router');
 });
+
+//export this router to use in hw.js
+module.exports = router;
