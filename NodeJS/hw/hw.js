@@ -3,7 +3,7 @@ var app = express();
 var things = require('./things.js');
 
 //Middleware function
-app.use(function(req, res, next){
+app.use('/things',function(req, res, next){
     console.log('New request recieved at '+ Date.now());
     next();
 });
