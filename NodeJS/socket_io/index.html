@@ -7,11 +7,11 @@
    
    <script>
       var socket = io();
-      socket.on('message', function(data){
+      /*socket.on('message', function(data){
           document.write(data);
-      });
-      socket.on('customEvent', function(data){document.write(data.description)});
-      socket.on('newclientconnect', function(data){
+      });*/
+      //socket.on('customEvent', function(data){document.write(data.description)});
+      socket.on('connectToRoom', function(data){
         document.body.innerHTML = '';
         document.write(data.description);
       });

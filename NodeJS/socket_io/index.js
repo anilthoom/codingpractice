@@ -7,24 +7,12 @@ app.get('/', function(req, res){
     res.sendFile('index.html', {root: __dirname});
 });
 
-var clients = 0;
 var roomno = 1;
-var nsp = io.on('connection', function(socket){
-    clients++;
-    socket.emit('newclientconnect', {description: 'Hello Welcome!'});
-    socket.broadcast.emit('newclientconnect', {description: clients + ' clients connected!'});
+io.on('connection', function(socket){
+    if(io.nsps['/'].adapter.rooms["room-"+roomno] && io.nsps['/'].adapter.rooms["room-"+roomno].length > 1) roomno++;
+    socket.join("room-"+roomno);
 
-    //io.sockets.emit('broadcast',{description: clients + ' clients connected!'})
-    /*setTimeout(function(){
-        //socket.send('Welcome bro!!!');
-        socket.emit('customEvent', {description: 'This is a custom event'});
-    }, 4000);*/
-
-    socket.on('disconnect', function(){
-        clients--;
-        //io.sockets.emit('broadcast', {description: clients + 'clients connected!'});
-        socket.broadcast.emit('newclientconnect', {description: clients + ' clients connected!'});
-    });
+    io.sockets.in("room-"+roomno).emit('connectToRoom', "You are in room no. "+roomno);
 });
 
 http.listen(3000, function(){
