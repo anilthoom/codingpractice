@@ -5,7 +5,7 @@
     <p>{{ name+" - "+ age }}</p>
     <p v-if="name == 'Anil' ? false: true">Name updated!</p>
     <button v-on:click="changeName">Change Name</button>
-    <button>New Element</button>
+    <button v-on:click="addElement">New Element</button>
 </div>
 
 <script>
