@@ -6,6 +6,9 @@
     <p v-if="name == 'Anil' ? false: true">Name updated!</p>
     <button v-on:click="changeName">Change Name</button>
     <button v-on:click="addElement">New Element</button>
+    <ul>
+        <li v-for="element in elements">A Element</li>
+    </ul>
 </div>
 
 <script>
@@ -21,7 +24,7 @@ new Vue({
             this.name = 'Kumar'
         },
         addElement: function(){
-
+            this.elements.push(this.elements.length+1);
         }
     }
 });
