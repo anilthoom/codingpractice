@@ -3,7 +3,7 @@
 
 <div id="app">
     <p>{{ name+" - "+ age }}</p>
-    <p>Name updated!</p>
+    <p v-if="name == 'Anil' ? false: true">Name updated!</p>
     <button v-on:click="changeName">Change Name</button>
 </div>
 
