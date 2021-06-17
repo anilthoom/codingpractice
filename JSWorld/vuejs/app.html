@@ -8,7 +8,7 @@
 </style>
 
 <div id="app">
-    <p>{{ name+" - "+ age }}</p>
+    <p v-bind:class="{updated: name == 'Anil' ? false: true}">{{ name+" - "+ age }}</p>
     <p v-if="name == 'Anil' ? false: true">Name updated!</p>
     <button v-on:click="changeName">Change Name</button>
     <button v-on:click="addElement">New Element</button>
