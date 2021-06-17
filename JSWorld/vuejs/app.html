@@ -2,7 +2,8 @@
 </script>
 
 <div id="app">
-    {{ name+"-"+ age }}
+    <p>{{ name+"-"+ age }}</p>
+    <button v-on:click="changeName">Change Name</button>
 </div>
 
 <script>
@@ -11,6 +12,11 @@ new Vue({
     data: {
         name: 'Anil',
         age: '30'
+    },
+    methods: {
+        changeName: function(){
+            this.name = 'Kumar'
+        }
     }
 });
 </script>
