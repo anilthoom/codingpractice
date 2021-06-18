@@ -16,6 +16,7 @@
         <li v-for="element in elements" v-bind:id=" 'el' + element "
             v-bind:style="{backgroundColor: getColor(element)}">Element {{element}}</li>
     </ul>
+    <app-username></app-username>
 </div>
 
 <script>
@@ -24,7 +25,8 @@
             return{
                 username: 'Thoom'
             }
-        }
+        },
+        template: '<b>{{ username }}</b>'
     });
     new Vue({
         el: '#app',
