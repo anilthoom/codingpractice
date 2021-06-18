@@ -2,6 +2,7 @@ package com.anilt.spring.email;
 
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,6 +19,7 @@ public class EmailController {
 	}
 
 	@PostMapping
+	//@Async("asyncExecutor")
 	public void sendMail(@RequestBody EmailDetails emailDetails) {
 
 		
@@ -31,7 +33,7 @@ public class EmailController {
 		  //Create an email message SimpleMailMessage mailMessage = new
 		  SimpleMailMessage mailMessage = new SimpleMailMessage(); 
 		  mailMessage.setFrom(emailDetails.getEmail());
-		  mailMessage.setTo("to@domain.com");
+		  mailMessage.setTo("anilt@opentext.com");
 		  mailMessage.setSubject("License Renewal Notification");
 		  mailMessage.setText(emailDetails.getEmailContent());
 		  
