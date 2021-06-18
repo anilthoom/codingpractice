@@ -20,7 +20,11 @@
 
 <script>
     Vue.component('app-username',{
-        
+        data: function(){
+            return{
+                username: 'Thoom'
+            }
+        }
     });
     new Vue({
         el: '#app',
