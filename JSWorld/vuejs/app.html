@@ -17,13 +17,15 @@
             v-bind:style="{backgroundColor: getColor(element)}">Element {{element}}</li>
     </ul>
     <app-username></app-username>
+    <app-username></app-username>
 </div>
 
 <script>
     Vue.component('app-username',{
+        props: ['username'],
         data: function(){
             return{
-                username: 'Thoom'
+                //username: 'Thoom'
             }
         },
         template: '<b>{{ username }}</b>'
