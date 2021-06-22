@@ -28,7 +28,7 @@
                 //username: 'Thoom'
             }
         },
-        template: '<b v-on:click="changeUser">{{ username }}</b>'
+        template: '<p v-on:click="changeUser">{{ username }}</p>'
     });
     new Vue({
         el: '#app',
@@ -46,6 +46,9 @@
             },
             getColor: function (number) {
                 return number % 2 == 0 ? 'green' : 'red';
+            },
+            changeUser: {
+                
             }
         }
     });
