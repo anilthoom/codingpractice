@@ -24,6 +24,7 @@ new Vue({
         removeHobby: function(hobby){
             var position = this.hobbies.indexOf(hobby);
             this.hobbies.splice(position, 1);
+            this.counter = this.counter - 1;
         }
     }
 });
