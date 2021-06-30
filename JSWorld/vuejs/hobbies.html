@@ -13,14 +13,19 @@
     <p v-if="hobbyWasDeleted">Hobby was deleted!</p>
     <input type="text" name="hobbytxt" id="hobbytxtid" v-model="userHobby">
     <button v-on:click="addHobby" id="addhobbybtn">New Hobby</button>
-    
-    <p v-for="hobby in hobbies"
-       v-on:click="removeHobby(hobby)"> {{ hobby }} </p>
+    <p>
+        <app-hobby
+            v-for="hby in hobbies"
+            v-bind:hobby="hby"></app-hobby>
+    </p>
+    <!--p v-for="hobby in hobbies"
+       v-on:click="removeHobby(hobby)"> {{ hobby }} </p-->
 </div>
 
 <script>
     Vue.component('app-hobby', {
-        
+        props: ['hobby'],
+        template: '<p>{{ hobby }}</p>'
     });
 new Vue({
     el: '#hobbydiv',
