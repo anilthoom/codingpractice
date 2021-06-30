@@ -2,14 +2,14 @@
 </script>
 <style>
     .updated {
-        background-color: aqua;
-        color: brown;
+        background-color: rgb(165, 164, 168);
+        color: rgb(23, 8, 243);
     }
 </style>
 
 <div id="app">
-    <p v-bind:class="{updated: name == 'Anil' ? false: true}">{{ name+" - "+ age }}</p>
-    <p v-if="name == 'Anil' ? false: true">Name updated!</p>
+    <p v-bind:class="{updated: name == 'Anicl' ? false: true}">{{ name+" - "+ age }}</p>
+    <p v-if="name == 'Anil' ? false: true">Name updated!</p>    
     <button v-on:click="changeName">Change Name</button>
     <button v-on:click="addElement">New Element</button>
     <ul>
@@ -33,7 +33,7 @@
     new Vue({
         el: '#app',
         data: {
-            name: 'Anil Kumar Thoom',
+            name: 'TAnil Kumar Thoom',
             age: '30',
             elements: []
         },
