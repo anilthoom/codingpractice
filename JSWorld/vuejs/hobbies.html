@@ -2,10 +2,10 @@
 
 <div id="hobbydiv">
     <p>Total hobbies : {{ counter }}</p>
-    <input type="text" name="hobbytxt" id="hobbytxtid">
+    <input type="text" name="hobbytxt" id="hobbytxtid" v-model="userHobby">
     <button v-on:click="addHobby" id="addhobbybtn">New Hobby</button>
     <p v-for="hobby in hobbies"
-       v-on:click="removeHobby"> {{ hobby }} </p>
+       v-on:click="removeHobby(hobby)"> {{ hobby }} </p>
 </div>
 
 <script>
@@ -13,15 +13,17 @@ new Vue({
     el: '#hobbydiv',
     data:{
         hobbies: ['Playing cricket', 'Reading books'],
+        userHobby: '',
         counter: 2
     },
     methods:{
         addHobby: function(){
-            this.hobbies.push(document.getElementById('hobbytxtid').value);
+            this.hobbies.push(this.userHobby);
             this.counter = this.counter + 1;
         },
-        removeHobby(){
-            //this.$emit('usrclicked', this.username);
+        removeHobby: function(hobby){
+            var position = this.hobbies.indexOf(hobby);
+            this.hobbies.splice(position, 1);
         }
     }
 });
