@@ -1,12 +1,14 @@
 <script src="https://unpkg.com/vue"></script>
 
-<div id="hobbydiv"></div>
+<div id="hobbydiv">
+    <p v-for="hobby in hobbies"> {{ hobby }} </p>
+</div>
 
 <script>
 new Vue({
     el: '#hobbydiv',
     data:{
-        
+        hobbies: ['Playing cricket', 'Reading books']        
     }
 });
 </script>
