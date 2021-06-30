@@ -1,24 +1,27 @@
 <script src="https://unpkg.com/vue"></script>
 
 <div id="hobbydiv">
+    <p>Total hobbies : {{ counter }}</p>
     <input type="text" name="hobbytxt" id="hobbytxtid">
     <button v-on:click="addHobby" id="addhobbybtn">New Hobby</button>
     <p v-for="hobby in hobbies"
-       v-on:click="removeHobby(this)" > {{ hobby }} </p>
+       v-on:click="removeHobby"> {{ hobby }} </p>
 </div>
 
 <script>
 new Vue({
     el: '#hobbydiv',
     data:{
-        hobbies: ['Playing cricket', 'Reading books']        
+        hobbies: ['Playing cricket', 'Reading books'],
+        counter: 2
     },
     methods:{
         addHobby: function(){
             this.hobbies.push(document.getElementById('hobbytxtid').value);
+            this.counter = this.counter + 1;
         },
-        removeHobby: function(hobby){
-            alert(hobby);
+        removeHobby(){
+            //this.$emit('usrclicked', this.username);
         }
     }
 });
