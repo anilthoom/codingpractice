@@ -3,7 +3,8 @@
 <div id="hobbydiv">
     <input type="text" name="hobbytxt" id="hobbytxtid">
     <button v-on:click="addHobby" id="addhobbybtn">New Hobby</button>
-    <p v-for="hobby in hobbies"> {{ hobby }} </p>
+    <p v-for="hobby in hobbies"
+       v-on:click="removeHobby(this)" > {{ hobby }} </p>
 </div>
 
 <script>
@@ -15,6 +16,9 @@ new Vue({
     methods:{
         addHobby: function(){
             this.hobbies.push(document.getElementById('hobbytxtid').value);
+        },
+        removeHobby: function(hobby){
+            alert(hobby);
         }
     }
 });
