@@ -35,9 +35,9 @@
                // username: 'XXX'
             }
         },
-        template: '<p v-on:click="changeUser">{{ username }}</p>',
+        template: '<p v-on:click="userNameClicked">{{ username }}</p>',
         methods: {
-            changeUser(){
+            userNameClicked(){
                this.$emit('userNameClicked', this.username);
             }
         }
