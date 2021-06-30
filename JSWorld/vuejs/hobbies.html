@@ -1,7 +1,7 @@
 <script src="https://unpkg.com/vue"></script>
 
 <div id="hobbydiv">
-    <p>Total hobbies : {{ counter }}</p>
+    <p>Total hobbies : {{ hobbies.length }}</p>
     <p v-if="hobbyWasDeleted">Hobby was deleted!</p>
     <input type="text" name="hobbytxt" id="hobbytxtid" v-model="userHobby">
     <button v-on:click="addHobby" id="addhobbybtn">New Hobby</button>
@@ -17,17 +17,17 @@ new Vue({
         hobbies: ['Playing cricket', 'Reading books'],
         userHobby: '',
         hobbyWasDeleted: false,
-        counter: 2
+        //counter: 2
     },
     methods:{
         addHobby: function(){
             this.hobbies.push(this.userHobby);
-            this.counter = this.counter + 1;
+            //this.counter = this.counter + 1;
         },
         removeHobby: function(hobby){
             var position = this.hobbies.indexOf(hobby);
             this.hobbies.splice(position, 1);
-            this.counter = this.counter - 1;
+            //this.counter = this.counter - 1;
             this.hobbyWasDeleted = true;
         }
     }
