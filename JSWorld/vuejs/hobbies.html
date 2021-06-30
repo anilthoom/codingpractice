@@ -2,8 +2,10 @@
 
 <div id="hobbydiv">
     <p>Total hobbies : {{ counter }}</p>
+    <p v-if="hobbyWasDeleted">Hobby was deleted!</p>
     <input type="text" name="hobbytxt" id="hobbytxtid" v-model="userHobby">
     <button v-on:click="addHobby" id="addhobbybtn">New Hobby</button>
+    
     <p v-for="hobby in hobbies"
        v-on:click="removeHobby(hobby)"> {{ hobby }} </p>
 </div>
@@ -14,6 +16,7 @@ new Vue({
     data:{
         hobbies: ['Playing cricket', 'Reading books'],
         userHobby: '',
+        hobbyWasDeleted: false,
         counter: 2
     },
     methods:{
@@ -25,6 +28,7 @@ new Vue({
             var position = this.hobbies.indexOf(hobby);
             this.hobbies.splice(position, 1);
             this.counter = this.counter - 1;
+            this.hobbyWasDeleted = true;
         }
     }
 });
