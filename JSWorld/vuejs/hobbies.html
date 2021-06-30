@@ -1,7 +1,15 @@
 <script src="https://unpkg.com/vue"></script>
 
+<style>
+    .multiple-hobbies{
+        border: 1px solid red;
+    }
+</style>
+
 <div id="hobbydiv">
-    <p v-bind:style="{color: hobbies.length > 3 ? 'red' : 'black'}">Total hobbies : {{ hobbies.length }}</p>
+    <p 
+        v-bind:style="{color: hobbies.length > 3 ? 'red' : 'black'}"
+        v-bind:class="{'multiple-hobbies': hobbies.length > 3}">Total hobbies : {{ hobbies.length }}</p>
     <p v-if="hobbyWasDeleted">Hobby was deleted!</p>
     <input type="text" name="hobbytxt" id="hobbytxtid" v-model="userHobby">
     <button v-on:click="addHobby" id="addhobbybtn">New Hobby</button>
@@ -11,6 +19,9 @@
 </div>
 
 <script>
+    Vue.component('app-hobby', {
+        
+    });
 new Vue({
     el: '#hobbydiv',
     data:{
