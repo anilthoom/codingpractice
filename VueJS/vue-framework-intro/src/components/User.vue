@@ -11,6 +11,9 @@ export default {
         return{
             username: 'Anil'
         }
+    },
+    components: {
+        
     }
 }
 </script>
