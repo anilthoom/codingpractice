@@ -1,6 +1,7 @@
 {
   "presets": [
-    ["env", { "modules": false }],
-    "stage-3"
+    ["latest", {
+      "es2015": { "modules": false }
+    }]
   ]
 }
