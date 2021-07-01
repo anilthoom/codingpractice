@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 import User from './components/User.vue'
-
+//Global use
 Vue.component('app-user', User);
 
 new Vue({
