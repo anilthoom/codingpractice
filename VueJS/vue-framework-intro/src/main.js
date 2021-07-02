@@ -8,9 +8,9 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter);
 
 const routes = [
-  { path: '/blog', component: Blog},
-  { path: '/account', component: Account},
-  { path: '/', component: User}
+  { path: '/blog', component: Blog },
+  { path: '/account', component: Account },
+  { path: '/', component: User }
 ];
 
 const router = new VueRouter({
