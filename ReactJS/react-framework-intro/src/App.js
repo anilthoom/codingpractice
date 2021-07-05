@@ -7,7 +7,9 @@ import Blog from './components/Blog';
 function App() {
   return (
     <Router>
-
+      <Route path="/" component={User} />
+      <Route path="/account" component={Account} />
+      <Route path="/blog" component={Blog} />
     </Router>
   );
 }
