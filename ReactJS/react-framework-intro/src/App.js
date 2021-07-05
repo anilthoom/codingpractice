@@ -1,11 +1,12 @@
 import './App.css';
 import Info from './components/Info';
+import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <Info></Info>
-    </div>
+    <Router>
+      
+    </Router>
   );
 }
 
