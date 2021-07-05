@@ -9,8 +9,8 @@ function App() {
     <Router>
       <div>
         <div>
-          <Link to="/">Home</Link> | 
-          <Link to="/account">Account</Link> | 
+          <Link to="/">Home</Link> || 
+          <Link to="/account">Account</Link> || 
           <Link to="/blog">Blog</Link>
         </div>
         <hr />
