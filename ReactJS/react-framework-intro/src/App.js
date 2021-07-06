@@ -1,5 +1,5 @@
 import './App.css';
-import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import User from './components/User';
 import Account from './components/Account';
 import Blog from './components/Blog';
@@ -9,8 +9,8 @@ function App() {
     <Router>
       <div>
         <div>
-          <Link to="/">Home</Link> || 
-          <Link to="/account">Account</Link> || 
+          <Link to="/">Home</Link> ||
+          <Link to="/account">Account</Link> ||
           <Link to="/blog">Blog</Link>
         </div>
         <hr />
