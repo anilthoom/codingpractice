@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "angular-framework-intro"
+    }
+  },
+  "defaultProject": "angular-framework-intro",
+  "cli": {
+    "analytics": false
+  }
 }
