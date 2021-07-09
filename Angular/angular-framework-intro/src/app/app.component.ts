@@ -8,8 +8,12 @@ import { Component } from '@angular/core';
 export class AppComponent {
   firstname = 'Anil';
   lastname = 'Thoom';
+  elements = ['Playing Cricket', 'Reading']
 
   onChangeName(){
     this.firstname = "Shrihan"
+  }
+  onAddElement(){
+    this.elements.push('Added');
   }
 }
