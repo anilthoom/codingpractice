@@ -3,12 +3,13 @@
 </h1>
 <p *ngIf="firstname != 'Anil'">Name Updated!</p>
 <button (click)="onChangeName()">Change Name</button>
-<h1>My Hobbies</h1>
+<h1>My Hobbies - {{elements.length}}</h1>
 <input type="text" name="hobby" id="hobbyId" [(ngModel)]="hobby">
 <button (click)="onAddElement(hobby)">Add Hobbies</button>
 <ul>
   <li 
-    *ngFor="let el of elements">{{ el }}</li>
+    *ngFor="let el of elements"
+    (click)="onRemoveElement(el)">{{ el }}</li>
 </ul>
 
 <hr><hr>
