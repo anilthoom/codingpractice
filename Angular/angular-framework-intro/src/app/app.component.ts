@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   firstname = 'Anil';
   lastname = 'Thoom';
-  elements = ['Playing Cricket', 'Reading']
+  elements = ['Playing Cricket', 'Reading'];
+  message: string = '';
 
   onChangeName(){
     this.firstname = "Shrihan"
