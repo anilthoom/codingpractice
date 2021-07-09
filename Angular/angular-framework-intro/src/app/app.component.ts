@@ -10,12 +10,13 @@ export class AppComponent {
   lastname = 'Thoom';
   elements = ['Playing Cricket', 'Reading'];
   message: string = '';
+  hobby: string = '';
 
   onChangeName(){
     this.firstname = "Shrihan"
   }
-  onAddElement(){
-    this.elements.push('Added');
+  onAddElement(newHobby){
+    this.elements.push(newHobby);
   }
   onUserWasClicked(userName: string){
     alert(userName);
