@@ -7,7 +7,14 @@ import { FormsModule } from '@angular/forms';
 import { InfoComponent } from './info/info.component';
 import { BlogComponent } from './blog/blog.component';
 import { AccountComponent } from './account/account.component';
+import { RouterModule, Routes } from '@angular/router';
 
+const appRoutes: Routes = [
+  {path: '', component: UsernameComponent},
+  {path: 'blog', component: BlogComponent},
+  {path: 'account', component: AccountComponent},
+  {path: 'info', component: InfoComponent}
+];
 @NgModule({
   declarations: [
     AppComponent,
@@ -18,7 +25,8 @@ import { AccountComponent } from './account/account.component';
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]
