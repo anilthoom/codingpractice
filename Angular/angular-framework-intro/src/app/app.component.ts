@@ -18,6 +18,9 @@ export class AppComponent {
   onAddElement(newHobby){
     this.elements.push(newHobby);
   }
+  onRemoveElement(element){
+    alert(element);
+  }
   onUserWasClicked(userName: string){
     alert(userName);
   }
