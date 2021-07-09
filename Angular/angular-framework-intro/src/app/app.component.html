@@ -4,11 +4,14 @@
 <p *ngIf="firstname != 'Anil'">Name Updated!</p>
 <button (click)="onChangeName()">Change Name</button>
 <h1>My Hobbies</h1>
-<button (click)="onAddElement()">Add Hobbies</button>
+<input type="text" name="hobby" id="hobbyId" [(ngModel)]="hobby">
+<button (click)="onAddElement(hobby)">Add Hobbies</button>
 <ul>
   <li 
     *ngFor="let el of elements">{{ el }}</li>
 </ul>
+
+<hr><hr>
 <app-username [username]="'Shri'" (userClicked)="onUserWasClicked($event)"></app-username>
 <app-username [username]="'Tharunika'" (userClicked)="onUserWasClicked($event)"></app-username>
 <input type="text" [(ngModel)]="message">
