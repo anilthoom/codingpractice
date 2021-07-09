@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   firstname = 'Anil';
   lastname = 'Thoom';
+
+  onChangeName(){
+    this.firstname = "Shrihan"
+  }
 }
