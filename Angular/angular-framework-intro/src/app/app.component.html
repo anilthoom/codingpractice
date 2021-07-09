@@ -14,12 +14,11 @@
 <input type="text" name="hobby" id="hobbyId" [(ngModel)]="hobby">
 <button (click)="onAddElement(hobby)">Add Hobbies</button>
 <ul>
-  <li 
-    *ngFor="let el of elements"
-    (click)="onRemoveElement(el)">{{ el }}</li>
+  <li *ngFor="let el of elements" (click)="onRemoveElement(el)">{{ el }}</li>
 </ul>
 
-<hr><hr>
+<hr>
+<hr>
 <app-username [username]="'Shri'" (userClicked)="onUserWasClicked($event)"></app-username>
 <app-username [username]="'Tharunika'" (userClicked)="onUserWasClicked($event)"></app-username>
 <input type="text" [(ngModel)]="message">
