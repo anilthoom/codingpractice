@@ -5,12 +5,14 @@ import { AppComponent } from './app.component';
 import { UsernameComponent } from './username/username.component';
 import { FormsModule } from '@angular/forms';
 import { InfoComponent } from './info/info.component';
+import { BlogComponent } from './blog/blog.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     UsernameComponent,
-    InfoComponent
+    InfoComponent,
+    BlogComponent
   ],
   imports: [
     BrowserModule,
