@@ -19,7 +19,8 @@ export class AppComponent {
     this.elements.push(newHobby);
   }
   onRemoveElement(element){
-    alert(element);
+    const position = this.elements.indexOf(element);
+    this.elements.splice(position,1);
   }
   onUserWasClicked(userName: string){
     alert(userName);
