@@ -9,5 +9,5 @@
   <li 
     *ngFor="let el of elements">{{ el }}</li>
 </ul>
-<app-username [username]="'Shri'"></app-username>
-<app-username [username]="'Tharunika'"></app-username>
+<app-username [username]="'Shri'" (userClicked)="onUserWasClicked($event)"></app-username>
+<app-username [username]="'Tharunika'" (userClicked)="onUserWasClicked($event)"></app-username>
