@@ -1,5 +1,6 @@
 <h1>
   {{lastname}} {{firstname}}
 </h1>
+<p *ngIf="firstname != 'Anil'">Name Updated!</p>
 <button (click)="onChangeName()">Change Name</button>
 <h1>My Hobbies</h1>
