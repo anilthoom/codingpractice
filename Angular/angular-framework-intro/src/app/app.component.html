@@ -6,5 +6,5 @@
 <h1>My Hobbies</h1>
 <button (click)="onAddElement()">Add Hobbies</button>
 <ul>
-  
+  <li *ngFor="let el of elements">{{el}}</li>
 </ul>
