@@ -16,4 +16,7 @@ export class AppComponent {
   onAddElement(){
     this.elements.push('Added');
   }
+  onUserWasClicked(userName: string){
+    alert(userName);
+  }
 }
