@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   firstname = 'Anil';
@@ -12,17 +12,17 @@ export class AppComponent {
   message: string = '';
   hobby: string = '';
 
-  onChangeName(){
-    this.firstname = "Shrihan"
+  onChangeName() {
+    this.firstname = 'Shrihan';
   }
-  onAddElement(newHobby){
+  onAddElement(newHobby) {
     this.elements.push(newHobby);
   }
-  onRemoveElement(element){
+  onRemoveElement(element) {
     const position = this.elements.indexOf(element);
-    this.elements.splice(position,1);
+    this.elements.splice(position, 1);
   }
-  onUserWasClicked(userName: string){
+  onUserWasClicked(userName: string) {
     alert(userName);
   }
 }
