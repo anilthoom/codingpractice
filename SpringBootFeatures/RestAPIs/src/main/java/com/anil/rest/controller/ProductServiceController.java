@@ -50,4 +50,9 @@ public class ProductServiceController {
         return new ResponseEntity<>("Product updated sucessfully!", HttpStatus.OK);
     }
 
+    @RequestMapping(value = "/products/{id}", method = RequestMethod.DELETE)
+    public ResponseEntity<Object> deleteProduct(@PathVariable("id") String id){
+        productRepo.remove(id);
+        return new ResponseEntity<>("Product deleted from repository", HttpStatus.OK);
+    }
 }
