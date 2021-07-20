@@ -16,7 +16,7 @@ public class SpringbootMavenApplication {
 	public static void main(String[] args) {
 		logger.info("This is info message");
 		logger.warn("Warning message!");
-
+		logger.error("ERROR ANIL!!!");
 		SpringApplication.run(SpringbootMavenApplication.class, args);
 	}
 
