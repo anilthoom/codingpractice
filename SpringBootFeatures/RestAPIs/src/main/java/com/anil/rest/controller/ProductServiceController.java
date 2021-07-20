@@ -17,6 +17,11 @@ public class ProductServiceController {
         lens.setId("1");
         lens.setName("Canon");
         productRepo.put(lens.getId(), lens);
+
+        Product tripod = new Product();
+        tripod.setId("2");
+        tripod.setName("Monfratto");
+        productRepo.put(tripod.getId(), tripod);
     }
 
 }
