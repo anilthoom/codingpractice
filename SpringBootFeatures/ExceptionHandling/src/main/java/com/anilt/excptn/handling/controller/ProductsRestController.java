@@ -1,5 +1,6 @@
 package com.anilt.excptn.handling.controller;
 
+import com.anilt.excptn.handling.exceptions.ProductNotFoundException;
 import com.anilt.excptn.handling.model.Product;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -42,6 +43,8 @@ public class ProductsRestController {
 
     @RequestMapping(value = "/products/{id}", method = RequestMethod.PUT)
     public ResponseEntity<Object> updateProduct(@PathVariable("id") String id, @RequestBody Product product){
+        if(!productRepo.containsKey(id))
+            throw new ProductNotFoundException();
         productRepo.remove(id);
         productRepo.put(product.getId(), product);
         return new ResponseEntity<>("Product updated successfully", HttpStatus.OK);
