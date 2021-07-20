@@ -38,7 +38,7 @@ public class ProductsRestController {
     @RequestMapping(value = "/products", method = RequestMethod.POST)
     public ResponseEntity<Object> createProduct(@RequestBody Product product){
         productRepo.put(product.getId(), product);
-        return new ResponseEntity<>("Product created successfully", HttpStatus.OK);
+        return new ResponseEntity<>("Product created successfully", HttpStatus.CREATED);
     }
 
     @RequestMapping(value = "/products/{id}", method = RequestMethod.PUT)
