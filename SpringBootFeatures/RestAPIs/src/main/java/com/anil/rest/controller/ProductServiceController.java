@@ -5,9 +5,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -36,5 +34,11 @@ public class ProductServiceController {
     @RequestMapping(value = "/product/{id}")
     public ResponseEntity<Object> getProductById(@PathVariable("id") String id){
         return new ResponseEntity<>(productRepo.get(id), HttpStatus.OK);
+    }
+
+    @RequestMapping(value = "/products", method = RequestMethod.POST)
+    public ResponseEntity<Object> createProduct(@RequestBody Product product){
+        productRepo.put(product.getId(), product);
+        return new ResponseEntity<>("Product is created successfully", HttpStatus.OK);
     }
 }
