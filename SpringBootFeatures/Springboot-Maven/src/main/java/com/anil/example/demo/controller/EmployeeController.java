@@ -8,7 +8,7 @@ public class EmployeeController {
 
     @RequestMapping(value = "/emp-name")
     public String getEmpName(){
-        return "My name is anil";
+        return "My name is Anil";
     }
 
 }
