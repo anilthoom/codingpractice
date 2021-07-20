@@ -24,4 +24,5 @@ public class SpringbootMavenApplication {
 	public String hello() {
 		return "Hello Anil1";
 	}
+
 }
