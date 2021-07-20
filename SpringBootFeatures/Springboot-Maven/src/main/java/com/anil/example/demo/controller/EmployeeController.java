@@ -14,9 +14,9 @@ public class EmployeeController {
     public String getEmpName(@PathVariable("id") String id){
         logger.info("Employee request with id : "+id);
         String prefix = "Employee name is ";
-        if(id == "1")
+        if(id.equalsIgnoreCase("1"))
             return prefix+"Anil";
-        else if(id == "2")
+        else if(id.equalsIgnoreCase("2"))
             return prefix+"Shrihan";
         else
             return prefix+"Thoom";
