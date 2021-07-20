@@ -14,6 +14,7 @@ public class SpringbootMavenApplication {
 	private static final Logger logger = LoggerFactory.getLogger(SpringbootMavenApplication.class);
 
 	public static void main(String[] args) {
+		logger.info("This is info message");
 		SpringApplication.run(SpringbootMavenApplication.class, args);
 	}
 
