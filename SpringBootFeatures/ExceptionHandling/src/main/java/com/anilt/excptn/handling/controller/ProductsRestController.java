@@ -38,7 +38,7 @@ public class ProductsRestController {
     @RequestMapping(value = "/products", method = RequestMethod.POST)
     public ResponseEntity<Object> createProduct(@RequestBody Product product){
         productRepo.put(product.getId(), product);
-        return new ResponseEntity<>("Product created successfully", HttpStatus.CREATED);
+        return new ResponseEntity<>("Product created successfully.", HttpStatus.CREATED);
     }
 
     @RequestMapping(value = "/products/{id}", method = RequestMethod.PUT)
@@ -47,12 +47,12 @@ public class ProductsRestController {
             throw new ProductNotFoundException();
         productRepo.remove(id);
         productRepo.put(product.getId(), product);
-        return new ResponseEntity<>("Product updated successfully", HttpStatus.OK);
+        return new ResponseEntity<>("Product updated successfully.", HttpStatus.OK);
     }
 
     @RequestMapping(value = "/products/{id}", method = RequestMethod.DELETE)
     public ResponseEntity<Object> deleteProduct(@PathVariable("id") String id){
         productRepo.remove(id);
-        return new ResponseEntity<>("Product deleted successfully", HttpStatus.OK);
+        return new ResponseEntity<>("Product deleted successfully.", HttpStatus.OK);
     }
 }
