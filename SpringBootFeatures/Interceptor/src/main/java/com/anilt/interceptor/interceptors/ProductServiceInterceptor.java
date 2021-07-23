@@ -29,6 +29,6 @@ public class ProductServiceInterceptor implements HandlerInterceptor {
     public void afterCompletion(HttpServletRequest request,
                                 HttpServletResponse response,
                                 Object handler, Exception ex) throws Exception {
-        System.out.println("Request and Response is completed");
+        System.out.println("After-Completion: Request and Response is completed");
     }
 }
