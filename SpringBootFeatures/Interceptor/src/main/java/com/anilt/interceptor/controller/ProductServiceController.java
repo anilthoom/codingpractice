@@ -9,7 +9,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 @RestController
-public class ProductsRestController {
+public class ProductServiceController {
     public static Map<String, Product> productRepo = new HashMap<>();
     static {
         Product lens = new Product();
