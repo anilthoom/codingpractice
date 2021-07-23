@@ -7,7 +7,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 public class ProductServiceInterceptorAppConfig extends WebMvcConfigurerAdapter {
 
     @Autowired
-    ProductServiceInterceptors productServiceInterceptor;
+    ProductServiceInterceptor productServiceInterceptor;
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
