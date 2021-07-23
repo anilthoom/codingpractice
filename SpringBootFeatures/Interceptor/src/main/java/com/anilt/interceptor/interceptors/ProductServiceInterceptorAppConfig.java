@@ -1,4 +1,16 @@
 package com.anilt.interceptor.interceptors;
 
-public class ProductServiceInterceptorAppConfig {
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+
+public class ProductServiceInterceptorAppConfig extends WebMvcConfigurerAdapter {
+
+    @Autowired
+    ProductServiceInterceptors productServiceInterceptor;
+
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        registry.addInterceptor(productServiceInterceptor);
+    }
 }
