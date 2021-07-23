@@ -29,6 +29,6 @@ public class ProductServiceInterceptors implements HandlerInterceptor {
     public void afterCompletion(HttpServletRequest request,
                                 HttpServletResponse response,
                                 Object handler, Exception ex) throws Exception {
-        System.out.println("Pre Handle method is calling");
+        System.out.println("Request and Response is completed");
     }
 }
