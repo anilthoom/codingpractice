@@ -18,7 +18,7 @@ public class ProductServiceController {
 
         Product tripod = new Product();
         tripod.setId("2");
-        tripod.setName("Manfrotto");
+        tripod.setName("Nikon");
 
         productRepo.put(lens.getId(), lens);
         productRepo.put(tripod.getId(), tripod);
