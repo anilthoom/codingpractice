@@ -13,7 +13,7 @@ import java.util.Arrays;
 
 @RestController
 public class ConsumeWebServiceController {
-    public static String baseUrl = "http://localhost:8080/products/";
+    public static String baseUrl = "http://localhost:9090/products/";
 
     @Autowired
     RestTemplate restTemplate;
