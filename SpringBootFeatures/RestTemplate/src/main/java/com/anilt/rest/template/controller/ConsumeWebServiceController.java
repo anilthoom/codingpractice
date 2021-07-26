@@ -24,7 +24,7 @@ public class ConsumeWebServiceController {
         HttpHeaders headers = new HttpHeaders();
         headers.setAccept(Arrays.asList(MediaType.APPLICATION_JSON));
         HttpEntity<String> entity = new HttpEntity<String>(headers);
-        return restTemplate.exchange("http://localhost:8080/products/",
+        return restTemplate.exchange(baseUrl,
                 HttpMethod.GET, entity, String.class).getBody();
     }
 }

@@ -22,7 +22,7 @@ public class ProductServiceController {
 
         Product tripod = new Product();
         tripod.setId("2");
-        tripod.setName("Monfratto");
+        tripod.setName("Nikon");
         productRepo.put(tripod.getId(), tripod);
     }
 
