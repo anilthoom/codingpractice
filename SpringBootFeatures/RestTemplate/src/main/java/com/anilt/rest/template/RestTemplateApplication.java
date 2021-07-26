@@ -10,4 +10,7 @@ public class RestTemplateApplication {
 		SpringApplication.run(RestTemplateApplication.class, args);
 	}
 
+	private static void useExchangeMethodsOfRestTemplate(){
+
+	}
 }
