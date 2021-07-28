@@ -12,7 +12,17 @@ public class FrequentWordInArray {
     public static String mostFrequentWord(String arr[],int n)
     {
         Map<String, Integer> wordsCountMap = new HashMap<>();
+        String word = "";
+        for(int i=0; i<n; i++){
+            word = arr[i];
+            if(wordsCountMap.containsKey(word)){
+                //Increment
+            }
+            else {
+                //Add for the first time
 
+            }
+        }
         String result = "";
         return result;
     }
