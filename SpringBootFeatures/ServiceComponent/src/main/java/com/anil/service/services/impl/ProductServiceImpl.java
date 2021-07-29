@@ -24,7 +24,7 @@ public class ProductServiceImpl implements ProductService {
     }
     @Override
     public void createProduct(Product product) {
-
+        productRepo.put(product.getId(), product);
     }
 
     @Override
