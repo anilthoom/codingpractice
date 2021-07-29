@@ -19,17 +19,20 @@ public class ProductServiceController {
     }
 
     @RequestMapping(value = "/products", method = RequestMethod.POST)
-    public void createProduct(@RequestBody Product product){
+    public ResponseEntity<Object> createProduct(@RequestBody Product product){
         productService.createProduct(product);
-    }
+        return new ResponseEntity<>("Product created successfully", HttpStatus.CREATED);
+   }
 
     @RequestMapping(value = "/products{id}", method = RequestMethod.PUT)
-    public void updateProduct(@PathVariable("id") String id, @RequestBody Product product){
+    public ResponseEntity<Object> updateProduct(@PathVariable("id") String id, @RequestBody Product product){
         productService.updateProduct(id, product);
+        return new ResponseEntity<>("Product updated successfully", HttpStatus.OK);
     }
 
     @RequestMapping(value = "/products/{id}", method = RequestMethod.DELETE)
-    public void deleteProduct(@PathVariable("id") String id){
+    public ResponseEntity<Object> deleteProduct(@PathVariable("id") String id){
         productService.deleteProduct(id);
+        return new ResponseEntity<>("", HttpStatus.OK);
     }
 }
