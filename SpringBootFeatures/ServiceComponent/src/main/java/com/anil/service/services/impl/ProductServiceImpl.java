@@ -2,9 +2,11 @@ package com.anil.service.services.impl;
 
 import com.anil.service.model.Product;
 import com.anil.service.services.ProductService;
+import org.springframework.stereotype.Service;
 
 import java.util.Collection;
 
+@Service
 public class ProductServiceImpl implements ProductService {
     @Override
     public void createProduct(Product product) {
