@@ -33,6 +33,6 @@ public class ProductServiceController {
     @RequestMapping(value = "/products/{id}", method = RequestMethod.DELETE)
     public ResponseEntity<Object> deleteProduct(@PathVariable("id") String id){
         productService.deleteProduct(id);
-        return new ResponseEntity<>("", HttpStatus.OK);
+        return new ResponseEntity<>("Product deleted successfully", HttpStatus.OK);
     }
 }
