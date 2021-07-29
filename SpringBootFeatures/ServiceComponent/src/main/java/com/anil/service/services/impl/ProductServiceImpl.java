@@ -29,12 +29,14 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     public Collection<Product> getProducts() {
-        return null;
+        return productRepo.values();
     }
 
     @Override
     public void updateProduct(String id, Product product) {
-
+        productRepo.remove(id);
+        product.setId(id);
+        productRepo.put(id, product);
     }
 
     @Override
