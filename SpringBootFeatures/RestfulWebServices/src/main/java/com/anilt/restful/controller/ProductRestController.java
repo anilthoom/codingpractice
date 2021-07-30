@@ -41,4 +41,10 @@ public class ProductRestController {
         productRepo.put(id, product);
         return new ResponseEntity<>("Product updated successfully", HttpStatus.OK);
     }
+
+    @RequestMapping(value = "/products/{id}", method = RequestMethod.DELETE)
+    public ResponseEntity<Object> deleteProduct(@PathVariable("id") String id){
+        productRepo.remove(id);
+        return new ResponseEntity<>("Product deleted successfully", HttpStatus.OK);
+    }
 }
