@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Products</title>
+    <script
+            src="https://code.jquery.com/jquery-3.6.0.min.js"
+            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+            crossorigin="anonymous"></script>
+
+    <script>
+         $(document).ready(function() {
+            $("button").click(function() {
+               var productmodel = {
+                  id : "3",
+                  name : "Jaguar"
+               };
+               var requestJSON = JSON.stringify(productmodel);
+               $.ajax({
+                  type : "POST",
+                  url : "http://localhost:8080/products",
+                  headers : {
+                     "Content-Type" : "application/json"
+                  },
+                  data : requestJSON,
+                  success : function(data) {
+                     alert(data);
+                  },
+                  error : function(data) {
+                  }
+               });
+            });
+         });
+      </script>
+</head>
+<body>
+    <button>Click here to submit the form</button>
+</body>
+</html>
