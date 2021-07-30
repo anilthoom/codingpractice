@@ -19,6 +19,11 @@ public class Scheduler {
         System.out.println("Fixed rate scheduler : "+getDate());
     }
 
+    @Scheduled(fixedDelay = 1000, initialDelay = 1000)
+    public void fixedDelaySch(){
+        System.out.println("Fixed Delay Scheduler : "+ getDate());
+    }
+
     private String getDate(){
         return new SimpleDateFormat("yyyy-MM-dd HH:mm:ss.SSS").format(new Date());
     }
