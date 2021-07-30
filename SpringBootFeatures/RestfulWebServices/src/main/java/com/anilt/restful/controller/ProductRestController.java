@@ -3,7 +3,9 @@ package com.anilt.restful.controller;
 import com.anilt.restful.model.Product;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.HashMap;
@@ -27,6 +29,12 @@ public class ProductRestController {
 
     @RequestMapping(value = "/products")
     public ResponseEntity<Object> getProducts(){
-        return new ResponseEntity<>(productRepo.values(), HttpStatus.OK);
+        return new ResponseEntity<>(productRepo.values(), HttpStatus.CREATED);
+    }
+
+    @RequestMapping(value = "/products", method = RequestMethod.POST)
+    public ResponseEntity<Object> createProduct(@RequestBody Product product){
+        productRepo.put(product.getId(), product);
+        return new ResponseEntity<>("Product created successfully", HttpStatus.OK);
     }
 }
