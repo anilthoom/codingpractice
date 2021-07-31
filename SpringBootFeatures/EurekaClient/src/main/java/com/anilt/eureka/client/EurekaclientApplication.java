@@ -17,6 +17,6 @@ public class EurekaclientApplication {
 
 	@RequestMapping(value = "/")
 	public String home(){
-		return "This is Eureka Client Application!";
+		return "This is Eureka Client Application!!";
 	}
 }
