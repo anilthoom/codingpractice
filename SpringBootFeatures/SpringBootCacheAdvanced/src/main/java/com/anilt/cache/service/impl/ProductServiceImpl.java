@@ -2,6 +2,7 @@ package com.anilt.cache.service.impl;
 
 import com.anilt.cache.model.Product;
 import com.anilt.cache.service.ProductService;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
@@ -30,12 +31,26 @@ public class ProductServiceImpl implements ProductService {
         productMap.put(p3.getId(), p3);
     }
     @Override
+    @Cacheable("products")
     public Collection<Product> getAllProducts() {
+        try {
+            System.out.println("getAllProducts : To simulate the response, not from cache");
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return productMap.values();
     }
 
     @Override
+    @Cacheable("product")
     public Product getProductById(String id) {
+        try {
+            System.out.println("getProductById : To simulate the response, not from cache");
+            Thread.sleep(5000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return productMap.get(id);
     }
 
