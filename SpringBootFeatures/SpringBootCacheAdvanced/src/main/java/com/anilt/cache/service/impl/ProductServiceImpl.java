@@ -2,12 +2,14 @@ package com.anilt.cache.service.impl;
 
 import com.anilt.cache.model.Product;
 import com.anilt.cache.service.ProductService;
+import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
+@Service
 public class ProductServiceImpl implements ProductService {
     private static Map<String, Product> productMap = new HashMap<>();
     static {
