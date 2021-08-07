@@ -46,7 +46,7 @@ public class ProductServiceImpl implements ProductService {
     @Cacheable("product")
     public Product getProductById(String id) {
         try {
-            System.out.println("getProductById: To simulate the response, not from cache");
+            System.out.println("getProductById: To simulate the response, not from cache.");
             Thread.sleep(5000);
         } catch (InterruptedException e) {
             e.printStackTrace();
