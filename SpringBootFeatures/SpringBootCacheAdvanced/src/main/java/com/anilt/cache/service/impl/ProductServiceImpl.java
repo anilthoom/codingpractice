@@ -31,7 +31,7 @@ public class ProductServiceImpl implements ProductService {
         productMap.put(p3.getId(), p3);
     }
     @Override
-    @Cacheable("products")
+    //@Cacheable("products")
     public Collection<Product> getAllProducts() {
         try {
             System.out.println("getAllProducts: To simulate the response, not from cache.");
@@ -43,7 +43,7 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    @Cacheable("product")
+   // @Cacheable("product")
     public Product getProductById(String id) {
         try {
             System.out.println("getProductById: To simulate the response, not from cache.");
