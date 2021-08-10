@@ -2,6 +2,7 @@ package com.anilt.rest.template.controller;
 
 import com.anilt.rest.template.model.Product;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -16,12 +17,13 @@ import java.util.Arrays;
 
 @RestController
 public class ConsumeWebServiceController {
-    public static String baseUrl = "http://localhost:9090/products/";
+    public static String baseUrl = "http://localhost:8080/products/";
 
     @Autowired
     RestTemplate restTemplate;
 
     @RequestMapping(value = "/template/products")
+    @Cacheable("products")
     public String getProductList(){
         System.out.println("Called......");
         HttpHeaders headers = new HttpHeaders();
