@@ -1,9 +1,11 @@
 package com.anilt.jackson;
 
 import com.anilt.jackson.model.TOCTree;
+import com.fasterxml.jackson.databind.JsonNode;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import java.io.IOException;
+import java.util.Iterator;
 
 import com.fasterxml.jackson.core.JsonParseException;
 import com.fasterxml.jackson.databind.JsonMappingException;
@@ -46,10 +48,18 @@ public class JacksonExploreApplication {
 		//map json to tree
 		try{
 			TOCTree treeObj = mapper.readValue(jsonString, TOCTree.class);
-			System.out.println(treeObj);
+			//System.out.println(treeObj);
 
 			String result = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(treeObj);
-			System.out.println(result);
+			//System.out.println(result);
+
+			//Tree node approach
+			JsonNode rootNode = mapper.readTree(jsonString);
+			System.out.println(rootNode.path("name").textValue());
+
+			JsonNode childNode = rootNode.path("childNodes");
+			Iterator<JsonNode> iterator = childNode.elements();
+
 		}
 		catch (JsonParseException e) { e.printStackTrace();}
 		catch (JsonMappingException e) { e.printStackTrace(); }
