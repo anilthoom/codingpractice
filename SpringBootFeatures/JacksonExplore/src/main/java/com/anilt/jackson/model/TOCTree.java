@@ -10,12 +10,12 @@ import java.util.ArrayList;
 public class TOCTree {
     private String id;
     private String name;
-    private String opened;
+    private Boolean opened;
     private String comment;
     private String dueDate;
-    private String disabled;
+    private Boolean disabled;
     private String reviewer;
-    private String selected;
+    private Boolean selected;
     private String documents;
     private String attributes;
     private ArrayList<TOCTree> childNodes;
