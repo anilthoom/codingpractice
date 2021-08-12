@@ -3,6 +3,8 @@ package com.anilt.jackson.model;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.util.ArrayList;
+
 @Setter
 @Getter
 public class TOCTree {
@@ -16,5 +18,5 @@ public class TOCTree {
     private String selected;
     private String documents;
     private String attributes;
-    private String childNodes;
+    private ArrayList<TOCTree> childNodes;
 }
