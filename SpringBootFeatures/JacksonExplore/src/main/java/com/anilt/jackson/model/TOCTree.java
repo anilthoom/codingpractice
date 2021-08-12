@@ -8,7 +8,7 @@ import java.util.ArrayList;
 @Setter
 @Getter
 public class TOCTree {
-    private String id;
+    private Integer id;
     private String name;
     private Boolean opened;
     private String comment;
