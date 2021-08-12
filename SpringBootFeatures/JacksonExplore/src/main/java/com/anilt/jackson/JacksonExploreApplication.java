@@ -1,5 +1,6 @@
 package com.anilt.jackson;
 
+import com.anilt.jackson.model.TOCTree;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import java.io.IOException;
@@ -14,40 +15,44 @@ public class JacksonExploreApplication {
 	public static void main(String[] args) {
 		//SpringApplication.run(JacksonExploreApplication.class, args);
 		ObjectMapper mapper = new ObjectMapper();
-		String jsonString = "{\"name\":\"Anil\", \"age\":21}";
+		String jsonString = "{\n" +
+				"\t\"id\": \"1\",\n" +
+				"\t\"name\": \"TBD-DANI BLA 01-Anil_Sub_10_4\",\n" +
+				"\t\"opened\": false,\n" +
+				"\t\"comment\": null,\n" +
+				"\t\"dueDate\": null,\n" +
+				"\t\"disabled\": false,\n" +
+				"\t\"reviewer\": null,\n" +
+				"\t\"selected\": false,\n" +
+				"\t\"documents\": null,\n" +
+				"\t\"attributes\": null,\n" +
+				"\t\"childNodes\": [\n" +
+				"\t\t{\n" +
+				"\t\t\t\"id\": 2,\n" +
+				"\t\t\t\"name\": \"m1-administrative-information-and-prescribing-information\",\n" +
+				"\t\t\t\"opened\": false,\n" +
+				"\t\t\t\"comment\": null,\n" +
+				"\t\t\t\"dueDate\": null,\n" +
+				"\t\t\t\"disabled\": false,\n" +
+				"\t\t\t\"reviewer\": null,\n" +
+				"\t\t\t\"selected\": true,\n" +
+				"\t\t\t\"documents\": null,\n" +
+				"\t\t\t\"attributes\": null,\n" +
+				"\t\t\t\"childNodes\": null\n" +
+				"\t\t}\n" +
+				"\t]\n" +
+				"}";
 
-		//map json to student
+		//map json to tree
 		try{
-			Student student = mapper.readValue(jsonString, Student.class);
+			TOCTree treeObj = mapper.readValue(jsonString, TOCTree.class);
+			System.out.println(treeObj);
 
-			System.out.println(student);
-
-			jsonString = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(student);
-
-			System.out.println(jsonString);
+			String result = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(treeObj);
+			System.out.println(result);
 		}
 		catch (JsonParseException e) { e.printStackTrace();}
 		catch (JsonMappingException e) { e.printStackTrace(); }
 		catch (IOException e) { e.printStackTrace(); }
-	}
-}
-class Student {
-	private String name;
-	private int age;
-	public Student(){}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public int getAge() {
-		return age;
-	}
-	public void setAge(int age) {
-		this.age = age;
-	}
-	public String toString(){
-		return "Student [ name: "+name+", age: "+ age+ " ]";
 	}
 }
