@@ -59,6 +59,9 @@ public class JacksonExploreApplication {
 
 			JsonNode childNode = rootNode.path("childNodes");
 			Iterator<JsonNode> iterator = childNode.elements();
+			while (iterator.hasNext()){
+				System.out.println(iterator.next().elements().next());
+			}
 
 		}
 		catch (JsonParseException e) { e.printStackTrace();}
