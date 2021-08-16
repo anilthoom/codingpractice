@@ -62,7 +62,6 @@ public class JacksonExploreApplication {
 			while (iterator.hasNext()){
 				System.out.println(iterator.next().elements().next());
 			}
-
 		}
 		catch (JsonParseException e) { e.printStackTrace();}
 		catch (JsonMappingException e) { e.printStackTrace(); }
