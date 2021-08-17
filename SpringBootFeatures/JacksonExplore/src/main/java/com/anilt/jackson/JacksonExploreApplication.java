@@ -48,7 +48,7 @@ public class JacksonExploreApplication {
 		//map json to tree
 		try{
 			TOCTree treeObj = mapper.readValue(jsonString, TOCTree.class);
-			//System.out.println(treeObj);
+			System.out.println(treeObj);
 
 			String result = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(treeObj);
 			//System.out.println(result);
