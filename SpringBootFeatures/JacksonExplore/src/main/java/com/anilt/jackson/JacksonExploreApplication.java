@@ -51,7 +51,7 @@ public class JacksonExploreApplication {
 			System.out.println(treeObj);
 
 			String result = mapper.writerWithDefaultPrettyPrinter().writeValueAsString(treeObj);
-			//System.out.println(result);
+			System.out.println(result);
 
 			//Tree node approach
 			JsonNode rootNode = mapper.readTree(jsonString);
