@@ -19,7 +19,7 @@ public class JacksonExploreApplication {
 		ObjectMapper mapper = new ObjectMapper();
 		String jsonString = "{\n" +
 				"\t\"id\": 1,\n" +
-				"\t\"name\": \"TBD-DANI BLA 01-Anil_Sub_10_4\",\n" +
+				"\t\"name\": \"TBD-DANI BLA 01-Submission\",\n" +
 				"\t\"opened\": false,\n" +
 				"\t\"comment\": null,\n" +
 				"\t\"dueDate\": null,\n" +
