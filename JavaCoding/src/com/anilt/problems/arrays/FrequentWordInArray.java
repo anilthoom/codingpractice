@@ -1,21 +1,20 @@
 package com.anilt.problems.arrays;
 
 import java.util.HashMap;
+import java.util.LinkedHashMap;
 import java.util.Map;
+import java.util.TreeMap;
 
 // https://practice.geeksforgeeks.org/problems/most-frequent-word-in-an-array-of-strings3528/1
 public class FrequentWordInArray {
     public static void main(String[] args) {
-        String array[] = {"elgefh", "elgefh", "vuxct", "elgefh", "kmrht", "elgefh", "kmrht", "kmrht", "hjfd", "hjfd", "kmrht", "vuxct", "elgefh", "mzwlcq", "kmrht"};
+        //String array[] = {"elgefh", "vuxct", "elgefh", "kmrht", "elgefh", "kmrht", "kmrht", "hjfd", "hjfd", "kmrht", "vuxct", "elgefh", "mzwlcq", "kmrht", "elgefh"};
+        String array[] = {"xejdcj", "xejdcj", "lvjpb", "tmyuiu", "lvjpb", "tmyuiu", "ovoba", "lvjpb", "lvjpb", "fqhyu", "fqhyu", "tmyuiu", "xejdcj", "tmyuiu", "fqhyu", "ovoba", "xejdcj"};
         System.out.println(mostFrequentWord(array, array.length));
     }
-    public static String mostFrequentWord(String arr[],int n){
-
-        return "";
-    }
-    public static String mostFrequentWordX(String arr[],int n)
+    public static String mostFrequentWord(String arr[],int n)
     {
-        Map<String, Integer> wordsCountMap = new HashMap<>();
+        Map<String, Integer> wordsCountMap = new LinkedHashMap<>();
         String word = "";
         Integer counter;
         String heroWord = "";
@@ -24,7 +23,8 @@ public class FrequentWordInArray {
             word = arr[i];
             if(wordsCountMap.containsKey(word)){
                counter = wordsCountMap.get(word)+1;
-               wordsCountMap.put(word, counter);
+               wordsCountMap.replace(word, counter);
+               //wordsCountMap.put(word, counter);
             }
             else {
                 wordsCountMap.put(word, 1);
