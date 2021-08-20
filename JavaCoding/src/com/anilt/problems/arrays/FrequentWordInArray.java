@@ -13,10 +13,12 @@ public class FrequentWordInArray {
     {
         Map<String, Integer> wordsCountMap = new HashMap<>();
         String word = "";
+        Integer counter;
         for(int i=0; i<n; i++){
             word = arr[i];
             if(wordsCountMap.containsKey(word)){
-               System.out.println(wordsCountMap.get(word));
+               counter = wordsCountMap.get(word)+1;
+               wordsCountMap.put(word, counter);
             }
             else {
                 wordsCountMap.put(word, 1);
