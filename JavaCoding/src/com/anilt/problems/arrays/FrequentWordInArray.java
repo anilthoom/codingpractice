@@ -22,6 +22,7 @@ public class FrequentWordInArray {
                 wordsCountMap.put(word, 1);
             }
         }
+
         String result = "";
         return result;
     }
