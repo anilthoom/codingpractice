@@ -18,6 +18,9 @@ public class FrequentWordInArray {
             if(wordsCountMap.containsKey(word)){
                System.out.println(wordsCountMap.get(word));
             }
+            else {
+                wordsCountMap.put(word, 1);
+            }
         }
         String result = "";
         return result;
