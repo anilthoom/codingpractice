@@ -37,7 +37,6 @@ public class FrequentWordInArray {
         for (Map.Entry<String, Integer> entry: wordsCountMap.entrySet()) {
             System.out.println(entry.getKey() +" - "+ entry.getValue());
         }
-        String result = "";
-        return result;
+        return heroWord;
     }
 }
