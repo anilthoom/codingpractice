@@ -12,17 +12,11 @@ public class FrequentWordInArray {
     public static String mostFrequentWord(String arr[],int n)
     {
         Map<String, Integer> wordsCountMap = new HashMap<>();
-        String commonPrefix = "";
         String word = "";
         for(int i=0; i<n; i++){
             word = arr[i];
-            if (commonPrefix.isEmpty()) {
-                char firstWordChars [] = word.toCharArray();
-                char secondWordChars[] = arr[i+1].toCharArray();
-                for(int c =0; c<firstWordChars.length; c++){
-
-                }
-
+            if(wordsCountMap.containsKey(word)){
+               System.out.println(wordsCountMap.get(word));
             }
         }
         String result = "";
