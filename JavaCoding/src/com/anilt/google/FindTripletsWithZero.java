@@ -10,8 +10,14 @@ public class FindTripletsWithZero {
     }
     public boolean findTriplets(int arr[] , int n)
     {
-
         Arrays.sort(arr);
+        for(int i=0; i<n; i++){
+            if(arr[i] + arr[i+1] + arr[i+2] == 0)
+            {
+                return true;
+            }
+            System.out.print(arr[i] + " ");
+        }
         return false;
     }
 }
