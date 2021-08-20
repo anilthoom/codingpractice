@@ -11,14 +11,13 @@ public class FindTripletsWithZero {
     }
     public boolean findTriplets(int arr[] , int n)
     {
-        Arrays.sort(arr);
-        for(int i=0; i<n; i++){
-
-            if(arr[i] + arr[i+1] + arr[i+2] == 0)
-            {
-                return true;
+        //Arrays.sort(arr);
+        for(int i=0; i<n-2; i++){
+            for(int j=2; j<n; j++){
+                if(arr[i] + arr[i+1] + arr[j] == 0){
+                    return  true;
+                }
             }
-            System.out.println(arr[i] + " ");
         }
         return false;
     }
