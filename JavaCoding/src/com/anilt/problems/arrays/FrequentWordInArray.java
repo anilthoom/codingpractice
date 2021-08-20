@@ -6,8 +6,8 @@ import java.util.Map;
 // https://practice.geeksforgeeks.org/problems/most-frequent-word-in-an-array-of-strings3528/1
 public class FrequentWordInArray {
     public static void main(String[] args) {
-        String array[] = {"Anil", "Kumar", "Anil", "Shri"};
-        System.out.println(mostFrequentWord(array, 4));
+        String array[] = {"xejdcj", "xejdcj", "lvjpb", "tmyuiu", "lvjpb", "tmyuiu", "ovoba", "lvjpb", "lvjpb", "fqhyu", "fqhyu", "tmyuiu", "xejdcj", "tmyuiu", "fqhyu", "ovoba", "xejdcj"};
+        System.out.println(mostFrequentWord(array, array.length));
     }
     public static String mostFrequentWord(String arr[],int n)
     {
