@@ -22,7 +22,9 @@ public class FrequentWordInArray {
                 wordsCountMap.put(word, 1);
             }
         }
-
+        for (Map.Entry<String, Integer> entry: wordsCountMap.entrySet()) {
+            System.out.println(entry.getKey() +" - "+ entry.getValue());
+        }
         String result = "";
         return result;
     }
