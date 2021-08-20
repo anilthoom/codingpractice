@@ -21,7 +21,7 @@ public class FrequentWordInArray {
             if(wordsCountMap.containsKey(word)){
                counter = wordsCountMap.get(word)+1;
                wordsCountMap.put(word, counter);
-               if(counter > heroCounter){
+               if(counter >= heroCounter){
                    heroWord = word;
                    heroCounter = counter;
                }
