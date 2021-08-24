@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class FindTripletsWithZero {
     public static void main(String[] args) {
         FindTripletsWithZero findTripletsWithZero = new FindTripletsWithZero();
-        int arr[] = {-2, -1, 2, -3, 3, -1};
+        int arr[] = {-2, -1, 2, -3, 3, -1, 0};
         System.out.println(findTripletsWithZero.findTriplets(arr, arr.length));
 
     }
