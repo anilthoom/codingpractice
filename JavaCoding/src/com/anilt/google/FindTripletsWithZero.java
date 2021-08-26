@@ -15,6 +15,7 @@ public class FindTripletsWithZero {
         for(int i=0; i<n-2; i++){
             for(int j=i+2; j<n; j++){
                 if(arr[i] + arr[i+1] + arr[j] == 0){
+
                     return  true;
                 }
             }
