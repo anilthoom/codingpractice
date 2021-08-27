@@ -14,7 +14,7 @@ spec:
     metadata:
       name: nginx-2
       labels:
-        app: myapp
+        app: myapp-deployment
     spec:
       containers:
         - name: nginx
