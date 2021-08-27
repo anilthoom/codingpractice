@@ -6,4 +6,9 @@ metadata:
     tier: frontend
     app: nginx
 spec:
+  selector:
+    matchLabels:
+      app: myapp-deployment
+  replicas:
+  template:
   
