@@ -8,7 +8,7 @@ spec:
   selector:
     matchLabels:
       app: myapp
-  replicas: 4
+  replicas: 5
   template:
     metadata:
       name: nginx-2
