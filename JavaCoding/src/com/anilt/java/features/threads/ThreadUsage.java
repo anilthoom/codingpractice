@@ -6,7 +6,10 @@ public class ThreadUsage {
     }
 }
 class TaskT extends Thread{
+    @Override
+    public void run() {
 
+    }
 }
 class TaskR implements Runnable{
     @Override
