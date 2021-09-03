@@ -20,7 +20,11 @@ public class ThreadPoolTypes {
         scheduledThreadPoolService.schedule(new TaskHandler("SCHEDULED THREAD POOL"), 10, TimeUnit.SECONDS);
         scheduledThreadPoolService.scheduleAtFixedRate(new TaskHandler("SCHEDULED AT FIXED RATE"), 15, 10, TimeUnit.SECONDS);
         scheduledThreadPoolService.scheduleWithFixedDelay(new TaskHandler("SCHEDULED AT FIXED DELAY"), 13, 12, TimeUnit.SECONDS);
+
         // Single threaded executor
+        // If we want to run sequential steps, then this is useful
+        ExecutorService singleThreadedPool = Executors.newSingleThreadExecutor();
+        singleThreadedPool.execute(new TaskHandler("SINGLE THREADED"));
     }
 }
 class TaskHandler implements Runnable{
