@@ -2,8 +2,10 @@ package com.anilt.java.features.threads;
 
 public class ThreadUsage {
     public static void main(String[] args) {
-        new Thread(new TaskT()).start();
-        new Thread(new TaskR()).start();
+        for (int i =0; i<10; i++){
+            new Thread(new TaskT()).start();
+            new Thread(new TaskR()).start();
+        }
     }
 }
 class TaskT extends Thread{
