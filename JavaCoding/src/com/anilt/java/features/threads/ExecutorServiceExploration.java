@@ -9,7 +9,7 @@ public class ExecutorServiceExploration {
         System.out.println("Total Processors : "+ coreCount);
         ExecutorService service = Executors.newFixedThreadPool(coreCount);
         long startTime = System.currentTimeMillis();
-        for (int i=0; i< 100; i++){
+        for (int i=0; i< 1000; i++){
             service.execute(new Task());
         }
         long endTime = System.currentTimeMillis();
