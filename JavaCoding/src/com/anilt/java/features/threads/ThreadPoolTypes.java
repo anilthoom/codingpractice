@@ -19,6 +19,7 @@ public class ThreadPoolTypes {
         ScheduledExecutorService scheduledThreadPoolService = Executors.newScheduledThreadPool(10);
         scheduledThreadPoolService.schedule(new TaskHandler("SCHEDULED THREAD POOL"), 10, TimeUnit.SECONDS);
         scheduledThreadPoolService.scheduleAtFixedRate(new TaskHandler("SCHEDULED AT FIXED RATE"), 15, 10, TimeUnit.SECONDS);
+        scheduledThreadPoolService.scheduleWithFixedDelay(new TaskHandler("SCHEDULED AT FIXED DELAY"), 13, 12, TimeUnit.SECONDS);
         // Single threaded executor
     }
 }
