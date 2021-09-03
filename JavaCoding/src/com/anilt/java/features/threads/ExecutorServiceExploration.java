@@ -12,6 +12,8 @@ public class ExecutorServiceExploration {
         for (int i=0; i< 100; i++){
             service.execute(new Task());
         }
+        long endTime = System.currentTimeMillis();
+        System.out.println("TOTAL TIME TAKEN : "+ (endTime-startTime) + " MILLISECONDS");
     }
 }
 class Task implements Runnable{
