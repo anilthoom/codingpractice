@@ -5,8 +5,8 @@ import java.util.concurrent.Executors;
 
 public class ExecutorServiceExploration {
     public static void main(String[] args) {
-        int count = Runtime.getRuntime().availableProcessors();
-        System.out.println("Total Processors : "+ count);
+        int coreCount = Runtime.getRuntime().availableProcessors();
+        System.out.println("Total Processors : "+ coreCount);
         ExecutorService service = Executors.newFixedThreadPool(10);
         service.execute(new Task());
     }
