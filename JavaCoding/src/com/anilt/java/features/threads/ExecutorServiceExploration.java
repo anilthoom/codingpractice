@@ -7,8 +7,10 @@ public class ExecutorServiceExploration {
     public static void main(String[] args) {
         int coreCount = Runtime.getRuntime().availableProcessors();
         System.out.println("Total Processors : "+ coreCount);
-        ExecutorService service = Executors.newFixedThreadPool(10);
-        service.execute(new Task());
+        ExecutorService service = Executors.newFixedThreadPool(coreCount);
+        for (int i=0; i< 100; i++){
+            service.execute(new Task());
+        }
     }
 }
 class Task implements Runnable{
