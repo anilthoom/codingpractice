@@ -4,8 +4,8 @@ package com.anilt.faang.arrays;
 public class TwoSum {
     public static void main(String[] args) {
         TwoSum twoSum = new TwoSum();
-        int[] arr = {1, 2, 3, 4, 5};
-        int target = 7;
+        int[] arr = {1, 5, 11, 4, 9};
+        int target = 20;
         int result[] = twoSum.twoSum(arr, target);
         if(result != null){
             for(int i=0; i<result.length; i++){
@@ -23,9 +23,12 @@ public class TwoSum {
         }
         else {
             for (int i=0; i<nums.length-1; i++){
-                if((nums[i] + nums[i+1]) == target){
-                    answer[0] = i;
-                    answer[1] = i+1;
+                for (int j=i+1; j<nums.length; j++){
+                    if(nums[i] + nums[j] == target){
+                        answer[0] = i;
+                        answer[1] = j;
+                        return answer;
+                    }
                 }
             }
         }
