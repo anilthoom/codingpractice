@@ -9,7 +9,7 @@ public class TwoSum {
         int result[] = twoSum.twoSum(arr, target);
         if(result != null){
             for(int i=0; i<result.length; i++){
-                System.out.println(result[i]);
+                System.out.print(result[i]+ " ");
             }
         }
         else {
@@ -17,6 +17,18 @@ public class TwoSum {
         }
     }
     public int[] twoSum(int[] nums, int target) {
-        return null;
+        int answer[] = new int[2];
+        if(nums == null || nums.length<2){
+            return null;
+        }
+        else {
+            for (int i=0; i<nums.length-1; i++){
+                if((nums[i] + nums[i+1]) == target){
+                    answer[0] = i;
+                    answer[1] = i+1;
+                }
+            }
+        }
+        return answer;
     }
 }
