@@ -13,17 +13,23 @@ public class ThreadPoolTypes {
         // Cached thread pool
         ExecutorService cachedThreadPool = Executors.newCachedThreadPool();
         for (int i = 0; i<100; i++){
-            cachedThreadPool.execute(new TaskHandler());
+            cachedThreadPool.execute(new TaskHandler("CACHED THREAD POOL"));
         }
         // Scheduled thread pool
         ScheduledExecutorService scheduledThreadPoolService = Executors.newScheduledThreadPool(10);
-        scheduledThreadPoolService.schedule(new TaskHandler(), 10, TimeUnit.SECONDS);
+        scheduledThreadPoolService.schedule(new TaskHandler("SCHEDULED THREAD POOL"), 10, TimeUnit.SECONDS);
         // Single threaded executor
     }
 }
 class TaskHandler implements Runnable{
+    private String message;
+
+    public TaskHandler(String message) {
+        this.message = message;
+    }
+
     @Override
     public void run() {
-        System.out.println("Task executed : "+ Thread.currentThread().getName());
+        System.out.println(message+ " : " + Thread.currentThread().getName());
     }
 }
