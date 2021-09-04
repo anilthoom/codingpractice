@@ -9,11 +9,17 @@ public class ContainerWithMostWater {
     //Brut force approach
     public int maxArea(int[] height) {
         int area = 0;
+        int maxArea = -1;
+
         for(int i=0; i<height.length-1; i++){
             for (int j=i+1; j<height.length; j++){
-
+                int min = Math.min(height[i], height[j]);
+                area = height[i] * (j-i);
+                if(maxArea < area){
+                    maxArea = area;
+                    }
+                }
             }
-        }
-        return area;
+        return maxArea;
     }
 }
