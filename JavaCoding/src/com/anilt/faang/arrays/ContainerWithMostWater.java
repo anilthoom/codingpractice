@@ -8,7 +8,7 @@ public class ContainerWithMostWater {
     }
     //Brut force approach : O(n^2)
     public int maxAreaBad(int[] height) {
-        int area = 0;
+        int area;
         int maxArea = -1;
         for(int i=0; i<height.length-1; i++){
             for (int j=i+1; j<height.length; j++){
