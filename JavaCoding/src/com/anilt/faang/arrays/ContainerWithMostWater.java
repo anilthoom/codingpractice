@@ -28,7 +28,6 @@ public class ContainerWithMostWater {
         int maxArea = -1;
         int p1= 0, p2=height.length-1;
         while (p1 < p2){
-            System.out.println(height[p1] + " "+ height[p2]);
             if(height[p1] < height[p2]){
                 area = height[p1] * (p2-p1);
                 maxArea = Math.max(area, maxArea);
