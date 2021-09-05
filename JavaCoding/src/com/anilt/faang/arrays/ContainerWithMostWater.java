@@ -24,7 +24,7 @@ public class ContainerWithMostWater {
 
     //Optimal solution : O(n)
     public int maxArea(int[] height) {
-        int area = 0;
+        int area;
         int maxArea = -1;
         int p1= 0, p2=height.length-1;
         while (p1 < p2){
