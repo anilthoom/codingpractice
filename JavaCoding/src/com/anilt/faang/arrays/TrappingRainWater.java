@@ -37,7 +37,6 @@ public class TrappingRainWater {
                         bucketTuples.add(tuples);
                         break;
                     }
-
                     p2 = height[i];
                 }
                 p1 = p2;
