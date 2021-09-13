@@ -1,0 +1,36 @@
+<script>
+    function callLegacy() {
+        console.log("Old way of creating function");
+    }
+    /* Old approach of calling function */
+    function myfunc(name) {
+        console.log("Hello", name);
+    }
+
+    myfunc("Anil");
+
+    // New way - no arg function
+    const newFunc = () => {
+        console.log("No arg function");
+    }
+    newFunc();
+
+    // New way - single arg functions and different declarations
+    const newFuncSingleArgWay1 = name => {
+        console.log(name);
+    }
+    const newFuncSingleArgWay2 = (name) => {
+        console.log(name);
+    }
+
+
+    // New way - multi arg functions and different declarations
+    const calcMulti = (a, b) => {
+        return a * b;
+    }
+    const calcMulti2 = (a, b) => a * b;
+
+    console.log(calcMulti2(12, 4));
+</script>
+
+<button onclick="callLegacy">Legacy function Call</button>
