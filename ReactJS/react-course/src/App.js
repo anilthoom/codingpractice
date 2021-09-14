@@ -8,8 +8,6 @@ function App() {
     <Todo text='Learn React'/>
     <Todo text='Learn Kafka'/>
     <Todo text='Learn Docker'/>
-    <Modal></Modal>
-    <Backdrop></Backdrop>
   </div>);
 }
 
