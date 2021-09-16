@@ -3,8 +3,8 @@ import { createContext, useState } from "react";
 const FavouritesContext = createContext({
     favourites: [],
     totalFavourites: 0,
-    addFavourite: (favouriteMeetup) => {},
-    removeFavourite: (meetupId) => {},
+    addFavourites: (favouriteMeetup) => {},
+    removeFavourites: (meetupId) => {},
     itemIsFavourite: (meetupId) => {}
 });
 
@@ -18,7 +18,7 @@ export function FavouritesContextProvider(props){
     }
     function removeFavouritesHandler(meetupId){
         setUserFavourites(previousUserFavourites => {
-            return previousUserFavourites.filter(meetup => meetup.id != meetupId);
+            return previousUserFavourites.filter(meetup => meetup.id !== meetupId);
         });
     }
     function itemIsFavouriteHandler(meetupId){

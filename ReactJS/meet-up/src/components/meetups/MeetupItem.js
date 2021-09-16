@@ -8,10 +8,11 @@ function MeetupItem(props) {
     const favouritesCtx = useContext(FavouritesContext);
     const itemIsFavourite = favouritesCtx.itemIsFavourite(props.id);
     function toggleFavouritesStatusHandler(){
+        debugger;
         if(itemIsFavourite){
-            favouritesCtx.removeFavourite(props.id);
+            favouritesCtx.removeFavourites(props.id);
         } else{
-            favouritesCtx.addFavourite({
+            favouritesCtx.addFavourites({
                 id: props.id,
                 title: props.title,
                 image: props.image,
