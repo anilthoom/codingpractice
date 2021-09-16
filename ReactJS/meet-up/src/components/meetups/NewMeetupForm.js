@@ -10,6 +10,16 @@ function NewMeetupForm(){
     function submitHandler(event){
         event.preventDefault();
         const enteredTitle = titleInputRef.current.value;
+        const enteredImage = imageInputRef.current.value;
+        const enteredAddress = addressInputRef.current.value;
+        const enteredDescription = descriptionInputRef.current.value;
+
+        const meetupData = {
+            title: enteredTitle,
+            image: enteredImage,
+            address: enteredAddress,
+            description: enteredDescription,
+        };
     }
     return(
         <Card>
