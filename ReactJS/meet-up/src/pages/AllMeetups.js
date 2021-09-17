@@ -1,32 +1,32 @@
 import { useEffect, useState } from "react";
 import MeetupList from "../components/meetups/MeetupList";
 
-function AllMeetupsPage(){
+function AllMeetupsPage() {
     const [isLoading, setIsLoading] = useState(true);
     const [loadedMeetups, setLoadedMetups] = useState([]);
 
     useEffect(() => {
-            setIsLoading(true);
-            fetch(
+        setIsLoading(true);
+        fetch(
             'https://react-meetup-c32f2-default-rtdb.firebaseio.com/meetups.json'
-            ).then(response => {
-                return response.json();
-            }).then(data => {
-                const meetups = [];
-                for(const key in data){
-                    const meetup = {
-                        id: key,
-                        ...data[key]
-                    };
-                    meetups.push(meetup);
-                }
-                setIsLoading(false);
-                setLoadedMetups(meetups);
-            });
+        ).then(response => {
+            return response.json();
+        }).then(data => {
+            const meetups = [];
+            for (const key in data) {
+                const meetup = {
+                    id: key,
+                    ...data[key]
+                };
+                meetups.push(meetup);
+            }
+            setIsLoading(false);
+            setLoadedMetups(meetups);
+        });
     }, []);
-    
-    if(isLoading){
-        return(
+
+    if (isLoading) {
+        return (
             <section>
                 <p>Loading...</p>
             </section>
@@ -35,7 +35,7 @@ function AllMeetupsPage(){
     return (
         <section>
             <h1>All Meetups</h1>
-            <MeetupList meetups={loadedMeetups}/>
+            <MeetupList meetups={loadedMeetups} />
         </section>
     );
 }

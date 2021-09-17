@@ -4,9 +4,9 @@ import FavouritesContext from "../../store/favourite-context";
 
 import classes from './MainNavigation.module.css';
 
-function MainNavigation(){
+function MainNavigation() {
     const favouritesCtx = useContext(FavouritesContext);
-    return(
+    return (
         <header className={classes.header}>
             <div className={classes.logo}>React Meetups</div>
             <nav>

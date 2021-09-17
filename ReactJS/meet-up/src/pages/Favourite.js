@@ -2,12 +2,12 @@ import { useContext } from "react";
 import MeetupList from "../components/meetups/MeetupList";
 import FavouritesContext from "../store/favourite-context";
 
-function FavrouitePage(){
+function FavrouitePage() {
     const favouritesCtx = useContext(FavouritesContext);
     let content;
-    if(favouritesCtx.totalFavourites === 0){
+    if (favouritesCtx.totalFavourites === 0) {
         content = <p>You got no favourites yet. Start add some?</p>
-    } else{
+    } else {
         content = <MeetupList meetups={favouritesCtx.favourites} />
     }
     return (
