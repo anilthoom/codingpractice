@@ -1,8 +1,6 @@
 package com.anilt.faang.arrays;
 
 import java.util.*;
-import java.util.stream.Collectors;
-import java.util.stream.IntStream;
 
 //https://leetcode.com/problems/two-sum/
 public class TwoSum {
