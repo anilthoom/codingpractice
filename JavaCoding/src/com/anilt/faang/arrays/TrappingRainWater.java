@@ -17,8 +17,17 @@ public class TrappingRainWater {
         int left=0, right=height.length-1, total=0;
         int maxLeft=0, maxRight=0;
         while (left < right){
+            // Identify pointer with lesser value
             if(height[left] <= height[right]){
-
+                //if this pointer value lesser or equal to max on the opposite side
+                if(height[left] >= maxLeft){
+                    // Yes update the max on that side
+                    maxLeft = height[left];
+                }
+                else {
+                    //No: get water value and add to total
+                    total += maxLeft-height[left];
+                }
 
             }
         }
