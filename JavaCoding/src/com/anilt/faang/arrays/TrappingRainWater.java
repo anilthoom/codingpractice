@@ -12,7 +12,9 @@ public class TrappingRainWater {
 //        int arr[] = {4,2,0,3,2,5};
         System.out.println("\n"+trappingRainWater.trap(arr));
     }
-    public int trap_opt(int[] height) {
+
+    //Optimum solution: O(n)
+    public int trap(int[] height) {
         // currentWater = min(maxL, maxR) - currentHeight
         int left=0, right=height.length-1, total=0;
         int maxLeft=0, maxRight=0;
@@ -28,12 +30,25 @@ public class TrappingRainWater {
                     //No: get water value and add to total
                     total += maxLeft-height[left];
                 }
-
+                //Move pointer inwards
+                left++;
+            }
+            //Repeat for other pointer
+            else{
+                if(height[right] >= maxRight){
+                    maxRight = height[right];
+                }
+                else {
+                    total += maxRight-height[right];
+                }
+                right--;
             }
         }
-        return 0;
+        return total;
     }
-    public int trap(int[] height) {
+
+    //Optimum solution: O(n^2)
+    public int trap_bad(int[] height) {
         int totalWater = 0;
         int leftP, rightP, maxLeft, maxRight, currentWater;
         for (int p = 0; p< height.length; p++){
