@@ -8,10 +8,15 @@ import java.util.List;
 public class TrappingRainWater {
     public static void main(String[] args) {
         TrappingRainWater trappingRainWater = new TrappingRainWater();
-        int arr[] = {0,1,0,2,1,0,1,3,2,1,2,1};
+//        int arr[] = {0,1,0,2,1,0,1,3,2,1,2,1};
+        int arr[] = {4,2,0,3,2,5};
         System.out.println("\n"+trappingRainWater.trap(arr));
     }
     public int trap(int[] height) {
+        // currentWater = min(maxL, maxR) - currentHeight
+        return 0;
+    }
+    public int trap_bad(int[] height) {
         int p1 = -1;
         int p2 = -1;
         int waterBucket = 0;
@@ -40,7 +45,7 @@ public class TrappingRainWater {
                     p2 = height[i];
                 }
                 p1 = p2;
-                if(i < height.length){
+                if(i < height.length-1){
                     System.out.println(" - "+p2);
                     tuples.add(p2);
                     bucketTuples.add(tuples);
@@ -65,7 +70,12 @@ public class TrappingRainWater {
                 for (int j=tupleArr.size()-1; j> 0; j--){
                     System.out.print(" "+tupleArr.get(j));
                     int current = (int)tupleArr.get(j);
-                    waterBucket += firstVal-current;
+                    if(current >= firstVal){
+                        firstVal = current;
+                    }
+                    else {
+                        waterBucket += firstVal - current;
+                    }
                 }
             }
             System.out.println();
