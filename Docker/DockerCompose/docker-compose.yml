@@ -1,0 +1,25 @@
+version: '2'
+services:
+    message-server:
+        container_name: rest-apis
+        build:
+            context: RestAPIs
+            dockerfile: Dockerfile
+        image: rest-apis:latest
+        ports:
+            - 18888:8888
+        networks:
+            - spring-cloud-network
+    product-server:
+        container_name: rest-template
+        build:
+            context: RestTemplate
+            dockerfile: Dockerfile
+        image: rest-template:latest
+        ports:
+            - 19999:9999
+        networks:
+            - spring-cloud-network
+networks:
+    spring-cloud-network:
+        driver: bridge
