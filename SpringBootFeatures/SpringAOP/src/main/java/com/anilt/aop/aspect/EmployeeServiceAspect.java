@@ -2,10 +2,7 @@ package com.anilt.aop.aspect;
 
 import com.anilt.aop.model.Employee;
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.annotation.After;
-import org.aspectj.lang.annotation.AfterReturning;
-import org.aspectj.lang.annotation.Aspect;
-import org.aspectj.lang.annotation.Before;
+import org.aspectj.lang.annotation.*;
 import org.springframework.stereotype.Component;
 
 @Aspect
@@ -34,6 +31,14 @@ public class EmployeeServiceAspect {
     public void afterAdvice(JoinPoint joinPoint, String empId) {
         System.out.println("After method:" + joinPoint.getSignature());
         System.out.println("Deleted Employee with id - " + empId);
+    }
+
+    //implementing after throwing advice
+    @AfterThrowing(value="execution(* com.anilt.aop.service.EmployeeService.*(..))",throwing="ex")
+    public void afterThrowingAdvice(JoinPoint joinPoint, Exception ex)
+    {
+        System.out.println("$$$$$$$$$$$$$$$$$$$$$$  After Throwing exception in method:"+joinPoint.getSignature());
+        System.out.println("Exception is:"+ex.getMessage());
     }
 
     /**
