@@ -27,4 +27,15 @@ public class EmployeeServiceAspect {
         System.out.println("After method:" + joinPoint.getSignature());
         System.out.println("Deleted Employee with id - " + empId);
     }
+
+    /**
+     * @Around advice: Around advice is represented by @Around annotation.
+     *     It executes before and after a join point.
+     *     It is the most powerful advice.
+     *     It also provides more control for end-user to get deal with ProceedingJoinPoint.
+     */
+
+    /**
+     *
+     */
 }
