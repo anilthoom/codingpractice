@@ -17,4 +17,11 @@ public class EmployeeController {
     public Employee addEmployee(@RequestParam("empId") String empId, @RequestParam("firstName") String fName, @RequestParam("lastName") String lName){
         return employeeService.createEmployee(empId, fName, lName);
     }
+    @RequestMapping(value = "/remove/employee", method = RequestMethod.GET)
+    public String removeEmployee( @RequestParam("empId") String empId)
+    {
+        employeeService.deleteEmployee(empId);
+        System.out.println("Employee removed");
+        return "Employee removed";
+    }
 }
