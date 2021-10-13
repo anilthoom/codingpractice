@@ -10,7 +10,7 @@ public class EmployeeService {
         employee.setEmpId(empId);
         employee.setFirstName(fName);
         employee.setLastName(lName);
-        if(empId == null)
+        if(empId.equalsIgnoreCase("101"))
             throw new RuntimeException("Some exception..");
         return employee;
     }
