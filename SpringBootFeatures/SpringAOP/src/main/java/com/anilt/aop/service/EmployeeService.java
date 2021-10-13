@@ -10,8 +10,9 @@ public class EmployeeService {
         employee.setEmpId(empId);
         employee.setFirstName(fName);
         employee.setLastName(lName);
-        throw new RuntimeException("Some exception..");
-        //return employee;
+        if(empId == null)
+            throw new RuntimeException("Some exception..");
+        return employee;
     }
 
     public void deleteEmployee(String empId) {
