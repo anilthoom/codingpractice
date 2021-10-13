@@ -12,4 +12,7 @@ public class EmployeeService {
         employee.setLastName(lName);
         return employee;
     }
+
+    public void deleteEmployee(String empId) {
+    }
 }
