@@ -10,7 +10,8 @@ public class EmployeeService {
         employee.setEmpId(empId);
         employee.setFirstName(fName);
         employee.setLastName(lName);
-        return employee;
+        throw new RuntimeException("Some exception..");
+        //return employee;
     }
 
     public void deleteEmployee(String empId) {
