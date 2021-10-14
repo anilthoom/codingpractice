@@ -47,8 +47,4 @@ public class EmployeeServiceAspect {
      *     It is the most powerful advice.
      *     It also provides more control for end-user to get deal with ProceedingJoinPoint.
      */
-
-    /**
-     *
-     */
 }
