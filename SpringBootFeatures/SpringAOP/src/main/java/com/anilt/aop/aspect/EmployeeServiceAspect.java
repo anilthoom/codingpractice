@@ -40,7 +40,6 @@ public class EmployeeServiceAspect {
         System.out.println("$$$$$$$$$$$$$$$$$$$$$$  After Throwing exception in method:"+joinPoint.getSignature());
         System.out.println("Exception is:"+ex.getMessage());
     }
-
     /**
      * @Around advice: Around advice is represented by @Around annotation.
      *     It executes before and after a join point.
