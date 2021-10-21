@@ -16,7 +16,7 @@ public class ArrayTest
 		int a[] = new int[]{2,3,4,5,6};
 		for (int i : a) 
 		{
-			//System.out.println(i);
+			System.out.println(i);
 		}
 		
 		Student[] studentArr = new Student[4];
