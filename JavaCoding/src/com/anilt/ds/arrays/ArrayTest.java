@@ -35,10 +35,10 @@ public class ArrayTest
           
         // will print false as deep copy is created 
         // for one-dimensional array 
-   /*     System.out.println(intArray);
+        System.out.println(intArray);
         System.out.println(cloneArray);
         System.out.println(intArray == cloneArray); 
-          */
+
         for (int i = 0; i < cloneArray.length; i++) { 
 //            System.out.print(cloneArray[i]+" "); 
         } 
