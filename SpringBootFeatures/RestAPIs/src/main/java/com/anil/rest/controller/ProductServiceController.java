@@ -24,6 +24,11 @@ public class ProductServiceController {
         tripod.setId("2");
         tripod.setName("Monfratto");
         productRepo.put(tripod.getId(), tripod);
+
+        Product cam = new Product();
+        cam.setId("3");
+        cam.setName("1DX Mark-2");
+        productRepo.put(cam.getId(), cam);
     }
 
     @RequestMapping(value = "/products")
