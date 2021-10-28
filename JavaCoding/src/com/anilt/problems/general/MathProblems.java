@@ -16,10 +16,10 @@ public class MathProblems {
 		  
 		  System.out.println("MathProblems of 3! is : " + factorialOptimized(3));
 		  
-		  //input to print Fibonacci series upto how many numbers
-		  System.out.println("Enter number upto which Fibonacci series to print: ");
+		  //input to print Fibonacci series up to how many numbers
+		  System.out.println("Enter number up to which Fibonacci series to print: ");
 		  int number = new Scanner(System.in).nextInt();
-		  System.out.println("Fibonacci series upto " + number + " numbers : "); // printing Fibonacci series upto number 
+		  System.out.println("Fibonacci series up to " + number + " numbers : "); // printing Fibonacci series upto number
 		  for (int i = 1; i <= number; i++) 
 		  {
 			//  System.out.print(fibonacci2(i) + " "); 
@@ -27,10 +27,6 @@ public class MathProblems {
 		  
 		  System.out.println("OPTIMISED:  "+fibonacci(number));
 		  System.out.println("\nAt 4 : "+fibonacci2(4));
-		  
-		  
-		 
-		
 		System.out.println("MathProblems of 5! is : " + factorialOptimized(5));
 	}
 	 public int printFact(int num)
