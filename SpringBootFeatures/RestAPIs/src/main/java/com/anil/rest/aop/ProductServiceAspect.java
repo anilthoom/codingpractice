@@ -19,7 +19,7 @@ public class ProductServiceAspect {
 
     @AfterReturning(value = "execution(* com.anil.rest.controller.ProductServiceController.*(..)) and args(product)")
     public void afterReturningAdviceProduct(JoinPoint joinPoint, Product product){
-        System.out.println("AOP : "+ product.getName());
+        System.out.println("AOP After Success : "+ product.getName());
     }
 
     @After(value = "execution(* com.anil.rest.controller.ProductServiceController.*(..)) and args(product)")
