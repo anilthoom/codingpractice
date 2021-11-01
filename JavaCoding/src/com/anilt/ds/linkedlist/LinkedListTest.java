@@ -24,7 +24,7 @@ class LinkedListTest
 		NodeTest third = new NodeTest(3); 
 
 		/* Three nodes have been allocated dynamically. 
-		We have refernces to these three blocks as first, 
+		We have references to these three blocks as first,
 		second and third 
 
 		llist.head	 second			 third 
