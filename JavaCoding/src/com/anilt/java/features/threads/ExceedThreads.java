@@ -63,6 +63,7 @@ public class ExceedThreads
         Runnable r3 = new TaskExe("task 3");
         Runnable r4 = new TaskExe("task 4");
         Runnable r5 = new TaskExe("task 5");
+        Runnable r6 = new TaskExe("task 6");
 
         // creates a thread pool with MAX_T no. of
         // threads as the fixed pool size(Step 2)
@@ -74,6 +75,7 @@ public class ExceedThreads
         pool.execute(r3);
         pool.execute(r4);
         pool.execute(r5);
+        pool.execute(r6);
 
         // pool shutdown ( Step 4)
         pool.shutdown();
