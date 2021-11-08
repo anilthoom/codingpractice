@@ -39,7 +39,7 @@ class TaskExe implements Runnable
                             name +" = " +ft.format(d));
                     // prints the execution time for every task
                 }
-                Thread.sleep(1000);
+                Thread.sleep(2000);
             }
             System.out.println(name+" complete");
         }
