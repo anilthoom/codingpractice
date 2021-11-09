@@ -16,7 +16,12 @@ public class LombokLoggingController {
         log.info("An INFO Message");
         log.warn("A WARN Message");
         log.error("An ERROR Message");
-
+        try{
+            String str = null;
+            str.getBytes();
+        }catch (Exception e){
+            log.error("ERROR", e);
+        }
         return "Howdy! Check out the Logs to see the output...";
     }
 }
