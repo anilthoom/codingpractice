@@ -94,3 +94,23 @@
 2021-11-09 12:44:32,189 WARN com.anilt.log.controller.ControllerClass [http-nio-8080-exec-1] A WARN Message
 2021-11-09 12:44:32,189 ERROR com.anilt.log.controller.ControllerClass [http-nio-8080-exec-1] An ERROR Message
 2021-11-09 12:44:32,190 ERROR com.anilt.log.controller.ControllerClass [http-nio-8080-exec-1] Error[Ljava.lang.StackTraceElement;@7d641fc6
+2021-11-09 12:49:53,583 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Starting SpringLoggerApplication using Java 13.0.1 on ANILTPF1413WT with PID 9228 (C:\MyWork\Repository\Coding\SpringBootFeatures\SpringLogger\target\classes started by anilt in C:\MyWork\Repository\Coding\SpringBootFeatures\SpringLogger)
+2021-11-09 12:49:53,584 INFO org.springframework.boot.SpringApplication [restartedMain] No active profile set, falling back to default profiles: default
+2021-11-09 12:49:53,631 INFO org.springframework.boot.logging.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-09 12:49:53,632 INFO org.springframework.boot.logging.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-09 12:49:54,640 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat initialized with port(s): 8080 (http)
+2021-11-09 12:49:54,648 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2021-11-09 12:49:54,649 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2021-11-09 12:49:54,649 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/9.0.54]
+2021-11-09 12:49:54,697 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2021-11-09 12:49:54,697 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1064 ms
+2021-11-09 12:49:54,998 INFO org.springframework.boot.devtools.autoconfigure.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2021-11-09 12:49:55,007 INFO org.apache.juli.logging.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2021-11-09 12:49:55,182 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [restartedMain] Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-09 12:49:55,190 INFO org.springframework.boot.StartupInfoLogger [restartedMain] Started SpringLoggerApplication in 1.983 seconds (JVM running for 2.381)
+2021-11-09 12:50:06,928 INFO org.apache.juli.logging.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-09 12:50:06,929 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2021-11-09 12:50:06,930 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2021-11-09 12:50:06,946 INFO com.anilt.log.controller.LombokLoggingController [http-nio-8080-exec-1] An INFO Message
+2021-11-09 12:50:06,946 WARN com.anilt.log.controller.LombokLoggingController [http-nio-8080-exec-1] A WARN Message
+2021-11-09 12:50:06,946 ERROR com.anilt.log.controller.LombokLoggingController [http-nio-8080-exec-1] An ERROR Message
