@@ -4,10 +4,12 @@ public class BinarySearch {
     public static void main(String[] args) {
         BinarySearch binarySearch = new BinarySearch();
         int nums[] = {-1,0,3,5,9,12};
-        int target = 0;
+        int target = -2;
         System.out.println(binarySearch.search(nums, target));
         System.out.println(binarySearch.search(nums, target, 0, nums.length-1));
         System.out.println(binarySearch.firstBadVersion(5));
+
+        System.out.println(binarySearch.searchInsert(nums, target));
     }
     //Iterative
     public int search(int[] nums, int target) {
@@ -69,14 +71,14 @@ public class BinarySearch {
     //https://leetcode.com/problems/search-insert-position/
     public int searchInsert(int[] nums, int target) {
         int startIndex = 0; int endIndex = nums.length-1;
-        int indexPosition = -1;
+        int indexPosition = 0;
         while (startIndex <= endIndex){
             int midIndex = startIndex+ (endIndex-startIndex)/2;
             if(nums[midIndex] == target)
-                return midIndex-1;
+                return midIndex;
             if(nums[midIndex] > target){
                 endIndex = midIndex-1;
-                indexPosition = midIndex-1;
+                indexPosition = midIndex;
             }
             else if(nums[midIndex] < target) {
                 startIndex = midIndex + 1;
