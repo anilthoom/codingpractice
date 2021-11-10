@@ -41,4 +41,22 @@ public class BinarySearch {
         }
         return -1;
     }
+    //https://leetcode.com/problems/first-bad-version/
+    public int firstBadVersion(int n) {
+        int start = 1; int end = n; int firstBadVersion = -1;
+        while (start <= end){
+            int mid = start +(end-start)/2;
+            if(isBadVersion(mid)){
+                firstBadVersion = mid;
+                //move left
+            }
+        }
+        return -1;
+    }
+    private boolean isBadVersion(int n){
+        if(n==4)
+            return true;
+        else
+            return false;
+    }
 }
