@@ -65,4 +65,24 @@ public class BinarySearch {
         else
             return false;
     }
+
+    //https://leetcode.com/problems/search-insert-position/
+    public int searchInsert(int[] nums, int target) {
+        int startIndex = 0; int endIndex = nums.length-1;
+        int indexPosition = -1;
+        while (startIndex <= endIndex){
+            int midIndex = startIndex+ (endIndex-startIndex)/2;
+            if(nums[midIndex] == target)
+                return midIndex-1;
+            if(nums[midIndex] > target){
+                endIndex = midIndex-1;
+                indexPosition = midIndex-1;
+            }
+            else if(nums[midIndex] < target) {
+                startIndex = midIndex + 1;
+                indexPosition = midIndex+1;
+            }
+        }
+        return indexPosition;
+    }
 }
