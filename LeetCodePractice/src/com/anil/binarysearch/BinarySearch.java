@@ -7,6 +7,7 @@ public class BinarySearch {
         int target = 0;
         System.out.println(binarySearch.search(nums, target));
         System.out.println(binarySearch.search(nums, target, 0, nums.length-1));
+        System.out.println(binarySearch.firstBadVersion(5));
     }
     //Iterative
     public int search(int[] nums, int target) {
@@ -49,9 +50,14 @@ public class BinarySearch {
             if(isBadVersion(mid)){
                 firstBadVersion = mid;
                 //move left
+                end = mid-1;
+            }
+            else {
+                //move right
+                start = mid+1;
             }
         }
-        return -1;
+        return firstBadVersion;
     }
     private boolean isBadVersion(int n){
         if(n==4)
