@@ -5,8 +5,8 @@ import java.util.*;
 public class IntersectionOfTwoArrays {
     public static void main(String[] args) {
         IntersectionOfTwoArrays intersectionOfTwoArrays = new IntersectionOfTwoArrays();
-        int nums1[] = {1, 2, 2, 1};
-        int nums2[] = {2, 2};
+        int nums1[] = {4,9,5};
+        int nums2[] = {9,4,9,8,4};
         intersectionOfTwoArrays.intersect(nums1, nums2);
     }
     public int[] intersect(int[] nums1, int[] nums2) {
@@ -28,6 +28,7 @@ public class IntersectionOfTwoArrays {
         }
         for(int i =0; i< bigSizeArray.length; i++){
             if(findTheseNumsList.contains(bigSizeArray[i])){
+                findTheseNumsList.remove(findTheseNumsList.indexOf(bigSizeArray[i]));
                 resultList.add(bigSizeArray[i]);
             }
         }
