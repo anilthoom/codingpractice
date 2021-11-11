@@ -1,6 +1,6 @@
 package com.anil.ds.array;
 
-import java.util.Arrays;
+import java.util.*;
 
 public class IntersectionOfTwoArrays {
     public static void main(String[] args) {
@@ -10,10 +10,26 @@ public class IntersectionOfTwoArrays {
         intersectionOfTwoArrays.intersect(nums1, nums2);
     }
     public int[] intersect(int[] nums1, int[] nums2) {
-        int ans[] = new int[0];
-
-        Arrays.fill(ans, 10);
-        Arrays.fill(ans, 12);
+        int ans[] = {};
+        if(nums1.length <= nums2.length){
+            ans = intersectFind(nums1, nums2);
+        }
+        else {
+            ans = intersectFind(nums2, nums1);
+        }
+        return ans;
+    }
+    public int[] intersectFind(int[] smallSizeArray, int[] bigSizeArray) {
+        int ans[] = {};
+        List findTheseNumsList  = new ArrayList();
+        for(int i=0; i< smallSizeArray.length; i++){
+            findTheseNumsList.add(smallSizeArray[i]);
+        }
+        for(int i =0; i< bigSizeArray.length; i++){
+            if(findTheseNumsList.contains(bigSizeArray[i])){
+                Arrays.fill(ans, bigSizeArray[i]);
+            }
+        }
         return ans;
     }
 }
