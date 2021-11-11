@@ -12,7 +12,14 @@ public class RotateArray {
     public void rotate(int[] nums, int k) {
         int rightArr[] = Arrays.copyOfRange(nums, nums.length-3, nums.length);
         int leftArr[] = Arrays.copyOfRange(nums, 0,nums.length-3);
-        nums = rightArr;
+        for(int i=0; i<rightArr.length; i++){
+            nums[i] = rightArr[i];
+        }
+        int index = rightArr.length;
+        for(int i=0; i<leftArr.length; i++){
+            nums[index] = leftArr[i];
+            index++;
+        }
         System.out.println();
     }
 }
