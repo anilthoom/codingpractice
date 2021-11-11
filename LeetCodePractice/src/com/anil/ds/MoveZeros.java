@@ -10,7 +10,7 @@ public class MoveZeros {
         moveZeros.moveZeroes(nums);
     }
     //Note that you must do this in-place without making a copy of the array.
-    public void moveZeroes(int[] nums) {
+    public void moveZeroesBrutforce(int[] nums) {
         boolean needOneMoreIteration = false;
         boolean confirmForNextIteration = false;
         for(int i=0; i<nums.length; i++){
@@ -32,4 +32,27 @@ public class MoveZeros {
             moveZeroes(nums);
         }
     }
+    public void moveZeroes(int[] nums) {
+        int ans[] =  new int[nums.length];
+        int index = 0;
+        int zeroCounter = 0;
+        for(int i=0; i<nums.length; i++){
+            if(nums[i] != 0){
+                ans[index] = nums[i];
+                index++;
+            }
+            else {
+                zeroCounter++;
+            }
+        }
+        int ansCounter = ans.length;
+        for(int i=0; i<zeroCounter; i++){
+            ansCounter = ansCounter-1;
+            ans[ansCounter] = 0;
+        }
+        for(int i = 0; i<nums.length; i++){
+            nums[i] = ans[i];
+        }
+    }
+
 }
