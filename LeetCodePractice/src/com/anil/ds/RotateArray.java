@@ -10,7 +10,9 @@ public class RotateArray {
         rotateArray.rotate(nums, k);
     }
     public void rotate(int[] nums, int k) {
-        int subArr[] = Arrays.copyOfRange(nums, nums.length-3, nums.length);
+        int rightArr[] = Arrays.copyOfRange(nums, nums.length-3, nums.length);
+        int leftArr[] = Arrays.copyOfRange(nums, 0,nums.length-3);
+        nums = rightArr;
         System.out.println();
     }
 }
