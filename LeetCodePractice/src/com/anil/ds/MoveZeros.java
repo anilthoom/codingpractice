@@ -8,6 +8,7 @@ public class MoveZeros {
         moveZeros.moveZeroes(nums);
     }
     public void moveZeroes(int[] nums) {
+        int ans[] =  new int[nums.length];
 
     }
 }
