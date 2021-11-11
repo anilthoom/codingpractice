@@ -20,15 +20,20 @@ public class IntersectionOfTwoArrays {
         return ans;
     }
     public int[] intersectFind(int[] smallSizeArray, int[] bigSizeArray) {
-        int ans[] = {};
+
         List findTheseNumsList  = new ArrayList();
+        List resultList =  new ArrayList();
         for(int i=0; i< smallSizeArray.length; i++){
             findTheseNumsList.add(smallSizeArray[i]);
         }
         for(int i =0; i< bigSizeArray.length; i++){
             if(findTheseNumsList.contains(bigSizeArray[i])){
-                Arrays.fill(ans, bigSizeArray[i]);
+                resultList.add(bigSizeArray[i]);
             }
+        }
+        int ans[] = new int[resultList.size()];
+        for(int i=0; i<resultList.size(); i++){
+            ans[i] = (int) resultList.get(i);
         }
         return ans;
     }
