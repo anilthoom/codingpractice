@@ -1,6 +1,4 @@
-package com.anil.ds;
-
-import java.util.Arrays;
+package com.anil.twopointers;
 
 //https://leetcode.com/problems/move-zeroes/
 public class MoveZeros {

@@ -1,4 +1,4 @@
-package com.anil.ds;
+package com.anil.twopointers;
 
 import java.util.HashMap;
 import java.util.Map;

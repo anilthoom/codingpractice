@@ -1,7 +1,6 @@
-package com.anil.ds;
+package com.anil.ds.array;
 
 import java.util.Arrays;
-import java.util.Hashtable;
 
 //https://leetcode.com/problems/contains-duplicate/
 public class ContainsDuplicate {
