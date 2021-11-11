@@ -11,8 +11,25 @@ public class MoveZeros {
     }
     //Note that you must do this in-place without making a copy of the array.
     public void moveZeroes(int[] nums) {
+        boolean needOneMoreIteration = false;
+        boolean confirmForNextIteration = false;
         for(int i=0; i<nums.length; i++){
-
+            if(nums[i] == 0 && i+1<nums.length){
+                if(nums[i+1] == 0){
+                    needOneMoreIteration = true;
+                }
+                else {
+                    nums[i] = nums[i+1];
+                    nums[i+1] = 0;
+                    if(needOneMoreIteration){
+                        confirmForNextIteration = true;
+                    }
+                }
+            }
+        }
+        if(needOneMoreIteration & confirmForNextIteration){
+            needOneMoreIteration = false;
+            moveZeroes(nums);
         }
     }
 }
