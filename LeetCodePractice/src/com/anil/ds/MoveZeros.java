@@ -9,6 +9,21 @@ public class MoveZeros {
     }
     public void moveZeroes(int[] nums) {
         int ans[] =  new int[nums.length];
-
+        int index = 0;
+        int zeroCounter = 0;
+        for(int i=0; i<nums.length; i++){
+            if(nums[i] != 0){
+                ans[index] = nums[i];
+                index++;
+            }
+            else {
+                zeroCounter++;
+            }
+        }
+        int ansCounter = ans.length;
+        for(int i=0; i<zeroCounter; i++){
+            ansCounter = ansCounter-1;
+            ans[ansCounter] = 0;
+        }
     }
 }
