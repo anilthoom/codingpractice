@@ -20,6 +20,5 @@ public class RotateArray {
             nums[index] = leftArr[i];
             index++;
         }
-        System.out.println();
     }
 }
