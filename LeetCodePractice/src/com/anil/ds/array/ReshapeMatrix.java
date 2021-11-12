@@ -8,13 +8,15 @@ public class ReshapeMatrix {
         reshapeMatrix.matrixReshape(mat, r, c);
     }
     public int[][] matrixReshape(int[][] mat, int r, int c) {
-        if(mat.length == r)
+        int n = mat.length, m=mat[0].length, k=0;
+        if(r*c != n*m)
             return mat;
-        for(int i=0; i<mat.length; i++){
-            for(int j=0; j<mat[i].length; j++){
-                System.out.println(mat[i][j]);
+        int[][] ans = new int[r][c];
+        for(int i=0; i<r; i++){
+            for(int j=0; j<c; j++, k++){
+                ans[i][j] = mat[k/m][k%m];
             }
         }
-        return mat;
+        return ans;
     }
 }
