@@ -3,7 +3,7 @@ package com.anil.ds.array;
 public class BestTimeForStocks {
     public static void main(String[] args) {
         BestTimeForStocks bestTimeForStocks = new BestTimeForStocks();
-        int prices[] = {7,19,5,3,1,6,4};
+        int prices[] = {7,6,4,3,1};
         System.out.println(bestTimeForStocks.maxProfit(prices));
     }
     public int maxProfit(int[] prices) {
