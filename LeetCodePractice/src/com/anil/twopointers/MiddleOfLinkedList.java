@@ -11,15 +11,42 @@ public class MiddleOfLinkedList {
         three.next = four;
         ListNode five = new ListNode(5);
         four.next = five;
-        ListNode six = new ListNode(5);
-        five.next = six;
+//        ListNode six = new ListNode(6);
+//        five.next = six;
 
         MiddleOfLinkedList middleOfLinkedList = new MiddleOfLinkedList();
         middleOfLinkedList.middleNode(head);
+        middleOfLinkedList.removeNthFromEnd(head, 2);
     }
     //https://leetcode.com/problems/remove-nth-node-from-end-of-list/
     public ListNode removeNthFromEnd(ListNode head, int n) {
-        return head;
+        int listSize = 1;
+        ListNode tempHead = head;
+        while (tempHead.next != null){
+            tempHead = tempHead.next;
+            listSize++;
+        }
+        int nthNode = listSize/n+1;
+        int counter = -1;
+        int result[] = new int[listSize-1];
+        int index = -1;
+        while (head != null){
+            counter++;
+            if(counter != nthNode){
+                //Ignore
+                index++;
+                result[index] = head.val;
+            }
+            head = head.next;
+        }
+        ListNode resultHeadNode = new ListNode(result[0]);
+        ListNode previousNode = resultHeadNode;
+        for(int i=1; i< result.length; i++){
+            ListNode temp = new ListNode(result[i]);
+            previousNode.next = temp;
+            previousNode = previousNode.next;
+        }
+        return resultHeadNode;
     }
 
     //https://leetcode.com/problems/middle-of-the-linked-list/
