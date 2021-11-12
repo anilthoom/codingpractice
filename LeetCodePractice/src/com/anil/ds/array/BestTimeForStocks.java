@@ -8,6 +8,29 @@ public class BestTimeForStocks {
     }
     public int maxProfit(int[] prices) {
         int maxProfit = 0;
+        int buyPointer = 0, sellPointer=1;
+        int profit = 0;
+        while (buyPointer < sellPointer && sellPointer<prices.length){
+            profit = prices[sellPointer] - prices[buyPointer];
+            if(profit < maxProfit){
+                //Shift
+                if(prices[sellPointer] < prices[buyPointer]){
+                    buyPointer = sellPointer;
+                    sellPointer++;
+                }
+                else {
+                    sellPointer++;
+                }
+            }
+            else {
+                maxProfit = profit;
+                sellPointer++;
+            }
+        }
+        return maxProfit;
+    }
+    public int maxProfitBrutForce(int[] prices) {
+        int maxProfit = 0;
         for(int i=0; i<prices.length; i++){
             for(int j=i+1; j<prices.length; j++ ){
                 if(prices[j]-prices[i] > maxProfit)
