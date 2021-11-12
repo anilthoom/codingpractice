@@ -16,7 +16,7 @@ public class MiddleOfLinkedList {
 
         MiddleOfLinkedList middleOfLinkedList = new MiddleOfLinkedList();
         middleOfLinkedList.middleNode(head);
-        middleOfLinkedList.removeNthFromEnd(head, 2);
+        middleOfLinkedList.removeNthFromEnd(head, 1);
     }
     //https://leetcode.com/problems/remove-nth-node-from-end-of-list/
     public ListNode removeNthFromEnd(ListNode head, int n) {
@@ -26,8 +26,10 @@ public class MiddleOfLinkedList {
             tempHead = tempHead.next;
             listSize++;
         }
-        int nthNode = listSize/n+1;
+        if(listSize == 1)
+            return head.next;
         int counter = -1;
+        int nthNode = listSize-n;
         int result[] = new int[listSize-1];
         int index = -1;
         while (head != null){
