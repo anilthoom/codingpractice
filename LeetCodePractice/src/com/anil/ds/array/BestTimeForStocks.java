@@ -14,19 +14,15 @@ public class BestTimeForStocks {
         while (buyPointer < sellPointer && sellPointer<prices.length){
             profit = prices[sellPointer] - prices[buyPointer];
             if(profit < maxProfit){
-                //Shift
+                //Shift left pointer
                 if(prices[sellPointer] < prices[buyPointer]){
                     buyPointer = sellPointer;
-                    sellPointer++;
-                }
-                else {
-                    sellPointer++;
                 }
             }
             else {
                 maxProfit = profit;
-                sellPointer++;
             }
+            sellPointer++;
         }
         return maxProfit;
     }
