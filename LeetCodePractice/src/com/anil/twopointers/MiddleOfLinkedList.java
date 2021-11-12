@@ -1,6 +1,5 @@
 package com.anil.twopointers;
 
-//https://leetcode.com/problems/middle-of-the-linked-list/
 public class MiddleOfLinkedList {
     public static void main(String[] args) {
         ListNode head = new ListNode(1);
@@ -18,6 +17,12 @@ public class MiddleOfLinkedList {
         MiddleOfLinkedList middleOfLinkedList = new MiddleOfLinkedList();
         middleOfLinkedList.middleNode(head);
     }
+    //https://leetcode.com/problems/remove-nth-node-from-end-of-list/
+    public ListNode removeNthFromEnd(ListNode head, int n) {
+        return head;
+    }
+
+    //https://leetcode.com/problems/middle-of-the-linked-list/
     public ListNode middleNode(ListNode head) {
         int listSize = 1;
         ListNode tempHead = head;
