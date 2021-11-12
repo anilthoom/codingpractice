@@ -6,6 +6,7 @@ public class BestTimeForStocks {
         int prices[] = {7,6,4,3,1};
         System.out.println(bestTimeForStocks.maxProfit(prices));
     }
+    // Optimal solution - Two pointer approach.
     public int maxProfit(int[] prices) {
         int maxProfit = 0;
         int buyPointer = 0, sellPointer=1;
