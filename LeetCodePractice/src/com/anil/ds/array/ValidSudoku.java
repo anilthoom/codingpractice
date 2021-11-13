@@ -25,7 +25,6 @@ public class ValidSudoku {
         Map<Integer, List<Character>> matrix3X3Map = new HashMap<>();
         Map<Integer, List<Character>> colMap = new HashMap<>();
         for(int i=0; i<board.length; i++){
-
             List<Character> rowList = new ArrayList<>();
             for (int j=0; j<board[i].length; j++){
                 char elem = board[i][j];
@@ -47,53 +46,18 @@ public class ValidSudoku {
 
                     //3X3 Matrix check
                     List<Character> charMatrixList = new ArrayList<>();
-                    int matrixNo = findMatrixIndex(i, j);
-                    if(matrix3X3Map.get(matrixNo) != null){
-                        charMatrixList = matrix3X3Map.get(matrixNo);
+                    int index = (i / 3) *3 +  j / 3;
+                    if(matrix3X3Map.get(index) != null){
+                        charMatrixList = matrix3X3Map.get(index);
                         if(charMatrixList.contains(elem))
                             return false;
                     }
                     charMatrixList.add(elem);
-                    matrix3X3Map.put(matrixNo, charMatrixList);
+                    matrix3X3Map.put(index, charMatrixList);
                 }
             }
+            System.out.println();
         }
         return true;
-    }
-    private int findMatrixIndex(int i, int j){
-        if( (i==0 || i==1 || i==2) ){ //Matrix Row-1
-            if((j==0 || j==1 ||j==2)){
-                return 1;
-            }
-            else if((j==3 || j==4 ||j==5)){
-                return 2;
-            }
-            else if((j==6 || j==7 ||j==8)){
-                return 3;
-            }
-        }
-        else if( (i==3 || i==4 || i==5) ){//Matrix Row-2
-            if((j==0 || j==1 ||j==2)){
-                return 4;
-            }
-            else if((j==3 || j==4 ||j==5)){
-                return 5;
-            }
-            else if((j==6 || j==7 ||j==8)){
-                return 6;
-            }
-        }
-        else if( (i==6 || i==7 || i==8) ){//Matrix Row-2
-            if((j==0 || j==1 ||j==2)){
-                return 7;
-            }
-            else if((j==3 || j==4 ||j==5)){
-                return 8;
-            }
-            else if((j==6 || j==7 ||j==8)){
-                return 9;
-            }
-        }
-        return -1;
     }
 }
