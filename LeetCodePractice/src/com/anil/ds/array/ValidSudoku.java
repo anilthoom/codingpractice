@@ -21,9 +21,13 @@ public class ValidSudoku {
         System.out.println(validSudoku.isValidSudoku(board));
     }
     public boolean isValidSudoku(char[][] board) {
-        List<Character> rowList = new ArrayList<>();
         for(int i=0; i<board.length; i++){
+            List<Character> rowList = new ArrayList<>();
             for (int j=0; j<board[i].length; j++){
+                char elem = board[i][j];
+                if(rowList.contains(elem))
+                    return false;
+                rowList.add(elem);
                 System.out.print(board[i][j]+" ");
             }
             System.out.println();
