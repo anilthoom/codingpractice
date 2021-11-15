@@ -7,6 +7,11 @@ public class LongestSubSeq {
         System.out.println(longestSubSeq.lengthOfLongestSubstring("pwwkew"));
     }
     public int lengthOfLongestSubstring(String s) {
-        return -1;
+        int p1=0, p2=1;
+        int maxLength = 0;
+        while (p1<p2){
+
+        }
+        return maxLength;
     }
 }
