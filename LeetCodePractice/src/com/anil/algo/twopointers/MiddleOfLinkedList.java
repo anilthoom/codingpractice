@@ -1,4 +1,4 @@
-package com.anil.twopointers;
+package com.anil.algo.twopointers;
 
 public class MiddleOfLinkedList {
     public static void main(String[] args) {

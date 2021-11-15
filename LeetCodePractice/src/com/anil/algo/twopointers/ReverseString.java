@@ -1,6 +1,5 @@
-package com.anil.twopointers;
+package com.anil.algo.twopointers;
 
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 //https://leetcode.com/problems/reverse-string/

@@ -1,4 +1,4 @@
-package com.anil.twopointers;
+package com.anil.algo.twopointers;
 
 import java.util.Arrays;
 
