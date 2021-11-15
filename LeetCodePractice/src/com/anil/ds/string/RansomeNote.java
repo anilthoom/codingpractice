@@ -4,7 +4,7 @@ package com.anil.ds.string;
 public class RansomeNote {
     public static void main(String[] args) {
         RansomeNote ransomeNote = new RansomeNote();
-        System.out.println(ransomeNote.canConstructOptimal("baa", "aab"));
+        System.out.println(ransomeNote.canConstructOptimal("xmaxp", "studioxamax"));
     }
     public boolean canConstructOptimal(String ransomNote, String magazine) {
         int[] arr = new int[26];
