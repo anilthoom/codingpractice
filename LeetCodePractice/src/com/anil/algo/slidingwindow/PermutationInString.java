@@ -6,15 +6,20 @@ import java.util.Arrays;
 public class PermutationInString {
     public static void main(String[] args) {
         PermutationInString permutationInString = new PermutationInString();
-        System.out.println(permutationInString.checkInclusion("ab", "eidbaooo"));
+        System.out.println(permutationInString.checkInclusion("hello", "ooolleoooleh"));
     }
     public boolean checkInclusion(String s1, String s2) {
+        return false;
+    }
+    public boolean checkInclusionBF(String s1, String s2) {
         char[] s1Chars = new char[26];
         for(int i=0; i<s1.length(); i++){
             s1Chars[s1.charAt(i)-'a']++;
         }
         for(int i =0; i<s2.length(); i++){
             if(s1Chars[s2.charAt(i)-'a'] > 0){
+                if(s1.length()+i > s2.length())
+                    return false;
                 String str = s2.substring(i, i+s1.length());
                 boolean found = false;
                 for(int j=0; j<str.length(); j++){
