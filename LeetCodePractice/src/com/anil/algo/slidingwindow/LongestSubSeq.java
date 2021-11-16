@@ -11,24 +11,25 @@ public class LongestSubSeq {
         System.out.println(longestSubSeq.lengthOfLongestSubstring("abcabcbb"));
     }
     public int lengthOfLongestSubstring(String s) {
-        if (s.length() == 0) {return 0;}
-        int max = 0;
-        Set<Character> set = new HashSet<>();
-        int i =0 , j=0;
-        char[] c = s.toCharArray();
-        while(j < c.length) {
-
-            if (!set.contains(c[j])) {
-                set.add(c[j]);
-                j++;
-                max = Math.max(set.size(), max);
-            }else
-            {
-                set.remove(c[i]);
-                i++;
+        if (s.length() == 0)
+        {
+            return 0;
+        }
+        int maxLength = 0;
+        Set<Character> uniqueCharSet = new HashSet<>();
+        int p1 =0 , p2=0;
+        char[] charsArr = s.toCharArray();
+        while (p1 < charsArr.length ){
+            if(!uniqueCharSet.contains(charsArr[p1])){
+                uniqueCharSet.add(charsArr[p1]);
+                p1++;
+                maxLength = Math.max(uniqueCharSet.size(), maxLength);
+            }else {
+                uniqueCharSet.remove(charsArr[p2]);
+                p2++;
             }
         }
-        return max;
+        return maxLength;
     }
     public int lengthOfLongestSubstringBF(String s) {
         int maxLength = 0;
