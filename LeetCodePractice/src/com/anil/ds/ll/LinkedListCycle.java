@@ -1,5 +1,8 @@
 package com.anil.ds.ll;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class LinkedListCycle {
     public static void main(String[] args) {
         ListNode head = new ListNode(1);
@@ -13,12 +16,36 @@ public class LinkedListCycle {
         four.next = five;
         ListNode six = new ListNode(6);
         five.next = six;
+        six.next = head;
 
         LinkedListCycle linkedListCycle = new LinkedListCycle();
         System.out.println(linkedListCycle.hasCycle(head));
     }
+    //Optimized solution
     public boolean hasCycle(ListNode head) {
-
+        if (head == null || head.next == null) return false;
+        ListNode slow = head;
+        ListNode fast = head;
+        while (fast != null && fast.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+            if (slow == fast) {
+                return true;
+            }
+        }
+        return false;
+    }
+    public boolean hasCycleX(ListNode head) {
+        if(head == null)
+            return false;
+        List<Integer> hasCodesList = new ArrayList<>();
+        while (head.next != null){
+            if(hasCodesList.contains(head.hashCode())){
+                return true;
+            }
+            hasCodesList.add(head.hashCode());
+            head = head.next;
+        }
         return false;
     }
 
