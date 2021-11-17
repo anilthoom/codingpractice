@@ -18,6 +18,7 @@ public class PermutationInString {
         if(isMatch(s1Chars, s2Chars))
             return true;
         int s1Length = s1.length();
+        //Sliding window technique
         for(int i=1; i<=s2.length()-s1Length; i++){
             s2Chars[s2.charAt(i-1)-'a']--;
             s2Chars[s2.charAt(i+s1Length-1)-'a']++;
