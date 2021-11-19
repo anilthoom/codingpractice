@@ -33,6 +33,9 @@ public class MergeTwoSortedLists {
             else if(v2<v1){
                 //Attach l1 to l2
             }
+            else if(v1 == v2){
+                //Need to attach one of them to other
+            }
         }
         return null;
     }
