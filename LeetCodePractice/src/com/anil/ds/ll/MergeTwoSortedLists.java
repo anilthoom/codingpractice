@@ -1,5 +1,7 @@
 package com.anil.ds.ll;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class MergeTwoSortedLists {
@@ -19,24 +21,27 @@ public class MergeTwoSortedLists {
         ListNode sortedList = mergeTwoSortedLists.mergeTwoLists(l1, l2);
     }
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
-        ListNode remainingL1 =l1, remainingL2 = l2;
-        while (remainingL1.next !=null && remainingL2.next!=null){
-            int v1 = remainingL1.val;
-            int v2 = remainingL2.val;
-            if(v1<v2){
-                // Attach l2 to l1
-                remainingL2 = remainingL2.next;
-                l2.next =null;
-                remainingL1 = remainingL1.next;
-                l1.next = l2;
+        ListNode mergedList = new ListNode(0);
+        ListNode tail = mergedList;
+        while (true){
+            if(l1 == null){
+                tail.next = l2;
+                break;
             }
-            else if(v2<v1){
-                //Attach l1 to l2
+            if(l2 == null){
+                tail.next = l1;
+                break;
             }
-            else if(v1 == v2){
-                //Need to attach one of them to other
+            if(l1.val <= l2.val){
+                tail.next = l1;
+                l1 = l1.next;
             }
+            else {
+                tail.next = l2;
+                l2 = l2.next;
+            }
+            tail = tail.next;
         }
-        return null;
+        return mergedList.next;
     }
 }
