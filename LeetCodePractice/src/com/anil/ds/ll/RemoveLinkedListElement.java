@@ -17,7 +17,7 @@ public class RemoveLinkedListElement {
         six.next = seven;
 
         RemoveLinkedListElement removeLinkedListElement = new RemoveLinkedListElement();
-        removeLinkedListElement.removeElements(head, 6);
+        removeLinkedListElement.removeElements(head, 7);
 
     }
     public ListNode removeElements(ListNode head, int val) {
@@ -25,7 +25,7 @@ public class RemoveLinkedListElement {
             return head;
         ListNode newHead = new ListNode(0);
         ListNode tail = newHead;
-        while (head.next != null && head!=null){
+        while (head!=null){
             if(head.val != val){
                 tail.next = new ListNode(head.val);
             }
