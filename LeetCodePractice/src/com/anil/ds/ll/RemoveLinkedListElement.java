@@ -17,10 +17,28 @@ public class RemoveLinkedListElement {
         six.next = seven;
 
         RemoveLinkedListElement removeLinkedListElement = new RemoveLinkedListElement();
-        removeLinkedListElement.removeElements(head, 7);
+        removeLinkedListElement.removeElements(head, 6);
 
     }
+    //Optimal
     public ListNode removeElements(ListNode head, int val) {
+        if (head == null) {
+            return null;
+        }
+
+        ListNode dummy = new ListNode();
+        dummy.next = head;
+        ListNode curr = dummy;
+        while (curr.next != null) {
+            if (curr.next.val == val) {
+                curr.next = curr.next.next;
+            } else {
+                curr = curr.next;
+            }
+        }
+        return dummy.next;
+    }
+    public ListNode removeElementsBF(ListNode head, int val) {
         if(head == null)
             return head;
         ListNode newHead = new ListNode(0);
