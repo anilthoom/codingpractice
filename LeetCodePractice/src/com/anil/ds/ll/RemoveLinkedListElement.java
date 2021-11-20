@@ -21,19 +21,18 @@ public class RemoveLinkedListElement {
 
     }
     public ListNode removeElements(ListNode head, int val) {
-        ListNode newHead = head;
-        ListNode tempNode = newHead;
+        if(head == null)
+            return head;
+        ListNode newHead = new ListNode(0);
+        ListNode tail = newHead;
         while (head.next != null && head!=null){
             if(head.val != val){
-                System.out.print(head.val + " -> ");
-                head = head.next;
-                tempNode = head.next;
+                tail.next = new ListNode(head.val);
             }
-            else {
-                head = head.next.next;
-            }
-            tempNode = tempNode.next;
+            head = head.next;
+            if(tail.next != null)
+                tail = tail.next;
         }
-        return null;
+        return newHead.next;
     }
 }
