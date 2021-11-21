@@ -1,7 +1,5 @@
 package com.anil.ds.ll;
 
-import java.util.Stack;
-
 public class ReverseLinkedList {
     public static void main(String[] args) {
         ReverseLinkedList reverseLinkedList = new ReverseLinkedList();
