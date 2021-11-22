@@ -25,6 +25,22 @@ public class BinaryTreePreOrder {
         }
         return nodesList;
     }
+    public List<Integer> inorderTraversal(TreeNode root) {
+        if(root != null){
+            inorderTraversal(root.left);
+            nodesList.add(root.val);
+            inorderTraversal(root.right);
+        }
+        return nodesList;
+    }
+    public List<Integer> postorderTraversal(TreeNode root) {
+        if(root != null){
+            postorderTraversal(root.left);
+            postorderTraversal(root.right);
+            nodesList.add(root.val);
+        }
+        return nodesList;
+    }
 }
 class TreeNode {
     int val;
