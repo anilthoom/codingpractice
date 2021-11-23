@@ -17,7 +17,8 @@ public class BinaryTreePreOrder {
         //rightNode.left = new TreeNode(3);
 
         BinaryTreePreOrder binaryTreePreOrder = new BinaryTreePreOrder();
-        binaryTreePreOrder.preorderTraversal(root);
+        //binaryTreePreOrder.preorderTraversal(root);
+        binaryTreePreOrder.levelOrder(root);
 
     }
     List<Integer> nodesList = new ArrayList<>();
@@ -46,12 +47,32 @@ public class BinaryTreePreOrder {
         return nodesList;
     }
     public List<List<Integer>> levelOrder(TreeNode root) {
+        if(root == null)
+            return null;
         List<List<Integer>> levelOrderList = new ArrayList<>();
         parseLevelOrder(root, levelOrderList);
         return levelOrderList;
     }
     public void parseLevelOrder(TreeNode root, List<List<Integer>> list){
-
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        List<Integer> rootValue = new ArrayList<>();
+        rootValue.add(root.val);
+        list.add(rootValue);
+        while (!queue.isEmpty()){
+            TreeNode tempNode = queue.poll();
+            List<Integer> nodes = new ArrayList<>();
+            if(tempNode.left != null){
+                queue.add(tempNode.left);
+                nodes.add(tempNode.left.val);
+            }
+            if(tempNode.right != null){
+                queue.add(tempNode.right);
+                nodes.add(tempNode.right.val);
+            }
+            if(!nodes.isEmpty())
+                list.add(nodes);
+        }
     }
     public static void printLevelOrder(TreeNode root)
     {
