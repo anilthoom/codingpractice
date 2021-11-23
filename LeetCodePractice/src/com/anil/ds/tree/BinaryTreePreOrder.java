@@ -47,9 +47,9 @@ public class BinaryTreePreOrder {
         return nodesList;
     }
     public List<List<Integer>> levelOrder(TreeNode root) {
-        if(root == null)
-            return null;
         List<List<Integer>> levelOrderList = new ArrayList<>();
+        if(root == null)
+            return levelOrderList;
         parseLevelOrder(root, levelOrderList);
         return levelOrderList;
     }
