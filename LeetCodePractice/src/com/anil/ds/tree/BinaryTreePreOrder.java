@@ -10,10 +10,17 @@ import java.util.Queue;
 //https://leetcode.com/problems/binary-tree-preorder-traversal/
 public class BinaryTreePreOrder {
     public static void main(String[] args) {
-        TreeNode root = new TreeNode(3);
-        root.left = new TreeNode(1);
-        TreeNode rightNode = new TreeNode(2);
-        root.right = rightNode;
+        TreeNode root = new TreeNode(1);
+        TreeNode two = new TreeNode(2);
+        root.left = two;
+        TreeNode three = new TreeNode(3);
+        root.right = three;
+        two.left = new TreeNode(4);
+        two.right = new TreeNode(5);
+
+        three.left = new TreeNode(6);
+        three.right = new TreeNode(7);
+
         //rightNode.left = new TreeNode(3);
 
         BinaryTreePreOrder binaryTreePreOrder = new BinaryTreePreOrder();
@@ -50,28 +57,62 @@ public class BinaryTreePreOrder {
         List<List<Integer>> levelOrderList = new ArrayList<>();
         if(root == null)
             return levelOrderList;
-        parseLevelOrder(root, levelOrderList);
-        return levelOrderList;
-    }
-    public void parseLevelOrder(TreeNode root, List<List<Integer>> list){
-        Queue<TreeNode> queue = new LinkedList<>();
+
+        List<Integer> nodeValues = new ArrayList<>();
+        LinkedList<TreeNode> queue = new LinkedList<>();
         queue.add(root);
-        List<Integer> rootValue = new ArrayList<>();
-        rootValue.add(root.val);
-        list.add(rootValue);
+        LinkedList<TreeNode> nextNodes = new LinkedList<>();
+
         while (!queue.isEmpty()){
             TreeNode tempNode = queue.poll();
-            List<Integer> nodes = new ArrayList<>();
+
             if(tempNode.left != null){
-                queue.add(tempNode.left);
-                nodes.add(tempNode.left.val);
+                nextNodes.add(tempNode.left);
             }
             if(tempNode.right != null){
-                queue.add(tempNode.right);
-                nodes.add(tempNode.right.val);
+                nextNodes.add(tempNode.right);
             }
-            if(!nodes.isEmpty())
-                list.add(nodes);
+            nodeValues.add(tempNode.val);
+
+            if(queue.isEmpty()){
+                queue = nextNodes;
+                nextNodes =  new LinkedList<>();
+                levelOrderList.add(nodeValues);
+                nodeValues = new ArrayList<>();
+            }
+        }
+        return levelOrderList;
+    }
+    public static boolean printLevel(TreeNode root, int level)
+    {
+        // base case
+        if (root == null) {
+            return false;
+        }
+
+        if (level == 1)
+        {
+            System.out.print(root.val + " ");
+
+            // return true if at least one node is present at a given level
+            return true;
+        }
+
+        boolean left = printLevel(root.left, level - 1);
+        boolean right = printLevel(root.right, level - 1);
+
+        return left || right;
+    }
+
+    // Function to print level order traversal of a given binary tree
+    public static void levelOrderTraversal(TreeNode root)
+    {
+        // start from level 1 — till the height of the tree
+        int level = 1;
+
+        // run till printLevel() returns false
+        while (printLevel(root, level)) {
+            level++;
         }
     }
     public static void printLevelOrder(TreeNode root)
