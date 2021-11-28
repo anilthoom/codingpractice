@@ -11,6 +11,11 @@ public class SingleNumber {
     }
     public int singleNumber(int[] nums) {
         Arrays.sort(nums);
-        return -1;
+        int p1 = 0, p2 = 1;
+        while (nums[p1] == nums[p2] & p2<=nums.length){
+            p1 = p1+2;
+            p2 = p2+2;
+        }
+        return nums[p1];
     }
 }
