@@ -6,16 +6,22 @@ import java.util.Arrays;
 public class SingleNumber {
     public static void main(String[] args) {
         SingleNumber singleNumber = new SingleNumber();
-        int nums[] = {4, 1, 2, 1, 2, 4, 5, 5, 3};
+        int nums[] = {4, 1, 2, 1, 2};
         System.out.println(singleNumber.singleNumber(nums));
     }
     public int singleNumber(int[] nums) {
-        Arrays.sort(nums);
-        int p1 = 0, p2 = 1;
-        while (nums[p1] == nums[p2] & p2<=nums.length){
-            p1 = p1+2;
-            p2 = p2+2;
+        int sum = 0;
+        for(int i : nums){
+            sum ^= i;
         }
-        return nums[p1];
+        return sum;
+    }
+    public int singleNumberBF(int[] nums) {
+        Arrays.sort(nums);
+        for(int i=0; i<nums.length-1; i=i+2){
+            if(nums[i] != nums[i+1])
+                return nums[i];
+        }
+        return nums[nums.length-1];
     }
 }
