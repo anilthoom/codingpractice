@@ -3,9 +3,7 @@ package com.anil.math;
 public class CountPrimes {
     public static void main(String[] args) {
         CountPrimes countPrimes = new CountPrimes();
-
-        System.out.println(countPrimes.countPrimes(345694));
-        System.out.println(Math.sqrt(30));
+        System.out.println(countPrimes.countPrimes(20));
     }
     //Optimal solution
     public int countPrimes(int n){
