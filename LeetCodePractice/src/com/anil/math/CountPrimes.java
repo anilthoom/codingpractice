@@ -7,7 +7,23 @@ public class CountPrimes {
         System.out.println(countPrimes.countPrimes(345694));
         System.out.println(Math.sqrt(30));
     }
-    public int countPrimes(int n) {
+    //Optimal solution
+    public int countPrimes(int n){
+        boolean[] primeNum=new boolean[n];
+        int result=0;
+
+        for(int i=2;i<n;i++){
+            if(primeNum[i]==false){
+                result++;
+
+                for(int time=2;i*time<n;time++){
+                    primeNum[i*time]=true;
+                }
+            }
+        }
+        return result;
+    }
+    public int countPrimesBF(int n) {
         int counter = 0;
         for (int i = 2; i<n; i++){
             if(isPrime(i))
