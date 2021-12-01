@@ -13,14 +13,17 @@ public class MaximumDepthBinaryTree {
         two.right = new TreeNode(5);
         three.left = new TreeNode(6);
         three.right = new TreeNode(7);
+
+        MaximumDepthBinaryTree maximumDepthBinaryTree = new MaximumDepthBinaryTree();
+        System.out.println(maximumDepthBinaryTree.maxDepth(root));
     }
     public int maxDepth(TreeNode root) {
+        int counter = 0;
         if(root == null)
-            return 0;
+            return counter;
         LinkedList<TreeNode> queue = new LinkedList<>();
         queue.add(root);
         LinkedList<TreeNode> nextNodes = new LinkedList<>();
-        int counter = 1;
         while (!queue.isEmpty()){
             TreeNode tempNode = queue.poll();
             if(tempNode.left != null)
