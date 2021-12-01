@@ -22,6 +22,16 @@ public class ValidBST {
         LinkedList<TreeNode> nextNodes = new LinkedList<>();
         while (!queue.isEmpty()){
             TreeNode tempNode = queue.poll();
+            if(tempNode.left != null){
+                nextNodes.add(tempNode.left);
+                if(tempNode.val < tempNode.left.val)
+                    return false;
+            }
+            if(tempNode.right != null){
+                nextNodes.add(tempNode.right);
+                if(tempNode.val > tempNode.right.val)
+                    return false;
+            }
         }
         return true;
     }
