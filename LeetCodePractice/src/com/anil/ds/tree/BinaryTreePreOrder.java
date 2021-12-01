@@ -26,8 +26,8 @@ public class BinaryTreePreOrder {
 //        binaryTreePreOrder.preorderTraversal(root);
 //        binaryTreePreOrder.inorderTraversal(root);
 //        binaryTreePreOrder.postorderTraversal(root);
-//        binaryTreePreOrder.levelOrder(root);
-        binaryTreePreOrder.levelOrderTraversal(root);
+        binaryTreePreOrder.levelOrder(root);
+//        binaryTreePreOrder.levelOrderTraversal(root);
 
     }
 
@@ -119,7 +119,7 @@ public class BinaryTreePreOrder {
         while (printLevel(root, level)) {
             level++;
         }
-        System.out.println(level);
+        System.out.println("\n"+ level);
     }
     public static void printLevelOrder(TreeNode root)
     {
