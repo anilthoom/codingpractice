@@ -15,6 +15,7 @@ public class ValidBST {
         three.right = new TreeNode(7);
 
         ValidBST validBST = new ValidBST();
+        System.out.println(validBST.isValidBST(root));
     }
     public boolean isValidBST(TreeNode root) {
         LinkedList<TreeNode> queue = new LinkedList<>();
@@ -31,6 +32,10 @@ public class ValidBST {
                 nextNodes.add(tempNode.right);
                 if(tempNode.val > tempNode.right.val)
                     return false;
+            }
+            if(queue.isEmpty()){
+                queue = nextNodes;
+                nextNodes = new LinkedList<>();
             }
         }
         return true;
