@@ -24,7 +24,9 @@ public class BinaryTreePreOrder {
         //rightNode.left = new TreeNode(3);
 
         BinaryTreePreOrder binaryTreePreOrder = new BinaryTreePreOrder();
-        //binaryTreePreOrder.preorderTraversal(root);
+        binaryTreePreOrder.preorderTraversal(root);
+        binaryTreePreOrder.inorderTraversal(root);
+        binaryTreePreOrder.postorderTraversal(root);
         binaryTreePreOrder.levelOrder(root);
 
     }
