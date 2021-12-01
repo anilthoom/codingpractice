@@ -21,13 +21,13 @@ public class BinaryTreePreOrder {
         three.left = new TreeNode(6);
         three.right = new TreeNode(7);
 
-        //rightNode.left = new TreeNode(3);
 
         BinaryTreePreOrder binaryTreePreOrder = new BinaryTreePreOrder();
-        binaryTreePreOrder.preorderTraversal(root);
-        binaryTreePreOrder.inorderTraversal(root);
-        binaryTreePreOrder.postorderTraversal(root);
-        binaryTreePreOrder.levelOrder(root);
+//        binaryTreePreOrder.preorderTraversal(root);
+//        binaryTreePreOrder.inorderTraversal(root);
+//        binaryTreePreOrder.postorderTraversal(root);
+//        binaryTreePreOrder.levelOrder(root);
+        binaryTreePreOrder.levelOrderTraversal(root);
 
     }
 
@@ -110,7 +110,7 @@ public class BinaryTreePreOrder {
     }
 
     // Function to print level order traversal of a given binary tree
-    public static void levelOrderTraversal(TreeNode root)
+    public void levelOrderTraversal(TreeNode root)
     {
         // start from level 1 — till the height of the tree
         int level = 1;
@@ -119,6 +119,7 @@ public class BinaryTreePreOrder {
         while (printLevel(root, level)) {
             level++;
         }
+        System.out.println(level);
     }
     public static void printLevelOrder(TreeNode root)
     {
