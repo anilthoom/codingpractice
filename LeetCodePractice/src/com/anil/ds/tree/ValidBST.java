@@ -25,12 +25,12 @@ public class ValidBST {
             TreeNode tempNode = queue.poll();
             if(tempNode.left != null){
                 nextNodes.add(tempNode.left);
-                if(tempNode.val < tempNode.left.val)
+                if(tempNode.val <= tempNode.left.val)
                     return false;
             }
             if(tempNode.right != null){
                 nextNodes.add(tempNode.right);
-                if(tempNode.val > tempNode.right.val)
+                if(tempNode.val >= tempNode.right.val)
                     return false;
             }
             if(queue.isEmpty()){
