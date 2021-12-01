@@ -23,11 +23,11 @@ public class BinaryTreePreOrder {
 
 
         BinaryTreePreOrder binaryTreePreOrder = new BinaryTreePreOrder();
-//        binaryTreePreOrder.preorderTraversal(root);
-//        binaryTreePreOrder.inorderTraversal(root);
-//        binaryTreePreOrder.postorderTraversal(root);
+        binaryTreePreOrder.preorderTraversal(root);
+        binaryTreePreOrder.inorderTraversal(root);
+        binaryTreePreOrder.postorderTraversal(root);
         binaryTreePreOrder.levelOrder(root);
-//        binaryTreePreOrder.levelOrderTraversal(root);
+        binaryTreePreOrder.levelOrderTraversal(root);
 
     }
 
