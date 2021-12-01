@@ -28,8 +28,9 @@ public class BinaryTreePreOrder {
         binaryTreePreOrder.levelOrder(root);
 
     }
-    List<Integer> nodesList = new ArrayList<>();
+
     public List<Integer> preorderTraversal(TreeNode root) {
+        List<Integer> nodesList = new ArrayList<>();
         if(root != null){
             nodesList.add(root.val);
             preorderTraversal(root.left);
@@ -38,6 +39,7 @@ public class BinaryTreePreOrder {
         return nodesList;
     }
     public List<Integer> inorderTraversal(TreeNode root) {
+        List<Integer> nodesList = new ArrayList<>();
         if(root != null){
             inorderTraversal(root.left);
             nodesList.add(root.val);
@@ -46,6 +48,7 @@ public class BinaryTreePreOrder {
         return nodesList;
     }
     public List<Integer> postorderTraversal(TreeNode root) {
+        List<Integer> nodesList = new ArrayList<>();
         if(root != null){
             postorderTraversal(root.left);
             postorderTraversal(root.right);
