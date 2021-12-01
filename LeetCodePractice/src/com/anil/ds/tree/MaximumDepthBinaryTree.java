@@ -1,5 +1,7 @@
 package com.anil.ds.tree;
 
+import java.util.LinkedList;
+
 public class MaximumDepthBinaryTree {
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);
@@ -13,6 +15,12 @@ public class MaximumDepthBinaryTree {
         three.right = new TreeNode(7);
     }
     public int maxDepth(TreeNode root) {
+        LinkedList<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        LinkedList<TreeNode> nextNodes = new LinkedList<>();
+        while (!queue.isEmpty()){
+
+        }
         return 0;
     }
 }
