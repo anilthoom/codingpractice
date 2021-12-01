@@ -15,12 +15,25 @@ public class MaximumDepthBinaryTree {
         three.right = new TreeNode(7);
     }
     public int maxDepth(TreeNode root) {
+        if(root == null)
+            return 0;
         LinkedList<TreeNode> queue = new LinkedList<>();
         queue.add(root);
         LinkedList<TreeNode> nextNodes = new LinkedList<>();
+        int counter = 1;
         while (!queue.isEmpty()){
+            TreeNode tempNode = queue.poll();
+            if(tempNode.left != null)
+                nextNodes.add(tempNode.left);
+            if(tempNode.right != null)
+                nextNodes.add(tempNode.right);
+            if(queue.isEmpty()){
+                counter++;
+                queue = nextNodes;
+                nextNodes = new LinkedList<>();
+            }
 
         }
-        return 0;
+        return counter;
     }
 }
