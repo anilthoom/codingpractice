@@ -18,9 +18,9 @@ public class MaximumDepthBinaryTree {
         System.out.println(maximumDepthBinaryTree.maxDepth(root));
     }
     public int maxDepth(TreeNode root) {
-        int counter = 0;
+        int treeHeight = 0;
         if(root == null)
-            return counter;
+            return treeHeight;
         LinkedList<TreeNode> queue = new LinkedList<>();
         queue.add(root);
         LinkedList<TreeNode> nextNodes = new LinkedList<>();
@@ -31,12 +31,12 @@ public class MaximumDepthBinaryTree {
             if(tempNode.right != null)
                 nextNodes.add(tempNode.right);
             if(queue.isEmpty()){
-                counter++;
+                treeHeight++;
                 queue = nextNodes;
                 nextNodes = new LinkedList<>();
             }
 
         }
-        return counter;
+        return treeHeight;
     }
 }
