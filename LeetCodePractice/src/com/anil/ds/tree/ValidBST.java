@@ -17,6 +17,28 @@ public class ValidBST {
         ValidBST validBST = new ValidBST();
         System.out.println(validBST.isValidBST(root));
     }
+    static boolean checkBST(TreeNode root)
+    {
+        if(root == null)
+        {
+            return true;
+        }
+        if(root.left == null || root.right == null)
+        {
+            return true;
+        }
+        if((root.left.val < root.val) && (root.val < root.right.val))
+        {
+            boolean isLeftOk = checkBST(root.left);
+            boolean isRightOk = checkBST(root.right);
+            if(isLeftOk && isRightOk)
+                return true;
+            else
+                return false;
+        }
+        else
+            return false;
+    }
     public boolean isValidBST(TreeNode root) {
         LinkedList<TreeNode> queue = new LinkedList<>();
         queue.add(root);
