@@ -17,29 +17,26 @@ public class ValidBST {
         ValidBST validBST = new ValidBST();
         System.out.println(validBST.isValidBST(root));
     }
-    static boolean checkBST(TreeNode root)
+    boolean isBSTUtil(TreeNode node, int min, int max)
     {
-        if(root == null)
-        {
+        /* an empty tree is BST */
+        if (node == null)
             return true;
-        }
-        if(root.left == null || root.right == null)
-        {
-            return true;
-        }
-        if((root.left.val < root.val) && (root.val < root.right.val))
-        {
-            boolean isLeftOk = checkBST(root.left);
-            boolean isRightOk = checkBST(root.right);
-            if(isLeftOk && isRightOk)
-                return true;
-            else
-                return false;
-        }
-        else
+
+        /* false if this node violates the min/max constraints */
+        if (node.val < min || node.val > max)
             return false;
+
+        /* otherwise check the subtrees recursively
+        tightening the min/max constraints */
+        // Allow only distinct values
+        return (isBSTUtil(node.left, min, node.val-1) &&
+                isBSTUtil(node.right, node.val+1, max));
     }
-    public boolean isValidBST(TreeNode root) {
+    public boolean isValidBST(TreeNode root){
+        return isBSTUtil(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
+    }
+    public boolean isValidBSTWRONG(TreeNode root) {
         LinkedList<TreeNode> queue = new LinkedList<>();
         queue.add(root);
         LinkedList<TreeNode> nextNodes = new LinkedList<>();
