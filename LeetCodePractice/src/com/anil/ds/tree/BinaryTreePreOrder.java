@@ -67,7 +67,6 @@ public class BinaryTreePreOrder {
         LinkedList<TreeNode> queue = new LinkedList<>();
         queue.add(root);
         LinkedList<TreeNode> nextNodes = new LinkedList<>();
-
         while (!queue.isEmpty()){
             TreeNode tempNode = queue.poll();
 
