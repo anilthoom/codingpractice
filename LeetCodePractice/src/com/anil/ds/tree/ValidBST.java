@@ -17,8 +17,8 @@ public class ValidBST {
         ValidBST validBST = new ValidBST();
         System.out.println(validBST.isValidBST(root));
     }
-    // Returns true if given tree is BST.
-    static boolean isBST(TreeNode root, TreeNode l, TreeNode r)
+
+    static boolean isBST(TreeNode root, TreeNode leftNode, TreeNode rightNode)
     {
         // Base condition
         if (root == null)
@@ -27,21 +27,21 @@ public class ValidBST {
         // if left node exist then check it has
         // correct data or not i.e. left node's data
         // should be less than root's data
-        if (l != null && root.val <= l.val)
+        if (leftNode != null && root.val <= leftNode.val)
             return false;
 
         // if right node exist then check it has
         // correct data or not i.e. right node's data
         // should be greater than root's data
-        if (r != null && root.val >= r.val)
+        if (rightNode != null && root.val >= rightNode.val)
             return false;
 
         // check recursively for every node.
-        return isBST(root.left, l, root) &&
-                isBST(root.right, root, r);
+        return isBST(root.left, leftNode, root) &&
+                isBST(root.right, root, rightNode);
     }
     public boolean isValidBST(TreeNode root){
-        return isBSTUtil(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
+        return isBST(root, null, null);
     }
     public boolean isValidBSTWRONG(TreeNode root) {
         LinkedList<TreeNode> queue = new LinkedList<>();
