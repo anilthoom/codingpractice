@@ -27,8 +27,7 @@ public class ValidBST {
         if (node.val < min || node.val > max)
             return false;
 
-        /* otherwise check the subtrees recursively
-        tightening the min/max constraints */
+        /* otherwise, check the subtrees recursively tightening the min/max constraints */
         // Allow only distinct values
         return (isBSTUtil(node.left, min, node.val-1) &&
                 isBSTUtil(node.right, node.val+1, max));
