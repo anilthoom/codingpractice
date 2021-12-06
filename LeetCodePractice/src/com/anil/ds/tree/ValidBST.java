@@ -32,6 +32,29 @@ public class ValidBST {
         return (isBSTUtil(node.left, min, node.val-1) &&
                 isBSTUtil(node.right, node.val+1, max));
     }
+    // Returns true if given tree is BST.
+    static boolean isBST(TreeNode root, TreeNode l, TreeNode r)
+    {
+        // Base condition
+        if (root == null)
+            return true;
+
+        // if left node exist then check it has
+        // correct data or not i.e. left node's data
+        // should be less than root's data
+        if (l != null && root.val <= l.val)
+            return false;
+
+        // if right node exist then check it has
+        // correct data or not i.e. right node's data
+        // should be greater than root's data
+        if (r != null && root.val >= r.val)
+            return false;
+
+        // check recursively for every node.
+        return isBST(root.left, l, root) &&
+                isBST(root.right, root, r);
+    }
     public boolean isValidBST(TreeNode root){
         return isBSTUtil(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
     }
