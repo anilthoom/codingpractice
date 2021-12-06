@@ -17,21 +17,6 @@ public class ValidBST {
         ValidBST validBST = new ValidBST();
         System.out.println(validBST.isValidBST(root));
     }
-    boolean isBSTUtil(TreeNode node, int min, int max)
-    {
-        /* an empty tree is BST */
-        if (node == null)
-            return true;
-
-        /* false if this node violates the min/max constraints */
-        if (node.val < min || node.val > max)
-            return false;
-
-        /* otherwise, check the subtrees recursively tightening the min/max constraints */
-        // Allow only distinct values
-        return (isBSTUtil(node.left, min, node.val-1) &&
-                isBSTUtil(node.right, node.val+1, max));
-    }
     // Returns true if given tree is BST.
     static boolean isBST(TreeNode root, TreeNode l, TreeNode r)
     {
