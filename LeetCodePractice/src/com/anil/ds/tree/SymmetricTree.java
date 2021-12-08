@@ -1,5 +1,11 @@
 package com.anil.ds.tree;
 
+import com.sun.source.tree.Tree;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.List;
+
 //https://leetcode.com/explore/interview/card/top-interview-questions-easy/94/trees/627/
 public class SymmetricTree {
     public static void main(String[] args) {
@@ -17,7 +23,20 @@ public class SymmetricTree {
         System.out.println(symmetricTree.isSymmetric(root));
     }
     public boolean isSymmetric(TreeNode root) {
+        List<Integer> nodeValues = new ArrayList<>();
+        LinkedList<TreeNode> nextNodes = new LinkedList<>();
+        LinkedList<TreeNode> queue = new LinkedList<>();
+        queue.add(root);
+        while (!queue.isEmpty()){
+            TreeNode tempNode = queue.poll();
+            if(tempNode.left!=null){
+                nextNodes.add(tempNode.left);
+            }
+            if(tempNode.right != null){
+                nextNodes.add(tempNode.right);
+            }
 
+        }
         return true;
     }
 }
