@@ -3,9 +3,9 @@ package com.anil.ds.string;
 public class FirstUniqueCharInString {
     public static void main(String[] args) {
         FirstUniqueCharInString firstUniqueCharInString = new FirstUniqueCharInString();
-        System.out.println(firstUniqueCharInString.firstUniqCharOptimal("leetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeXleetcode"));
+        System.out.println(firstUniqueCharInString.firstUniqeCharOptimal("leetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeleetcodeXleetcode"));
     }
-    public int firstUniqCharOptimal(String s) {
+    public int firstUniqeCharOptimal(String s) {
         int[] chars = new int[128];
         int counter = 0;
         for(int i = 0; i < s.length(); i++) {
