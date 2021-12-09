@@ -36,6 +36,9 @@ public class SymmetricTree {
                 nextNodes.add(tempNode.right);
             }
 
+            if(queue.isEmpty()){
+
+            }
         }
         return true;
     }
