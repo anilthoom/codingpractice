@@ -15,8 +15,8 @@ public class SymmetricTree {
         TreeNode three = new TreeNode(2);
         root.right = three;
         two.left = new TreeNode(4);
-        //two.right = new TreeNode(5);
-        //three.left = new TreeNode(5);
+        two.right = new TreeNode(5);
+        three.left = new TreeNode(5);
         three.right = new TreeNode(4);
 
         SymmetricTree symmetricTree = new SymmetricTree();
