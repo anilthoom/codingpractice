@@ -2,7 +2,9 @@ package com.anil.ds.tree;
 //https://leetcode.com/explore/interview/card/top-interview-questions-easy/94/trees/631/
 public class ConvertSortedArrToBST {
     public static void main(String[] args) {
-
+        ConvertSortedArrToBST convertSortedArrToBST = new ConvertSortedArrToBST();
+        int nums[] = {-10,-3,0,5,9};
+        convertSortedArrToBST.sortedArrayToBST(nums);
     }
 
     /**
