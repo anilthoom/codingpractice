@@ -23,40 +23,13 @@ public class SymmetricTree {
         System.out.println(symmetricTree.isSymmetric(root));
     }
     public boolean isSymmetric(TreeNode root) {
-        String nodeValStr = "";
-        LinkedList<TreeNode> nextNodes = new LinkedList<>();
-        LinkedList<TreeNode> queue = new LinkedList<>();
-        queue.add(root);
-        while (!queue.isEmpty()){
-            TreeNode tempNode = queue.poll();
-            nodeValStr += ""+tempNode.val;
-            if(tempNode.left !=null || tempNode.right!=null){
-                if(tempNode.left == null){
-                    nodeValStr += "X";
-                }
-                else if(tempNode.left!=null){
-                    nextNodes.add(tempNode.left);
-                }
-                if(tempNode.right == null){
-                    nodeValStr += "X";
-                }
-                else if(tempNode.right != null){
-                    nextNodes.add(tempNode.right);
-                }
-            }
-            if(queue.isEmpty()){
-                if(!isPalindrome(nodeValStr))
-                    return false;
-                queue = nextNodes;
-                nextNodes = new LinkedList<>();
-                nodeValStr = "";
-            }
-        }
-        return true;
+        return isMirror(root, root);
     }
-    public boolean isPalindrome(String str){
-        StringBuffer buffer = new StringBuffer(str);
-        buffer.reverse();
-        return str.contentEquals(buffer);
+    public boolean isMirror(TreeNode node1, TreeNode node2){
+        if(node1 == null && node2 == null)
+            return true;
+        if(node1 != null && node2 != null && node1.val == node2.val)
+            return (isMirror(node1.left, node2.right) && isMirror(node1.right, node2.left));
+        return false;
     }
 }
