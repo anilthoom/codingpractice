@@ -18,10 +18,14 @@ public class AddTwoNums {
         addTwoNums.addTwoNumbers(l1, l2);
     }
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        int l1Sum = 0;
+        int totalSum = 0;
         while (l1 != null){
-            l1Sum += l1.val;
+            totalSum += l1.val;
             l1 = l1.next;
+        }
+        while (l2 != null){
+            totalSum += l2.val;
+            l2 = l2.next;
         }
         ListNode mergedNode = new ListNode();
         return mergedNode;
