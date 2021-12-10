@@ -31,11 +31,12 @@ public class AddTwoNums {
         StringBuffer stringBuffer = new StringBuffer(""+totalSum);
         stringBuffer.reverse();
         System.out.println(stringBuffer);
-
+        ListNode mergedNode = new ListNode();
+        mergedNode.val = Integer.parseInt(stringBuffer.charAt(0)+"");
         for(int i = 1; i<stringBuffer.length(); i++){
 
         }
-        ListNode mergedNode = new ListNode();
+
         return mergedNode;
     }
 }
