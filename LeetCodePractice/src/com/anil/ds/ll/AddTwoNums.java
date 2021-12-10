@@ -28,6 +28,13 @@ public class AddTwoNums {
             l2 = l2.next;
         }
         System.out.println(totalSum);
+        StringBuffer stringBuffer = new StringBuffer(""+totalSum);
+        stringBuffer.reverse();
+        System.out.println(stringBuffer);
+
+        for(int i = 1; i<stringBuffer.length(); i++){
+
+        }
         ListNode mergedNode = new ListNode();
         return mergedNode;
     }
