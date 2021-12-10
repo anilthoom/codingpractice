@@ -27,6 +27,7 @@ public class AddTwoNums {
             totalSum += l2.val;
             l2 = l2.next;
         }
+        System.out.println(totalSum);
         ListNode mergedNode = new ListNode();
         return mergedNode;
     }
