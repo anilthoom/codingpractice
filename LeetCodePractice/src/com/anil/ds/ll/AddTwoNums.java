@@ -34,7 +34,7 @@ public class AddTwoNums {
         ListNode mergedNode = new ListNode();
         mergedNode.val = Integer.parseInt(stringBuffer.charAt(0)+"");
         for(int i = 1; i<stringBuffer.length(); i++){
-            System.out.println(stringBuffer.charAt(i));
+
         }
 
         return mergedNode;
