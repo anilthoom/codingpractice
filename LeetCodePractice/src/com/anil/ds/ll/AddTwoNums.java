@@ -36,7 +36,6 @@ public class AddTwoNums {
         for(int i = 1; i<stringBuffer.length(); i++){
 
         }
-
         return mergedNode;
     }
 }
