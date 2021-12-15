@@ -6,7 +6,7 @@ public class AddTwoNums {
         ListNode l1 = new ListNode(1);
         ListNode two = new ListNode(2);
         l1.next = two;
-        ListNode three = new ListNode(4);
+        ListNode three = new ListNode(5);
         two.next = three;
 
         ListNode l2 = new ListNode(1);
