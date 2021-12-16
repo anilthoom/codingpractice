@@ -33,8 +33,11 @@ public class AddTwoNums {
         System.out.println(stringBuffer);
         ListNode mergedNode = new ListNode();
         mergedNode.val = Integer.parseInt(stringBuffer.charAt(0)+"");
+        ListNode previousNode = mergedNode;
         for(int i = 1; i<stringBuffer.length(); i++){
-
+            ListNode currentNode = new ListNode(stringBuffer.charAt(i));
+            previousNode.next = currentNode;
+            previousNode = currentNode;
         }
         return mergedNode;
     }
