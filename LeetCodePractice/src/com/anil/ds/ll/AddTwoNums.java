@@ -30,9 +30,10 @@ public class AddTwoNums {
         }
         int total = Integer.parseInt(l1Str)+Integer.parseInt(l2Str);
         System.out.println(total);
-        StringBuffer stringBuffer = new StringBuffer(total);
+        StringBuffer stringBuffer = new StringBuffer(total+"");
         stringBuffer.reverse();
         System.out.println(stringBuffer);
+
 
         return null;
     }
