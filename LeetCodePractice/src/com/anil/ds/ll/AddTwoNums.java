@@ -18,27 +18,22 @@ public class AddTwoNums {
         addTwoNums.addTwoNumbers(l1, l2);
     }
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        String totalSumStr = "";
+        String l1Str = "";
         while (l1 != null){
-            totalSumStr += l1.val;
+            l1Str += l1.val;
             l1 = l1.next;
         }
+        String l2Str = "";
         while (l2 != null){
-            totalSumStr += l2.val;
+            l2Str += l2.val;
             l2 = l2.next;
         }
-        System.out.println(totalSumStr);
-        StringBuffer stringBuffer = new StringBuffer(totalSumStr);
+        int total = Integer.parseInt(l1Str)+Integer.parseInt(l2Str);
+        System.out.println(total);
+        StringBuffer stringBuffer = new StringBuffer(total);
         stringBuffer.reverse();
         System.out.println(stringBuffer);
-        ListNode mergedNode = new ListNode();
-        mergedNode.val = Integer.parseInt(stringBuffer.charAt(0)+"");
-        ListNode previousNode = mergedNode;
-        for(int i = 1; i<stringBuffer.length(); i++){
-            ListNode currentNode = new ListNode(stringBuffer.charAt(i));
-            previousNode.next = currentNode;
-            previousNode = currentNode;
-        }
-        return mergedNode;
+
+        return null;
     }
 }
