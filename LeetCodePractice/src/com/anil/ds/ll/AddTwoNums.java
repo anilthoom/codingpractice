@@ -5,14 +5,14 @@ public class AddTwoNums {
     public static void main(String[] args) {
         //[2,4,9]
         //[5,6,4,9]
-        ListNode l1 = new ListNode(1);
-        ListNode two = new ListNode(2);
+        ListNode l1 = new ListNode(2);
+        ListNode two = new ListNode(4);
         l1.next = two;
-        ListNode three = new ListNode(5);
+        ListNode three = new ListNode(3);
         two.next = three;
 
-        ListNode l2 = new ListNode(1);
-        ListNode l2i = new ListNode(3);
+        ListNode l2 = new ListNode(5);
+        ListNode l2i = new ListNode(6);
         l2.next = l2i;
         ListNode l2j = new ListNode(4);
         l2i.next = l2j;
@@ -20,17 +20,19 @@ public class AddTwoNums {
         addTwoNums.addTwoNumbers(l1, l2);
     }
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        String l1Str = "";
+        StringBuffer l1Str = new StringBuffer();
         while (l1 != null){
-            l1Str += l1.val;
+            l1Str.append(l1.val);
             l1 = l1.next;
         }
-        String l2Str = "";
+        l1Str.reverse();
+        StringBuffer l2Str = new StringBuffer();
         while (l2 != null){
-            l2Str += l2.val;
+            l2Str.append(l2.val);
             l2 = l2.next;
         }
-        int total = Integer.parseInt(l1Str)+Integer.parseInt(l2Str);
+        l2Str.reverse();
+        int total = Integer.parseInt(l1Str.toString())+Integer.parseInt(l2Str.toString());
         System.out.println(total);
         StringBuffer stringBuffer = new StringBuffer(total+"");
         stringBuffer.reverse();
