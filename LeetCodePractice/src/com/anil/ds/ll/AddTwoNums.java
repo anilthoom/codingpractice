@@ -3,6 +3,8 @@ package com.anil.ds.ll;
 //https://leetcode.com/problems/add-two-numbers/
 public class AddTwoNums {
     public static void main(String[] args) {
+        //[2,4,9]
+        //[5,6,4,9]
         ListNode l1 = new ListNode(1);
         ListNode two = new ListNode(2);
         l1.next = two;
