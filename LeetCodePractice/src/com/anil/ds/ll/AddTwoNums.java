@@ -18,17 +18,17 @@ public class AddTwoNums {
         addTwoNums.addTwoNumbers(l1, l2);
     }
     public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        int totalSum = 0;
+        String totalSumStr = "";
         while (l1 != null){
-            totalSum += l1.val;
+            totalSumStr += l1.val;
             l1 = l1.next;
         }
         while (l2 != null){
-            totalSum += l2.val;
+            totalSumStr += l2.val;
             l2 = l2.next;
         }
-        System.out.println(totalSum);
-        StringBuffer stringBuffer = new StringBuffer(""+totalSum);
+        System.out.println(totalSumStr);
+        StringBuffer stringBuffer = new StringBuffer(totalSumStr);
         stringBuffer.reverse();
         System.out.println(stringBuffer);
         ListNode mergedNode = new ListNode();
