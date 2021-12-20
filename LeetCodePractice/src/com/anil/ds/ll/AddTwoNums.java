@@ -36,7 +36,6 @@ public class AddTwoNums {
         System.out.println(total);
         StringBuffer stringBuffer = new StringBuffer(total+"");
         stringBuffer.reverse();
-        System.out.println(stringBuffer);
         ListNode mergedNode = new ListNode(0);
         ListNode tail = mergedNode;
         for(int i=0; i<stringBuffer.length(); i++){
