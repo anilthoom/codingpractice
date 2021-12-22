@@ -33,7 +33,7 @@ public class AddTwoNums {
         }
         l2Str.reverse();
         int total = Integer.parseInt(l1Str.toString())+Integer.parseInt(l2Str.toString());
-        System.out.println(total);
+        //System.out.println(total);
         StringBuffer stringBuffer = new StringBuffer(total+"");
         stringBuffer.reverse();
         ListNode mergedNode = new ListNode(0);
