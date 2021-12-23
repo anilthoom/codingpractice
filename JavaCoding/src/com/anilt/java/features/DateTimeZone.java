@@ -1,6 +1,7 @@
 package com.anilt.java.features;
 
 import java.time.Instant;
+import java.time.LocalTime;
 import java.time.ZoneId;
 import java.time.ZonedDateTime;
 import java.time.temporal.ChronoUnit;
@@ -9,9 +10,9 @@ public class DateTimeZone {
     public static void main(String[] args) {
         ZonedDateTime currentDateTime = ZonedDateTime.now();
         System.out.println(currentDateTime.toLocalDateTime());
-        currentDateTime.truncatedTo(ChronoUnit.DAYS);
+        currentDateTime.with(LocalTime.of(0, 0, 0, 0));
         System.out.println(currentDateTime.toLocalDateTime());
-        Instant instant = Instant.parse(currentDateTime.toString());
-        System.out.println(instant.toString());
+        String instant = Instant.parse("2017-03-03T13:14:28.666Z").truncatedTo(ChronoUnit.DAYS).toString();
+        System.out.println(instant);
     }
 }
