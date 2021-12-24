@@ -14,7 +14,9 @@ public class DateTimeZone {
         System.out.println(currentDateTime.toLocalDateTime());
         String instant = Instant.parse("2017-03-03T13:14:28.666Z").truncatedTo(ChronoUnit.DAYS).toString();
         System.out.println(instant);
-        ZonedDateTime startDate = ZonedDateTime.of(ZonedDateTime.now().getYear(), ZonedDateTime.now().getMonthValue(), ZonedDateTime.now().getDayOfMonth(),0,0,0,0,ZonedDateTime.now().getZone());
+        ZonedDateTime startDate = ZonedDateTime.of(ZonedDateTime.now().getYear(),
+                ZonedDateTime.now().getMonthValue(), ZonedDateTime.now().getDayOfMonth(),
+                0,0,0,0,ZonedDateTime.now().getZone());
         System.out.println(startDate);
     }
 }
