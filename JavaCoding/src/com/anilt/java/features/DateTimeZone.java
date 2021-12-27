@@ -1,9 +1,6 @@
 package com.anilt.java.features;
 
-import java.time.Instant;
-import java.time.LocalTime;
-import java.time.ZoneId;
-import java.time.ZonedDateTime;
+import java.time.*;
 import java.time.temporal.ChronoUnit;
 
 public class DateTimeZone {
@@ -18,9 +15,7 @@ public class DateTimeZone {
                 ZonedDateTime.now().getMonthValue(), ZonedDateTime.now().getDayOfMonth(),
                 0,0,0,0,ZonedDateTime.now().getZone());
         System.out.println(startDate);
-        ZonedDateTime endDate = ZonedDateTime.of(ZonedDateTime.now().getYear(),
-                ZonedDateTime.now().getMonthValue(), ZonedDateTime.now().getDayOfMonth(),
-                23,59,59,0,ZonedDateTime.now().getZone());
-        System.out.println(endDate);
+        ZonedDateTime currentDate = ZonedDateTime.now(ZoneOffset.UTC).with(LocalTime.of(0, 0));
+        System.out.println(currentDate);
     }
 }
