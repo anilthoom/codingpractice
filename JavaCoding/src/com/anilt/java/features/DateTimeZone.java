@@ -16,5 +16,6 @@ public class DateTimeZone {
         ZonedDateTime currentDate = ZonedDateTime.now(ZoneOffset.UTC).with(LocalTime.of(0, 0));
         System.out.println(currentDate);
         ZonedDateTime cDate = ZonedDateTime.now().with(LocalTime.of(0, 0));
+        System.out.println(cDate);
     }
 }
