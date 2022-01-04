@@ -10,17 +10,23 @@ public class DateTimeZone {
         System.out.println(currentDateTime.toLocalDateTime());
         String instant = Instant.parse("2017-03-03T13:14:28.666Z").truncatedTo(ChronoUnit.DAYS).toString();
         System.out.println(instant);
-        ZonedDateTime startDate = ZonedDateTime.of(ZonedDateTime.now().getYear(),
-                ZonedDateTime.now().getMonthValue(), ZonedDateTime.now().getDayOfMonth(),
-                0,0,0,0,ZonedDateTime.now().getZone());
-        System.out.println(startDate);
+
         ZonedDateTime currentDate = ZonedDateTime.now(ZoneOffset.UTC).with(LocalTime.of(0, 0));
         System.out.println(currentDate);
         ZonedDateTime cDate = ZonedDateTime.now().with(LocalTime.of(0, 0));
         System.out.println(cDate);
 
+        ZonedDateTime startDate = ZonedDateTime.of(ZonedDateTime.now().getYear(),
+                ZonedDateTime.now().getMonthValue(), ZonedDateTime.now().getDayOfMonth(),
+                0,0,0,0,ZoneOffset.UTC);
+        System.out.println(startDate);
+
         Calendar cal = Calendar.getInstance();
+        ZonedDateTime submissionDuedate = ZonedDateTime.ofInstant(cal.toInstant(), ZoneOffset.UTC);
+        System.out.println(submissionDuedate);
+
         ZonedDateTime newDateTime = ZonedDateTime.ofInstant(cal.toInstant(), ZoneOffset.UTC);
         System.out.println(newDateTime);
+
     }
 }
