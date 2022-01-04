@@ -2,6 +2,7 @@ package com.anilt.java.features;
 
 import java.time.*;
 import java.time.temporal.ChronoUnit;
+import java.util.Calendar;
 
 public class DateTimeZone {
     public static void main(String[] args) {
@@ -17,5 +18,9 @@ public class DateTimeZone {
         System.out.println(currentDate);
         ZonedDateTime cDate = ZonedDateTime.now().with(LocalTime.of(0, 0));
         System.out.println(cDate);
+
+        Calendar cal = Calendar.getInstance();
+        ZonedDateTime newDateTime = ZonedDateTime.ofInstant(cal.toInstant(), ZoneOffset.UTC);
+        System.out.println(newDateTime);
     }
 }
