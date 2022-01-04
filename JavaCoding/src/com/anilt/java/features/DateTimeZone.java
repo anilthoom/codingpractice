@@ -19,14 +19,14 @@ public class DateTimeZone {
         ZonedDateTime startDate = ZonedDateTime.of(ZonedDateTime.now().getYear(),
                 ZonedDateTime.now().getMonthValue(), ZonedDateTime.now().getDayOfMonth(),
                 0,0,0,0,ZoneOffset.UTC);
-        System.out.println(startDate);
+       // System.out.println(startDate);
 
         Calendar cal = Calendar.getInstance();
+
         ZonedDateTime submissionDuedate = ZonedDateTime.ofInstant(cal.toInstant(), ZoneOffset.UTC);
         System.out.println(submissionDuedate);
-
-        ZonedDateTime newDateTime = ZonedDateTime.ofInstant(cal.toInstant(), ZoneOffset.UTC);
-        System.out.println(newDateTime);
-
+        cal.add(Calendar.DATE, -1 * 1);
+        submissionDuedate = ZonedDateTime.ofInstant(cal.toInstant(), ZoneOffset.UTC);
+        System.out.println(submissionDuedate);
     }
 }
