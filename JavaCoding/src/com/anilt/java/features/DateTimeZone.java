@@ -7,9 +7,9 @@ import java.util.Calendar;
 public class DateTimeZone {
     public static void main(String[] args) {
         ZonedDateTime currentDateTime = ZonedDateTime.now();
-        //System.out.println(currentDateTime.toLocalDateTime());
+        System.out.println(currentDateTime.toLocalDateTime());
         String instant = Instant.parse("2017-03-03T13:14:28.666Z").truncatedTo(ChronoUnit.DAYS).toString();
-       // System.out.println(instant);
+        System.out.println(instant);
 
         ZonedDateTime currentDate = ZonedDateTime.now(ZoneOffset.UTC).with(LocalTime.of(0, 0));
         //System.out.println(currentDate);
@@ -25,8 +25,9 @@ public class DateTimeZone {
 
         ZonedDateTime submissionDuedate = ZonedDateTime.ofInstant(cal.toInstant(), ZoneOffset.UTC);
         System.out.println(submissionDuedate);
-        cal.add(Calendar.DATE, -1 * 1);
+        cal.add(Calendar.DATE, -1 * 0);
         submissionDuedate = ZonedDateTime.ofInstant(cal.toInstant(), ZoneOffset.UTC);
         System.out.println(submissionDuedate);
+        System.out.println(submissionDuedate.truncatedTo(ChronoUnit.DAYS));
     }
 }
