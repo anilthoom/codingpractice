@@ -9,7 +9,6 @@ import java.util.TimeZone;
 public class DateTimeZone {
     public static void main(String[] args) {
         Calendar calendar = Calendar.getInstance();
-//        calendar.setTimeZone(TimeZone.getTimeZone("UTC"));
         calendar.set(Calendar.HOUR_OF_DAY, 0);
         calendar.set(Calendar.MINUTE, 0);
         calendar.set(Calendar.SECOND, 0);
