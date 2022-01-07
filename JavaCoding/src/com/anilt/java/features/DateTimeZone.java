@@ -13,9 +13,9 @@ public class DateTimeZone {
         calendar.set(Calendar.MINUTE, 0);
         calendar.set(Calendar.SECOND, 0);
         calendar.set(Calendar.MILLISECOND, 0);
-
         System.out.println(calendar.toInstant());
 
+        // Java 8
         LocalDate currentDate = LocalDate.now();
         System.out.println(currentDate);
     }
