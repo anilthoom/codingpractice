@@ -18,5 +18,8 @@ public class DateTimeZone {
         // Java 8
         LocalDate currentDate = LocalDate.now();
         System.out.println(currentDate);
+        String strDate = "2022-01-06T18:30Z[UTC]";
+        Instant date = Instant.parse(strDate);
+        System.out.println(date);
     }
 }
