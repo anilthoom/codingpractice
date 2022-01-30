@@ -22,9 +22,9 @@ public class SameTree {
             if(p.val != q.val){
                 return false;
             }
-            p = p.left;
-            q = q.left;
+            isSameTree(p.left, q.left);
+            isSameTree(p.right, q.right);
         }
-        return false;
+        return true;
     }
 }
