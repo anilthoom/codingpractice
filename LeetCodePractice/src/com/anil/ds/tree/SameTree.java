@@ -1,5 +1,6 @@
 package com.anil.ds.tree;
 
+//https://leetcode.com/problems/same-tree/
 public class SameTree {
     public static void main(String[] args) {
         SameTree sameTree = new SameTree();
@@ -22,7 +23,8 @@ public class SameTree {
             if(p.val != q.val){
                 return false;
             }
-            isSameTree(p.left, q.left);
+            if(p.left != null && q.left != null)
+                isSameTree(p.left, q.left);
             isSameTree(p.right, q.right);
         }
         return true;
