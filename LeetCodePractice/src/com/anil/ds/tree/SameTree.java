@@ -59,6 +59,14 @@ public class SameTree {
                 nextQNodes =  new LinkedList<>();
             }
         }
+        if(pValues.size() != qValues.size())
+            return false;
+        else {
+            for(int i=0; i<pValues.size(); i++){
+                if(pValues.get(i) != qValues.get(i))
+                    return false;
+            }
+        }
         return true;
     }
 }
