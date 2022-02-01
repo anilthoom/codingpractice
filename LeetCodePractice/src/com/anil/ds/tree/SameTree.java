@@ -27,13 +27,36 @@ public class SameTree {
         LinkedList<TreeNode> pQueue = new LinkedList<>();
         LinkedList<TreeNode> nextPNodes = new LinkedList<>();
         pQueue.add(p);
-        while (p != null){
+        while (!pQueue.isEmpty()){
             TreeNode tempNode = pQueue.poll();
             if(tempNode.left != null){
                 nextPNodes.add(tempNode.left);
             }
             if(tempNode.right != null){
                 nextPNodes.add(tempNode.right);
+            }
+            pValues.add(tempNode.val);
+            if(pQueue.isEmpty()){
+                pQueue = nextPNodes;
+                nextPNodes =  new LinkedList<>();
+            }
+        }
+        List<Integer> qValues = new ArrayList<>();
+        LinkedList<TreeNode> qQueue = new LinkedList<>();
+        LinkedList<TreeNode> nextQNodes = new LinkedList<>();
+        qQueue.add(q);
+        while (!qQueue.isEmpty()){
+            TreeNode tempNode = qQueue.poll();
+            if(tempNode.left != null){
+                nextQNodes.add(tempNode.left);
+            }
+            if(tempNode.right != null){
+                nextQNodes.add(tempNode.right);
+            }
+            qValues.add(tempNode.val);
+            if(qQueue.isEmpty()){
+                qQueue = nextQNodes;
+                nextQNodes =  new LinkedList<>();
             }
         }
         return true;
