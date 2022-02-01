@@ -1,6 +1,7 @@
 package com.anil.ds.tree;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 //https://leetcode.com/problems/same-tree/
@@ -22,15 +23,11 @@ public class SameTree {
         System.out.println(sameTree.isSameTree(p, q));
     }
     public boolean isSameTree(TreeNode p, TreeNode q) {
-        List<Integer> listValues = new ArrayList<>();
-
-        while (p != null && q != null){
-            if(p.val != q.val){
-                return false;
-            }
-            if(p.left != null && q.left != null)
-                isSameTree(p.left, q.left);
-            isSameTree(p.right, q.right);
+        List<Integer> pValues = new ArrayList<>();
+        LinkedList<TreeNode> pQueue = new LinkedList<>();
+        pQueue.add(p);
+        while (p != null){
+            TreeNode tempNode = pQueue.poll();
         }
         return true;
     }
