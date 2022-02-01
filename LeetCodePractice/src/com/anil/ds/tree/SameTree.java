@@ -10,7 +10,7 @@ public class SameTree {
         SameTree sameTree = new SameTree();
         TreeNode p = new TreeNode(1);
         TreeNode two = new TreeNode(2);
-        p.left = two;
+        //p.left = two;
         TreeNode three = new TreeNode(3);
         p.right = three;
 
@@ -29,12 +29,8 @@ public class SameTree {
         pQueue.add(p);
         while (!pQueue.isEmpty()){
             TreeNode tempNode = pQueue.poll();
-            if(tempNode.left != null){
-                nextPNodes.add(tempNode.left);
-            }
-            if(tempNode.right != null){
-                nextPNodes.add(tempNode.right);
-            }
+            nextPNodes.add(tempNode.left);
+            nextPNodes.add(tempNode.right);
             pValues.add(tempNode.val);
             if(pQueue.isEmpty()){
                 pQueue = nextPNodes;
