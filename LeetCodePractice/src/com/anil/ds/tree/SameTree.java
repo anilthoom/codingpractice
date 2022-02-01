@@ -25,9 +25,16 @@ public class SameTree {
     public boolean isSameTree(TreeNode p, TreeNode q) {
         List<Integer> pValues = new ArrayList<>();
         LinkedList<TreeNode> pQueue = new LinkedList<>();
+        LinkedList<TreeNode> nextPNodes = new LinkedList<>();
         pQueue.add(p);
         while (p != null){
             TreeNode tempNode = pQueue.poll();
+            if(tempNode.left != null){
+                nextPNodes.add(tempNode.left);
+            }
+            if(tempNode.right != null){
+                nextPNodes.add(tempNode.right);
+            }
         }
         return true;
     }
