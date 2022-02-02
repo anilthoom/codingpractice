@@ -1,5 +1,7 @@
 package com.anil.ds.tree;
 
+import com.sun.source.tree.Tree;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -23,6 +25,15 @@ public class SameTree {
         System.out.println(sameTree.isSameTree(p, q));
     }
     public boolean isSameTree(TreeNode p, TreeNode q) {
+        if(p!=null && q!=null && (p.val == q.val)){
+            isSameTree(p.left, q.left);
+            isSameTree(p.right, q.right);
+        }
+        else
+            return false;
+        return true;
+    }
+    public boolean isSameTree1(TreeNode p, TreeNode q) {
         List<Integer> pValues = new ArrayList<>();
         LinkedList<TreeNode> pQueue = new LinkedList<>();
         LinkedList<TreeNode> nextPNodes = new LinkedList<>();
