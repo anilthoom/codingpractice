@@ -25,13 +25,13 @@ public class SameTree {
         System.out.println(sameTree.isSameTree(p, q));
     }
     public boolean isSameTree(TreeNode p, TreeNode q) {
-        if(p!=null && q!=null && (p.val == q.val)){
-            isSameTree(p.left, q.left);
-            isSameTree(p.right, q.right);
-        }
-        else
+        if(p==null && q==null)
+            return true;
+        if(p==null || q==null)
             return false;
-        return true;
+        if(p.val != q.val)
+            return false;
+        return isSameTree(p.right, q.right) && isSameTree(p.left, q.left);
     }
     public boolean isSameTree1(TreeNode p, TreeNode q) {
         List<Integer> pValues = new ArrayList<>();
