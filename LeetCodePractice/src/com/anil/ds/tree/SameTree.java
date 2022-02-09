@@ -6,7 +6,7 @@ public class SameTree {
         SameTree sameTree = new SameTree();
         TreeNode p = new TreeNode(1);
         TreeNode two = new TreeNode(2);
-        //p.left = two;
+        p.left = two;
         TreeNode three = new TreeNode(3);
         p.right = three;
 
