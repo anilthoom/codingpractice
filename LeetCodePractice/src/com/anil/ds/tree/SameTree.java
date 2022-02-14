@@ -10,7 +10,7 @@ public class SameTree {
         TreeNode three = new TreeNode(3);
         p.right = three;
 
-        TreeNode q = new TreeNode(11);
+        TreeNode q = new TreeNode(1);
         TreeNode two1 = new TreeNode(2);
         q.left = two1;
         TreeNode three1 = new TreeNode(3);
