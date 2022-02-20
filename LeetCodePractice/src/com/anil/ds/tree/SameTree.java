@@ -13,7 +13,7 @@ public class SameTree {
         TreeNode q = new TreeNode(1);
         TreeNode two1 = new TreeNode(2);
         q.left = two1;
-        TreeNode three1 = new TreeNode(31);
+        TreeNode three1 = new TreeNode(3);
         q.right = three1;
 
         System.out.println(sameTree.isSameTree(p, q));
