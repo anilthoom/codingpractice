@@ -10,16 +10,16 @@ import java.util.Queue;
 //https://leetcode.com/problems/binary-tree-preorder-traversal/
 public class BinaryTreePreOrder {
     public static void main(String[] args) {
-        TreeNode root = new TreeNode(1);
-        TreeNode two = new TreeNode(2);
+        TreeNode root = new TreeNode(10);
+        TreeNode two = new TreeNode(20);
         root.left = two;
-        TreeNode three = new TreeNode(3);
+        TreeNode three = new TreeNode(30);
         root.right = three;
-        two.left = new TreeNode(4);
-        two.right = new TreeNode(5);
+        two.left = new TreeNode(40);
+        two.right = new TreeNode(50);
 
-        three.left = new TreeNode(6);
-        three.right = new TreeNode(7);
+        three.left = new TreeNode(60);
+        three.right = new TreeNode(70);
 
 
         BinaryTreePreOrder binaryTreePreOrder = new BinaryTreePreOrder();
