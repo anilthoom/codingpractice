@@ -19,7 +19,7 @@ public class BinaryTreePreOrder {
         two.right = new TreeNode(50);
 
         three.left = new TreeNode(60);
-        three.right = new TreeNode(70);
+        three.right = new TreeNode(7);
 
 
         BinaryTreePreOrder binaryTreePreOrder = new BinaryTreePreOrder();
