@@ -7,7 +7,9 @@ public class AllWrong {
         System.out.println(output);
     }
     public String getWrongAnswers(int N, String C){
-
-        return "";
+        StringBuffer stringBuffer = new StringBuffer(C);
+        StringBuilder stringBuilder = new StringBuilder(C);
+        stringBuilder.replace(0, N-1, "X");
+        return stringBuilder.toString();
     }
 }
