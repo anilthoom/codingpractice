@@ -1,7 +1,5 @@
 package com.anilt.meta.warmup;
 
-import java.util.StringTokenizer;
-
 public class AllWrong {
     public static void main(String[] args) {
         AllWrong allWrong = new AllWrong();
