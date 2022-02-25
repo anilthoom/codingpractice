@@ -1,5 +1,7 @@
 /.idea/
 /.metadata/
+/Facebook/.idea/
+/Facebook/*.iml
 /JavaCoding/bin/
 /JavaCoding/out/
 /JavaCoding/.idea/
