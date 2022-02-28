@@ -7,6 +7,14 @@ public class BattleShip {
         System.out.println(battleShip.getHitProbability(2, 3, G));
     }
     public double getHitProbability(int R, int C, int[][] G){
-        return 0.0;
+        double probability = 0.0;
+        double findings = 0.0;
+        for(int i=0; i<R; i++){
+            for(int j=0; j<C; j++){
+                if(G[i][j] == 1)
+                    findings += 1;
+            }
+        }
+        return findings/(R*C);
     }
 }
