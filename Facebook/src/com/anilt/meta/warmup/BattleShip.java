@@ -9,12 +9,13 @@ public class BattleShip {
     public double getHitProbability(int R, int C, int[][] G){
         double probability = 0.0;
         double findings = 0.0;
+        double total = R*C;
         for(int i=0; i<R; i++){
             for(int j=0; j<C; j++){
                 if(G[i][j] == 1)
                     findings += 1;
             }
         }
-        return findings/(R*C);
+        return findings/total;
     }
 }
