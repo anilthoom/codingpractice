@@ -1,5 +1,6 @@
 package com.anilt.file.contoller;
 
+import com.anilt.file.model.FileEntity;
 import com.anilt.file.model.FileResponse;
 import com.anilt.file.service.FileService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,6 +8,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import java.util.List;
 import java.util.stream.Collectors;
@@ -38,7 +40,23 @@ public class FileController {
     public List<FileResponse> list(){
         return fileService.getAllFiles()
                 .stream()
-                .map(this::mapToFileRespose)
+                .map(this::mapToFileResponse)
                 .collect(Collectors.toList());
+    }
+
+    private FileResponse mapToFileResponse(FileEntity fileEntity){
+        String downloadURL = ServletUriComponentsBuilder.fromCurrentContextPath()
+                .path("/files/")
+                .path(fileEntity.getId())
+                .toUriString();
+
+        FileResponse fileResponse = new FileResponse();
+        fileResponse.setId(fileEntity.getId());
+        fileResponse.setName(fileEntity.getName());
+        fileResponse.setContentType(fileEntity.getContentType());
+        fileResponse.setSize(fileEntity.getSize());
+        fileResponse.setUrl(downloadURL);
+
+        return fileResponse;
     }
 }
