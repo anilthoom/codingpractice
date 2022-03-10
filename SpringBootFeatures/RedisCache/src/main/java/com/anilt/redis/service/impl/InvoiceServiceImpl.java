@@ -50,7 +50,8 @@ public class InvoiceServiceImpl implements InvoiceService {
     }
 
     @Override
+    @Cacheable(value = "Invoice")
     public List<Invoice> getAllInvoices() {
-        return null;
+        return invoiceRepository.findAll();
     }
 }
