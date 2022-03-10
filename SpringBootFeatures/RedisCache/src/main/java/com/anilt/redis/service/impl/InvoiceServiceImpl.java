@@ -7,6 +7,7 @@ import com.anilt.redis.service.InvoiceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -41,8 +42,11 @@ public class InvoiceServiceImpl implements InvoiceService {
     }
 
     @Override
+    @Cacheable(value = "Invoice", key = "invId")
     public Invoice getOneInvoice(Integer invId) {
-        return null;
+        Invoice invoice = invoiceRepository.findById(invId)
+                .orElseThrow(() -> new InvoiceNotFoundException("Invoice not found"));
+        return invoice;
     }
 
     @Override
