@@ -24,4 +24,9 @@ public class InvoiceController {
         return ResponseEntity.ok(invoiceService.getAllInvoices());
     }
 
+    @GetMapping("/invoice/{id}")
+    public Invoice getInvoice(@PathVariable Integer id){
+        return invoiceService.getOneInvoice(id);
+    }
+
 }
