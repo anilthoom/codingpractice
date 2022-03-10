@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/")
 public class InvoiceController {
     @Autowired
     InvoiceService invoiceService;
@@ -27,6 +26,17 @@ public class InvoiceController {
     @GetMapping("/invoice/{id}")
     public Invoice getInvoice(@PathVariable Integer id){
         return invoiceService.getOneInvoice(id);
+    }
+
+    @PutMapping("/invoice/{id}")
+    public Invoice updateInvoice(@RequestBody Invoice inv, @PathVariable Integer id){
+        return invoiceService.updateInvoice(inv, id);
+    }
+
+    @DeleteMapping("/invoice/{id}")
+    public String deleteInvoice(@PathVariable Integer id){
+        invoiceService.deleteInvoice(id);
+        return "Employee with id: "+id+" Deleted!";
     }
 
 }
