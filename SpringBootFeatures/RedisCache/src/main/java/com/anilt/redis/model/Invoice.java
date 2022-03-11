@@ -16,7 +16,7 @@ public class Invoice implements Serializable {
 
     @Id
     @GeneratedValue
-    public Integer invId;
+    private Integer invId;
 
     private String invName;
     private Double invAmount;
