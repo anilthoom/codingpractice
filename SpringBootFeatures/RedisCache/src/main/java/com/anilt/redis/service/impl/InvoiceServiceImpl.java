@@ -34,7 +34,7 @@ public class InvoiceServiceImpl implements InvoiceService {
     }
 
     @Override
-    @CacheEvict(value = "Invoice", key = "invId")
+    @CacheEvict(value = "Invoice", key = "#invId")
     public void deleteInvoice(Integer invId) {
         Invoice invoice = invoiceRepository.findById(invId)
                 .orElseThrow(() -> new InvoiceNotFoundException("Invoice not found"));
@@ -42,7 +42,7 @@ public class InvoiceServiceImpl implements InvoiceService {
     }
 
     @Override
-    @Cacheable(value = "Invoice", key="invId")
+    @Cacheable(value = "Invoice", key="#invId")
     public Invoice getOneInvoice(Integer invId) {
         Invoice invoice = invoiceRepository.findById(invId)
                 .orElseThrow(() -> new InvoiceNotFoundException("Invoice not found"));
