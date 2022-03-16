@@ -17,6 +17,9 @@ public class SameTree {
         q.right = three1;
 
         System.out.println(sameTree.isSameTree(p, q));
+
+        String abc = "Anil  Hyderabad";
+        System.out.println(abc.split("-")[1]);
     }
     public boolean isSameTree(TreeNode p, TreeNode q) {
         if(p==null && q==null)
