@@ -9,6 +9,7 @@ public class RotateArray {
         int k = 5; // Output: [5,6,7,1,2,3,4]3  ,   [-1,-100,3,99] 2 , [-1]2 , [1,2] 3 , [1, 2, 3]4
         rotateArray.rotate(nums, k);
     }
+    //Optimal
     public void rotate(int[] nums, int k) {
         if(nums.length == 1 || nums.length == k) {
             //Don't do anything.
