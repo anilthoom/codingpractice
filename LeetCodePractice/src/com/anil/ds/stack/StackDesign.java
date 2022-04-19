@@ -1,5 +1,8 @@
 package com.anil.ds.stack;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class StackDesign {
     public static void main(String[] args) {
         MinStack minStack = new MinStack();
@@ -13,7 +16,7 @@ public class StackDesign {
     }
 }
 class MinStack {
-
+    List<Integer> stackList = new ArrayList<>();
     public MinStack() {
 
     }
