@@ -1,6 +1,9 @@
 package com.anil.ds.stack;
 
 public class StackDesign {
+    public static void main(String[] args) {
+
+    }
 
 }
 class MinStack {
