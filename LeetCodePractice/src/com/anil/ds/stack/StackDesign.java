@@ -27,7 +27,7 @@ class MinStack {
     }
 
     public void pop() {
-
+        stackList.remove(stackList.size()-1);
     }
 
     public int top() {
