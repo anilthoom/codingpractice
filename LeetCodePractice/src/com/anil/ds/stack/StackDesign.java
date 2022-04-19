@@ -11,7 +11,6 @@ public class StackDesign {
         minStack.top();    // return 0
         minStack.getMin(); // return -2
     }
-
 }
 class MinStack {
 
