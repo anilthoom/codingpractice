@@ -22,7 +22,7 @@ class MinStack {
     }
 
     public void push(int val) {
-
+        stackList.add(val);
     }
 
     public void pop() {
