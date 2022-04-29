@@ -18,7 +18,6 @@ public class StackDesign {
 }
 class MinStack {
     List<Integer> stackList = new ArrayList<>();
-
     public MinStack() {
 
     }
