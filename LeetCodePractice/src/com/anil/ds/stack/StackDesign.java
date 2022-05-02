@@ -18,11 +18,14 @@ public class StackDesign {
 }
 class MinStack {
     List<Integer> stackList = new ArrayList<>();
+    int min;
     public MinStack() {
 
     }
 
     public void push(int val) {
+        if(val < min)
+            min = val;
         stackList.add(val);
     }
 
