@@ -34,7 +34,7 @@ class MinStack {
     }
 
     public int top() {
-        return -1;
+        return stackList.get(stackList.size()-1);
     }
 
     public int getMin() {
