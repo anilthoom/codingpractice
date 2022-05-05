@@ -1,6 +1,7 @@
 package com.anil.ds.stack;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 //https://leetcode.com/problems/min-stack/
@@ -31,6 +32,9 @@ class MinStack {
 
     public void pop() {
         stackList.remove(stackList.size()-1);
+        Object arr[] = stackList.toArray();
+        Arrays.stream(arr).sorted();
+        System.out.println(arr);
     }
 
     public int top() {
