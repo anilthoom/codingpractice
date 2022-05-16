@@ -6,18 +6,22 @@ import java.util.*;
 public class StackDesign {
     public static void main(String[] args) {
         MinStack minStack = new MinStack();
+        minStack.push(-1);
         minStack.push(-2);
-        minStack.push(0);
         minStack.push(-3);
+        minStack.push(7);
+        minStack.push(1);
+        minStack.push(5);
         minStack.getMin(); // return -3
         minStack.pop();
         minStack.top();    // return 0
+        System.out.println();
         minStack.getMin(); // return -2
     }
 }
 class MinStack {
     List<Integer> stackList = new ArrayList<>();
-    Set<Integer> sortedSet = new HashSet<>();
+    Set<Integer> sortedSet = new TreeSet<>();
     int min;
     public MinStack() {
 
@@ -31,10 +35,8 @@ class MinStack {
     }
 
     public void pop() {
-        stackList.remove(stackList.size()-1);
-        Object arr[] = stackList.toArray();
-        Arrays.stream(arr).sorted();
-        System.out.println(arr);
+        int removedElement = stackList.remove(stackList.size()-1);
+        sortedSet.remove(removedElement);
     }
 
     public int top() {
@@ -42,6 +44,6 @@ class MinStack {
     }
 
     public int getMin() {
-        return -1;
+        return (Integer)(((TreeSet) sortedSet).first());
     }
 }
