@@ -1,8 +1,6 @@
 package com.anil.ds.stack;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 //https://leetcode.com/problems/min-stack/
 public class StackDesign {
@@ -19,6 +17,7 @@ public class StackDesign {
 }
 class MinStack {
     List<Integer> stackList = new ArrayList<>();
+    Set<Integer> sortedSet = new HashSet<>();
     int min;
     public MinStack() {
 
@@ -28,6 +27,7 @@ class MinStack {
         if(val < min)
             min = val;
         stackList.add(val);
+        sortedSet.add(val);
     }
 
     public void pop() {
