@@ -18,6 +18,7 @@ public class StackDesign {
 class MinStack {
     List<Integer> stackList = new ArrayList<>();
     Set<Integer> sortedSet = new TreeSet<>();
+    PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();
     int min;
     public MinStack() {
 
@@ -28,6 +29,7 @@ class MinStack {
             min = val;
         stackList.add(val);
         sortedSet.add(val);
+        priorityQueue.add(val);
     }
 
     public void pop() {
