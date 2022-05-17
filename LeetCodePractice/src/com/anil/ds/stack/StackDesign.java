@@ -18,7 +18,7 @@ public class StackDesign {
 class MinStack {
     List<Integer> stackList = new ArrayList<>();
     Set<Integer> sortedSet = new TreeSet<>();
-    PriorityQueue<Integer> priorityQueue = new PriorityQueue<>();
+    PriorityQueue<Integer> priorityQueue = new PriorityQueue<Integer>(sortedSet);
     int min;
     public MinStack() {
 
@@ -35,6 +35,7 @@ class MinStack {
     public void pop() {
         int removedElement = stackList.remove(stackList.size()-1);
         sortedSet.remove(removedElement);
+        priorityQueue.remove(removedElement);
     }
 
     public int top() {
