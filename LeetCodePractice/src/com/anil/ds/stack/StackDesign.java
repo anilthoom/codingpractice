@@ -6,9 +6,9 @@ import java.util.*;
 public class StackDesign {
     public static void main(String[] args) {
         MinStack minStack = new MinStack();
-        minStack.push(0);
+        minStack.push(3);
         minStack.push(1);
-        minStack.push(0);
+        minStack.push(3);
         minStack.getMin();
         minStack.pop();
         minStack.top();
@@ -17,8 +17,8 @@ public class StackDesign {
 }
 class MinStack {
     List<Integer> stackList = new ArrayList<>();
-    Set<Integer> sortedSet = new TreeSet<>();
-    PriorityQueue<Integer> priorityQueue = new PriorityQueue<Integer>(sortedSet);
+    List<Integer> sortedList = new ArrayList<>();
+    SortedMap<Integer, Integer> sortedMap = new TreeMap<Integer, Integer>();
     int min;
     public MinStack() {
 
@@ -28,14 +28,14 @@ class MinStack {
         if(val < min)
             min = val;
         stackList.add(val);
-        sortedSet.add(val);
-        priorityQueue.add(val);
+        sortedMap.put(sortedList.size()-1, val);
+        sortedList.add(val);
     }
 
     public void pop() {
         int removedElement = stackList.remove(stackList.size()-1);
-        sortedSet.remove(removedElement);
-        priorityQueue.remove(removedElement);
+//        sortedList.remove(removedElement);
+        sortedList.remove(Integer.parseInt(""+removedElement));
     }
 
     public int top() {
@@ -43,6 +43,7 @@ class MinStack {
     }
 
     public int getMin() {
-        return (Integer)(((TreeSet) sortedSet).first());
+        Collections.sort(sortedList);
+        return sortedList.get(0);
     }
 }
