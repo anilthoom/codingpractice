@@ -28,14 +28,15 @@ class MinStack {
         if(val < min)
             min = val;
         stackList.add(val);
-        sortedMap.put(sortedList.size()-1, val);
+        sortedMap.put(stackList.size()-1, val);
         sortedList.add(val);
     }
 
     public void pop() {
         int removedElement = stackList.remove(stackList.size()-1);
+        sortedMap.remove(stackList.size()-1);
 //        sortedList.remove(removedElement);
-        sortedList.remove(Integer.parseInt(""+removedElement));
+//        sortedList.remove(Integer.parseInt(""+removedElement));
     }
 
     public int top() {
