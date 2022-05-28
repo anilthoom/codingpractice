@@ -35,8 +35,8 @@ class MinStack {
     public void pop() {
         int removedElement = stackList.remove(stackList.size()-1);
         sortedMap.remove(stackList.size()-1);
-//        sortedList.remove(removedElement);
-//        sortedList.remove(Integer.parseInt(""+removedElement));
+        sortedList.remove(removedElement);
+        sortedList.remove(Integer.parseInt(""+removedElement));
     }
 
     public int top() {
