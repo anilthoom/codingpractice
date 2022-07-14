@@ -1,3 +1,0 @@
-Manifest-Version: 1.0
-Main-Class: com.anilt.k8s.deploymentdemo.DeploymentdemoApplication
-
