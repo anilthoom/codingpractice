@@ -32,4 +32,9 @@ public class OrderController {
     public void updateOrder(@RequestBody Order order){
         orderService.saveOrUpdate(order);
     }
+
+    @DeleteMapping("/order/{id}")
+    public void deleteOrder(@PathVariable("order_id") int id){
+        orderService.deleteOrderById(id);
+    }
 }
