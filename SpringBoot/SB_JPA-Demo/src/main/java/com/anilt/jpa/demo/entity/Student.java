@@ -8,10 +8,10 @@ import javax.persistence.Entity;
 import javax.persistence.Table;
 import java.util.Date;
 
-@Entity
-@Table(name = "student")
-@Getter
-@Setter
+//@Entity
+//@Table(name = "student")
+//@Getter
+//@Setter
 public class Student {
     @Column(name = "student_id")
     private Integer student_id;
