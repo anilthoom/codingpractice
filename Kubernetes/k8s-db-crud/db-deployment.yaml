@@ -1,0 +1,45 @@
+# Persistent Volume Claim (PVC) for MySQL Storage. Dynamically Provisioned by Cluster
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: mysql-pv-claim
+  labels:
+    app: mysql
+    tier: database
+spec:
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 1Gi
+
+---
+# Configure Deployment For MySQL Server
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mysql
+  labels:
+    app: mysql
+    tier: database
+spec:
+  selector: #mysql pod should contain some labels
+    matchLabels:
+      app: mysql
+      tier: database
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels: # Must match 'Service' and 'Deployment' selectors
+        app: mysql
+        tier: database
+    spec:
+      containers:
+        - image: mysql:5.7
+          args:
+            - "--ignore-db-dir=last+found" #Workaround for mysql issue 6
+          name: mysql
+          env:
+            name: MYSQL_ROOT_PASSWORD
+            value: Opentext1!
