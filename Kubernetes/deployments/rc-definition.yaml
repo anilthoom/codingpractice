@@ -1,0 +1,20 @@
+# Replication Controller example
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: my-nginx-rc
+  labels:
+    app: my-nginx
+    type: front-end
+spec:
+  template:
+    metadata:
+      name: nginx
+      labels:
+        app: nginx
+        type: front-end
+    spec:
+      containers:
+        - name: nginx-controller
+          image: nginx
+  replicas: 3
