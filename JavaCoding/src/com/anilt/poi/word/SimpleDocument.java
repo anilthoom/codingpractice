@@ -1,4 +1,4 @@
-package com.anilt.word;
+package com.anilt.poi.word;
 
 import java.io.FileOutputStream;
 
