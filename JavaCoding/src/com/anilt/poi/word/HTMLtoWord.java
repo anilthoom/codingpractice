@@ -9,8 +9,8 @@ public class HTMLtoWord
 {
 	public static void main(String[] argv) throws Exception 
 	{
-	      BufferedReader br = new BufferedReader(new FileReader("commit.htm"));
-	      BufferedWriter bw = new BufferedWriter(new FileWriter("commit.doc"));
+	      BufferedReader br = new BufferedReader(new FileReader("c:\\MyWork\\commit.htm"));
+	      BufferedWriter bw = new BufferedWriter(new FileWriter("c:\\MyWork\\commit.doc"));
 	      int i;
 	     
 	      do {

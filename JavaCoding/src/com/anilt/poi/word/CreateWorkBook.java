@@ -9,7 +9,7 @@ public class CreateWorkBook
       XSSFWorkbook wb = new XSSFWorkbook(); 
       //Create file system using specific name
       FileOutputStream out = new FileOutputStream(
-      new File("c:\\createworkbook.docx"));
+      new File("c:\\MyWork\\createworkbook.docx"));
       //write operation workbook using file out object 
       wb.write(out);
       out.close();

@@ -109,7 +109,7 @@ public class SimpleDocument {
         r5.setText("The pangs of despised love, the law's delay,"
                 + "The insolence of office and the spurns" + ".......");
 
-        FileOutputStream out = new FileOutputStream("simple.docx");
+        FileOutputStream out = new FileOutputStream("c:\\MyWork\\simple.docx");
         doc.write(out);
         out.close();
         System.out.println("DONE");

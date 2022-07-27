@@ -1,4 +1,4 @@
-package com.anilt.poi.word;
+package com.anilt.poi.excel;
 import java.io.*;
 import org.apache.poi.xssf.usermodel.*;
 public class OpenWorkBook

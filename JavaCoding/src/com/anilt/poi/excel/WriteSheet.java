@@ -1,4 +1,4 @@
-package com.anilt.poi.word;
+package com.anilt.poi.excel;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.util.Map;

@@ -14,7 +14,7 @@ public class WordExtractor {
 
    public static void main(String[] args)throws Exception {
 	   System.out.println("HELLO");
-      XWPFDocument docx = new XWPFDocument(new FileInputStream("OpenText_Partner_Master_Agreement_-_EMEA_Current_Partner.docx"));
+      XWPFDocument docx = new XWPFDocument(new FileInputStream("c:\\MyWork\\OpenText_Partner_Master_Agreement_-_EMEA_Current_Partner.docx"));
       
       //using XWPFWordExtractor Class
       XWPFWordExtractor we = new XWPFWordExtractor(docx);
@@ -29,7 +29,7 @@ public class WordExtractor {
        XWPFDocument document = new XWPFDocument();
        //Write the Document in file system
        FileOutputStream out = new FileOutputStream(
-               new File("BOOKKKK.docx"));
+               new File("c:\\MyWork\\BOOKKKK.docx"));
 
        //create Paragraph
        XWPFParagraph paragraph = document.createParagraph();
