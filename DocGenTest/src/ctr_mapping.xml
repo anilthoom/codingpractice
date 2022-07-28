@@ -1,0 +1,131 @@
+<GenerateInputXML>
+	<Mapping>
+		<Attribute key="AMENDMENT" value="Amendment" />
+		<Attribute key="AMENDMENTTYPE" value="Amendment Type" />
+		<Attribute key="AUTORENEW" value="Auto Renew" />
+		<Attribute key="AUTORENEWDURATION" value="Auto Renew Duration" />
+		<Attribute key="TERMINATIONCOMMENTS" value="Termination Comments" />
+		<Attribute key="EARLYTERMINATIONRIGHT" value="Early Termination Right" />
+		<Attribute key="COMMENTS" value="Comments" />
+		<Attribute key="CONTRACTNAME" value="Contract Name" />
+		<Attribute key="CONTRACTNUMBER" value="Contract Number" />
+		<Attribute key="CONTRACTTERM" value="Contract Term" />
+		<Attribute key="CONTRACTVALUE" value="Contract Value" />
+		<Attribute key="CONTRACTVALUEUSD" value="Contract Value in USD" />
+		<Attribute key="OPPORTUNITYID" value="Opportunity ID" />
+		<Attribute key="QUOTEID" value="Quote ID" />
+		<Attribute key="CURRENTTERMENDDATE" value="Current Term End Date" />
+		<Attribute key="CURRENTTERMSTARTDATE" value="Current Term Start Date " />
+		<Attribute key="ACCOUNTMANAGERCOMMENTS" value="Customer Manager Comments" />
+		<Attribute key="DEALMANAGER" value="Deal Manager" />
+		<Attribute key="DESCRIPTION" value="Description" />
+		<Attribute key="TERMINATIONCONDITIONS" value="Termination Conditions" />
+		<Attribute key="ENDUSERSEGMENT" value="End User Segment" />
+		<Attribute key="CONTRACTID" value="Contract ID" />
+		<Attribute key="INITIALEXPIRATIONDATE" value="Initial Expiration Date" />
+		<Attribute key="ACTUALSTARTDATE" value="Actual Start Date" />
+		<Attribute key="NEXTEXPIRATIONDATE" value="Next Expiration Date" />
+		<Attribute key="ORIGINALACCOUNTMANAGER" value="Original Account Manager" />
+		<Attribute key="PERPETUAL" value="Perpetual" />
+		<Attribute key="PREVIOUSCONTRACTID" value="Previous Contract ID" />
+		<Attribute key="PRICEPROTECTION" value="Price Protection" />
+		<Attribute key="PRICEPROTECTIONDATE" value="Price Protection Date" />
+		<Attribute key="PRIORITY" value="Priority" />
+		<Attribute key="GOLIVEDATE" value="Go Live Date" />
+		<Attribute key="RENEWALFLAG" value="Renewal Flag" />
+		<Attribute key="RENEWALCOMMENTS" value="Renewal Comments" />
+		<Attribute key="RENEWALDISCOUNT" value="Renewal Discount" />
+		<Attribute key="ORDERID" value="Order ID" />
+		<Attribute key="SIGNATUREDATE" value="Signature Date" />
+		<Attribute key="PLANNEDSTARTDATE" value="Planned Start Date" />
+		<Attribute key="TERMINATIONDATE" value="Termination Date" />
+		<Attribute key="TERMINATIONFEES" value="Termination Fees" />
+		<Attribute key="TERMINATIONNOTICEPERIOD" value="Termination Notice Period" />
+		<Attribute key="VALIDATED" value="Validated" />
+		<Attribute key="VALIDATEDBY" value="Validated By" />
+		<Attribute key="VALIDATEDON" value="Validated On" />
+		<Attribute key="CONTRACTTYPE" value="Contract Type" />
+		<Attribute key="COUNTRY" value="Country" />
+		<Attribute key="CURRENCY" value="Currency" />
+		<Attribute key="CONTRACTORIGINATION" value="Contract origination" />
+		<Attribute key="EXTERNALCONTACT_BIRTHDATE" value="External Contact Birthdate" />
+		<Attribute key="EXTERNALCONTACT_DISPLAYNAME" value="External Contact Display Name" />
+		<Attribute key="EXTERNALCONTACT_EMAIL" value="External Contact Email" />
+		<Attribute key="EXTERNALCONTACT_FIRSTNAME" value="External Contact First Name" />
+		<Attribute key="EXTERNALCONTACT_LASTNAME" value="External Contact Last Name" />
+		<Attribute key="EXTERNALCONTACT_MOBILE" value="External Contact Mobile" />
+		<Attribute key="EXTERNALCONTACT_PHONE" value="External Contact Phone" />
+		<Attribute key="EXTERNALCONTACT_PREFIX" value="External Contact Prefix" />
+		<Attribute key="EXTERNALPARTY_DESCRIPTION" value="External Party Description" />
+		<Attribute key="EXTERNALPARTY_EMAIL" value="External Party Email" />
+		<Attribute key="EXTERNALPARTY_IDENTIFICATIONNUMBER" value="External Party Identification Number" />
+		<Attribute key="EXTERNALPARTY_INCEPTIONDATE" value="External Party Inception Date" />
+		<Attribute key="EXTERNALPARTY_MASTERID" value="External Party Master ID" />
+		<Attribute key="EXTERNALPARTY_NAME" value="External Party Name" />
+		<Attribute key="EXTERNALPARTY_REGISTEREDNAME" value="External Party Registered Name" />
+		<Attribute key="EXTERNALPARTY_REGISTRATIONID" value="External Party Registration ID" />
+		<Attribute key="EXTERNALPARTY_WEBSITE" value="External Party Website" />
+		<Attribute key="ACCOUNTNUMBER" value="Account Number" />
+		<Attribute key="ACCOUNTMANAGER" value="Account Manager" />
+		<Attribute key="INTERNALCONTACT_BIRTHDATE" value="Internal Contact Birthdate" />
+		<Attribute key="INTERNALCONTACT_DISPLAYNAME" value="Internal Contact Display Name" />
+		<Attribute key="INTERNALCONTACT_EMAIL" value="Internal Contact Email" />
+		<Attribute key="INTERNALCONTACT_FIRSTNAME" value="Internal Contact First Name" />
+		<Attribute key="INTERNALCONTACT_LASTNAME" value="Internal Contact Last Name" />
+		<Attribute key="INTERNALCONTACT_MOBILE" value="Internal Contact Mobile" />
+		<Attribute key="INTERNALCONTACT_PHONE" value="Internal Contact Phone" />
+		<Attribute key="INTERNALCONTACT_PREFIX" value="Internal Contact Prefix" />
+		<Attribute key="INTERNALPARTY_DESCRIPTION" value="Internal Party Description" />
+		<Attribute key="INTERNALPARTY_EMAIL" value="Internal Party Email" />
+		<Attribute key="INTERNALPARTY_IDENTIFICATIONNUMBER" value="Internal Party Identification Number" />
+		<Attribute key="INTERNALPARTY_INCEPTIONDATE" value="Internal Party Inception Date" />
+		<Attribute key="INTERNALPARTY_MASTERID" value="Internal Party Master ID" />
+		<Attribute key="INTERNALPARTY_NAME" value="Internal Party Name" />
+		<Attribute key="INTERNALPARTY_REGISTEREDNAME" value="Internal Party Registered Name" />
+		<Attribute key="INTERNALPARTY_REGISTRATIONID" value="Internal Party Registration ID" />
+		<Attribute key="INTERNALPARTY_WEBSITE" value="Internal Party Website" />
+		<Attribute key="REGION" value="Region" />
+		<Attribute key="TERMINATIONREASON" value="Termination Reason" />
+		<Sections>
+			<Section>
+				<SectionName>Lorem ipsum dolor</SectionName>
+				<SectionOrder>1</SectionOrder>
+				<Clause>
+					<ClauseName>Eruditi periculis at sit</ClauseName>
+					<ClauseOrder>1</ClauseOrder>
+					<ClauseContent>Lorem ipsum dolor sit amet, viderer numquam electram nam in, ad his prompta hendrerit. Te nam decore vivendum expetenda, ne vim commune accumsan. Summo legimus suscipiantur sed et, mea atqui ubique te. No ipsum aliquando sea, porro atomorum corrumpit sit in. Eruditi periculis at sit, cu graeci essent incorrupte cum.</ClauseContent>
+				</Clause>
+				<Clause>
+					<ClauseName>Ut per velit dicunt</ClauseName>
+					<ClauseOrder>2</ClauseOrder>
+					<ClauseContent>Ut per velit dicunt, per ne eros nostrum. Vim iriure persius albucius ne, ut amet tantas accommodare vis. Sed utamur inimicus te, eu his prompta temporibus appellantur. Volumus antiopam petentium vim ei. At alterum offendit erroribus vim. Mazim splendide eam te, mea in solet bonorum.</ClauseContent>
+				</Clause>
+				<Clause>
+					<ClauseName>Id vivendo delectus</ClauseName>
+					<ClauseOrder>3</ClauseOrder>
+					<ClauseContent>Id vivendo delectus nam, no qui oporteat antiopam. Eam dictas labores moderatius at. In duo quas putant, nec salutatus pertinacia ex. Te sea lorem definitiones.</ClauseContent>
+				</Clause>
+			</Section>
+			<Section>
+				<SectionName>Est possim dignissim et</SectionName>
+				<SectionOrder>2</SectionOrder>
+				<Clause>
+					<ClauseName>Eu magna numquam</ClauseName>
+					<ClauseOrder>1</ClauseOrder>
+					<ClauseContent>Est possim dignissim et. Eu magna numquam per. Et pro saperet efficiendi adversarium. Nominavi theophrastus ea pri. Quo ut wisi nulla animal. Nostro tacimates maluisset eos ex.</ClauseContent>
+				</Clause>
+				<Clause>
+					<ClauseName>Nominavi theophrastus</ClauseName>
+					<ClauseOrder>2</ClauseOrder>
+					<ClauseContent>Vero zril ad nec, eligendi reprehendunt has an. Te quas graecis nam, cu altera iudicabit cum, sit nibh primis expetendis et. His consetetur disputationi in. An est scaevola qualisque. Tale purto perpetua id eos, mei ei quaeque copiosae ullamcorper.</ClauseContent>
+				</Clause>
+				<Clause>
+					<ClauseName>Quo ut wisi nulla animal</ClauseName>
+					<ClauseOrder>3</ClauseOrder>
+					<ClauseContent>Id vivendo delectus nam, no qui oporteat antiopam. Eam dictas labores moderatius at. In duo quas putant, nec salutatus pertinacia ex. Te sea lorem definitiones.
+Est possim dignissim et. Eu magna numquam per. Et pro saperet efficiendi adversarium. Nominavi theophrastus ea pri. Quo ut wisi nulla animal. Nostro tacimates maluisset eos ex.</ClauseContent>
+				</Clause>
+			</Section>
+		</Sections>
+	</Mapping>
+</GenerateInputXML>

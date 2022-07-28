@@ -1,0 +1,16 @@
+<SOAP:Envelope xmlns:SOAP="http://schemas.xmlsoap.org/soap/envelope/">
+	<SOAP:Body>
+		<GenerateDocument xmlns="http://schemas.opentext.com/cc/docgen">
+			<DocumentLayoutId>DL4</DocumentLayoutId>
+			<Attributes>
+				<Attribute key="CONTRACTNAME" value="OpenText Sales Agreement" />
+				<Attribute key="STARTDATE" value="26/08/2018" />
+				<Attribute key="ENDDATE" value="26th Aug, 2018" />
+				<Attribute key="INTERNALPARTY" value="OPEN TEXT PTY LTD" />
+				<Attribute key="INTERNALCONTACT" value="Mark B" />
+				<Attribute key="EXTERNALPARTY" value="Innovate Software Pvt. Ltd" />
+				<Attribute key="EXTERNALCONTACT" value="Adam Gilchrist" />
+			</Attributes>
+		</GenerateDocument>
+	</SOAP:Body>
+</SOAP:Envelope>
